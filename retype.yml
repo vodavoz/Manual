@@ -7,6 +7,5 @@ branding:
 links:
 - text: Наши контакты
   link: http://vodavoz.ru/
-favicon: static/favicon.ico
 footer:
   copyright: "Все права защищены"
