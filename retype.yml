@@ -1,0 +1,12 @@
+input: .
+output: build
+url: # Add your website address here
+branding:
+  title: Работа с приложением
+  label: Водавоз
+links:
+- text: Наши контакты
+  link: http://vodavoz.ru/
+favicon: static/favicon.ico
+footer:
+  copyright: "Все права защищены"
