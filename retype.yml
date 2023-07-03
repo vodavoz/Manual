@@ -1,6 +1,6 @@
-input: .
+input: 
 output: build
-url: # Add your website address here
+url: https://vodavoz.github.io
 branding:
   title: Работа с программой
   label: Водавоз
