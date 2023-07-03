@@ -10,3 +10,4 @@ links:
 favicon: static/logo.png
 footer:
   copyright: "Все права защищены"
+  poweredByRetype: false
