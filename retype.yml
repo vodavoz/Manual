@@ -1,11 +1,12 @@
 input: .
 output: build
-url: https://vodavoz.github.io/Manual
+url: # Add your website address here
 branding:
-  title: Работа с приложением
+  title: Работа с программой
   label: Водавоз
 links:
-- text: Наши контакты
+- text: vodavoz.ru
   link: http://vodavoz.ru/
+favicon: static/logo.png
 footer:
   copyright: "Все права защищены"
