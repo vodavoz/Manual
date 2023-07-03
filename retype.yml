@@ -1,4 +1,4 @@
-input: .
+input: 
 output: build
 url: # Add your website address here
 branding:
@@ -10,3 +10,4 @@ links:
 favicon: static/favicon.ico
 footer:
   copyright: "Все права защищены"
+  
