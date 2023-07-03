@@ -5,7 +5,7 @@ branding:
   title: Работа с программой
   label: Водавоз
 links:
-- text: vodavoz.ru
+- text: Наши контакты
   link: http://vodavoz.ru/
 favicon: static/logo.png
 footer:
