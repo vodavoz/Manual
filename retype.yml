@@ -1,12 +1,12 @@
-input: 
+input: .
 output: build
 url: # Add your website address here
 branding:
-  title: Работа с программой
+  title: Работа с приложением
   label: Водавоз
 links:
 - text: Наши контакты
   link: http://vodavoz.ru/
-favicon: static/logo.png
+favicon: static/favicon.ico
 footer:
   copyright: "Все права защищены"
