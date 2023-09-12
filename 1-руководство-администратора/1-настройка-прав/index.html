@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.745319047796">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.747825271184">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.1.0">
+    <meta name="generator" content="Retype 3.4.1">
 
     <!-- Primary Meta Tags -->
     <title>Настройка прав</title>
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.1.0.745319047796" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.4.1.747825271184" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.1.0.745319047796" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.1.0.745319047796" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.4.1.747825271184" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.4.1.747825271184" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -165,6 +165,31 @@
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
+                                <nav class="breadcrumb" aria-label="Breadcrumb">
+                                    <ol role="list">
+                                        <li class="pr-4">
+                                            <a href="../../" class="pr-4">
+                                                Добро пожаловать на сайт
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../1-руководство-администратора/" class="pr-4">
+                                                Руководство администратора
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../1-руководство-администратора/1-настройка-прав/" class="pr-4">
+                                                Настройка прав
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
                 
                                 <!-- Page content  -->
 <doc-anchor-target id="настройка-прав" class="break-words">
@@ -177,7 +202,7 @@
     <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-14</span></div>
 </div>
 
-<p>Для того, чтобы назначить права пользователю, необходимо в панели навигации открыть гиперссылку <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<p>Для того, чтобы назначить права пользователю, необходимо в панели навигации открыть гиперссылку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Права доступа</span>
 </span>.</p>
 <p><figure class="content-center">
@@ -191,7 +216,7 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>На вкладке <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<p>На вкладке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Группы доступа</span>
 </span> при помощи кнопок <img src="../../images/%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C_%D0%B2_%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%83.jpg" alt="" />, <img src="../../images/%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C_%D0%B8%D0%B7_%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%8B.jpg" alt="" /> и <img src="../../images/%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C_%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%83.jpg" alt="" /> пользователю добавляется необходимые права доступа.</p>
 <doc-anchor-target id="группы-доступа">
@@ -201,11 +226,11 @@
     </h2>
 </doc-anchor-target>
 <p>Для того, чтобы группы были доступны, их нужно создать.</p>
-<p>Для этого необходимо открыть <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+<p>Для этого необходимо открыть <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Администрирование</span>
-</span>-&gt;<span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
     <span>Настройки пользователей и прав</span>
-</span>-&gt;<span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Группы доступа</span>
 </span>.</p>
 <p><figure class="content-center">
@@ -227,11 +252,11 @@
     </h2>
 </doc-anchor-target>
 <p>Профили групп доступа определяют набор прав пользователя для доступа к тем или иным данным системы. Все необходимые профили уже созданы.</p>
-<p>Найти их можно <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+<p>Найти их можно <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Администрирование</span>
-</span>-&gt;<span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
     <span>Настройки пользователей и прав</span>
-</span>-&gt;<span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Профили групп доступа</span>
 </span>.</p>
 <p><figure class="content-center">
@@ -247,41 +272,41 @@
         <span>Основные:</span>
     </h3>
 </doc-anchor-target>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Администратор</span>
 </span> – этот профиль используется администратором системы и имеет абсолютно все права по работе с ней.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Пользователи</span>
-</span> – этот профиль устанавливается всем пользователям, кроме администратора. Например, для оператора необходимо установить профиль <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> – этот профиль устанавливается всем пользователям, кроме администратора. Например, для оператора необходимо установить профиль <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Пользователи</span>
-</span> и <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> и <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Оператор</span>
 </span>.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Директор</span>
 </span> – сотрудник с этой ролью может вносить изменения в настройки программы (для остальных пользователей эти настройки доступны лишь для просмотра), оформлять и завершать аренду оборудования, редактировать карточку номерного оборудования. Также директору доступны некоторые аналитические отчеты, недоступные остальным пользователям.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Бухгалтер</span>
 </span> – этот профиль назначается сотруднику, ведущему бухгалтерский учет, банковские и кассовые операции и др. Также в этот профиль включен функционал кредитного контролера, осуществляющего обработку клиентов с целью ликвидации дебиторской задолженности в случае отвала.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Руководитель</span>
 </span> – назначается сотруднику, который является руководителем отдела операторов. Также в этот профиль включен функционал старшего оператора, осуществляющего первичную проверку адреса доставки на предмет возможности отвала.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Оператор</span>
 </span> – сотрудник с этим профилем осуществляет обзвон клиентов с целью выявления потребности клиентов в воде, прием и оформление заказов на поставку воды, оформление актов приема/передачи оборудования в ремонт, в аренду, на обслуживание и др., оформление и завершение аренды оборудования. Также оператору доступны большинство аналитических отчетов.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Логист</span>
 </span> – назначается сотруднику, который занимается формированием маршрутных листов и распределением заявок по ним.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Диспетчер</span>
 </span> – сотрудник с этим профилем распечатывает маршрутные листы и комплекты документов по ним, осуществляет ввод данных по МЛ и контроль доставки.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Кладовщик</span>
 </span> – назначается сотруднику, который осуществляет складские операции.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Мастер</span>
 </span> – назначается сотруднику, который осуществляет диагностику, ремонт, обслуживание оборудования, а также составляет дефектные ведомости на списание оборудования.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Контроль качества</span>
 </span> – назначается специалисту отдела контроля качества.</p>
 <doc-anchor-target id="вспомогательные">
@@ -290,108 +315,108 @@
         <span>Вспомогательные:</span>
     </h3>
 </doc-anchor-target>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Дата запрета изменений</span>
 </span> - позволяет устанавливать дату запрета изменений.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Запрет работы с договорами</span>
 </span> - устанавливает только просмотр при работе с договорами.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>МИКО (Пользователь софтфона)</span>
 </span> – позволяет совершать и принимать звонки непосредственно из программы.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>МИКО (Просмотр истории звонков)</span>
 </span> – позволяет просматривать историю звонков, совершенных из программы.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>МИКО (Редактирование истории звонков)</span>
 </span> – позволяет редактировать историю звонков, совершенных из программы.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>МИКО (Доступ к веб-сервисам)</span>
 </span> - дает доступ для служебных пользователей телефонии.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>МИКО (Доступ к телефонии)</span>
 </span> -  дает базовый доступ к функциям телефонии и журнала звонков.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Обработка бухгалтерских документов</span>
 </span> - позволяет вводить данные в обработке бухгалтерских документов</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Ограничение просмотра по закреплению</span>
 </span> - позволяет просматривать информацию в разрезе закрепленных за менеджером контрагентов.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Откат задач БП</span>
-</span> – позволяет откатывать задачу в бизнес-процессе <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> – позволяет откатывать задачу в бизнес-процессе <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Ремонт оборудования</span>
 </span> на предыдущий этап.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Открытие внешних отчетов и обработок</span>
 </span> – при подключенном профиле пользователь может использовать для работы внешние отчеты и обработки.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Пользователь мобильного приложения</span>
 </span> – при подключенном профиле пользователь может получать маршрутные листы и работать с ними на мобильном устройстве.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Производство</span>
-</span> – делает доступным пользователю раздел <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> – делает доступным пользователю раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Производство</span>
 </span>.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с подключаемым оборудованием</span>
 </span> – данный профиль должен быть подключен пользователю для работы с кассой и для возможности формирования кассового чека.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с АВС-анализом</span>
 </span> – при подключенном профиле пользователь может работать с документом <a href="/2-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2/2-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/8-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/6-%D0%B0%D0%B2%D1%81-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7/">АВС-анализ</a>.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с арендой</span>
 </span> – при подключенном профиле пользователь может начислять арендную плату за использование подменного оборудования.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с маркировкой</span>
 </span> - позволяет работать с маркировкой.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с почтой</span>
 </span> - позволяет работать с электронной почтой.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с проверкой отвала</span>
 </span> - позволят просматривать и редактировать документы проверки отвала адресов.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с ремонтом и арендой</span>
 </span> - позволяет работать с ремонтом и  арендой оборудования.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с торговыми точками</span>
 </span> - позволяет работать с торговыми точками, создавать документы, планировать отгрузку и создавать реализации.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Работа с ЭДО</span>
 </span> - позволяет работать с электронным документооборотом.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Разрешить ввод заказов любой датой</span>
 </span> - позволяет вводить заказы покупателя игнорируя запреты календаря.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Редактирование оборудования</span>
 </span> - позволяет редактировать оборудование после его создания.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Редактирование МЛ</span>
-</span> - позволяет редактировать МЛ, переносить заказы в статусе <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> - позволяет редактировать МЛ, переносить заказы в статусе <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>В пути</span>
 </span> из одного МЛ в другой.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Синхронизация данных с другими программами</span>
 </span> - дополнительно назначается тем пользователям, которым должны быть доступны средства
 для мониторинга и синхронизации данных с другими программами.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Удаление БП</span>
-</span> - позволяет удалить весь бизнес-процесс <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> - позволяет удалить весь бизнес-процесс <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Ремонт оборудования</span>
 </span>.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Удалить данные</span>
 </span> - позволяет безвозвратно удалять данные.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Установка контролей в договорах</span>
 </span> - позволяет настраивать контроли в договорах.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Установка ограничений на отгрузку</span>
 </span> - позволяет настраивать органичение на отгрузку в адресе доставки.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Учредитель</span>
-</span> - позволяет работать с дивидендами и счетами с субконто <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span> - позволяет работать с дивидендами и счетами с субконто <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Учредители</span>
 </span>.</p>
 </doc-panel>
@@ -461,6 +486,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Настройка прав", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Настройка прав", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>

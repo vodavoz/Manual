@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.1.0.745319047796">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.747825271184">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.1.0">
+    <meta name="generator" content="Retype 3.4.1">
 
     <!-- Primary Meta Tags -->
     <title>Расширенные</title>
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.1.0.745319047796" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.4.1.747825271184" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.1.0.745319047796" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.1.0.745319047796" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.4.1.747825271184" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.4.1.747825271184" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -165,6 +165,39 @@
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
+                                <nav class="breadcrumb" aria-label="Breadcrumb">
+                                    <ol role="list">
+                                        <li class="pr-4">
+                                            <a href="../../../" class="pr-4">
+                                                Добро пожаловать на сайт
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../../1-руководство-администратора/" class="pr-4">
+                                                Руководство администратора
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../../1-руководство-администратора/настройки-программы/" class="pr-4">
+                                                Настройки программы
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                                            </svg>
+                                        </li>
+                                        <li class="pr-4">
+                                            <a href="../../../1-руководство-администратора/настройки-программы/5-расширенные/" class="pr-4">
+                                                Расширенные
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
                 
                                 <!-- Page content  -->
 <doc-anchor-target id="расширенные" class="break-words">
@@ -185,15 +218,15 @@
 <ul class="contains-task-list">
 <li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать факторинг - устанавливается для включения функционала факторинга.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать пропуска - устанавливается для включения функционала работы с пропусками и их автоматическим формированием. При включении в адресе доставки добавляется вкладка <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать пропуска - устанавливается для включения функционала работы с пропусками и их автоматическим формированием. При включении в адресе доставки добавляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Настройки пропуска</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать производство - устанавливается для включения функционала работы с производством. При включении в панели разделов появляется раздел <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать производство - устанавливается для включения функционала работы с производством. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Производство</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать торговые точки - устанавливается для включения функционала работы с торговыми точками. При включении в панели разделов появляется раздел <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать торговые точки - устанавливается для включения функционала работы с торговыми точками. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Торговые точки</span>
 </span>.</p>
 </li>
@@ -212,13 +245,13 @@
 </ul>
 <p>Для примера: водителю необходимо позвонить в ООО «Ромашка», он звонит в свой офис и набирает короткий подменный номер клиента из маршрутного листа. АТС соединяет его непосредственно с клиентом. Водитель не может узнать номер телефона клиента, так и клиент видит телефонный номер фирмы, а не водителя. Данная опция работает только при определённой настройке АТС, которая позволяет переадресовывать звонки по подменному номеру клиента. (Полностью функционал реализован и протестирован на АТС МИКО).</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать мобильное приложение - устанавливается для включения функционала работы с мобильным приложением клиента. При включении в панели разделов появляется раздел <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать мобильное приложение - устанавливается для включения функционала работы с мобильным приложением клиента. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Приложение клиента</span>
-</span>, в настройках программы вкладка <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+</span>, в настройках программы вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Настройки МПК</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать бухгалтерские регистры - устанавливается для включения функционала работы с бухгалтерскими регистрами. При включении в настройках программы появляется вкладка <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать бухгалтерские регистры - устанавливается для включения функционала работы с бухгалтерскими регистрами. При включении в настройках программы появляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Настройки бухгалтерии</span>
 </span>.</p>
 </li>
@@ -228,30 +261,30 @@
 </li>
 <li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Необходимо уточнение данных - устанавливается для включения функционала уточнения данных.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Вести учет маркируемой продукции ИСМП - устанавливается для включения функционала работы с маркировкой. При включении в настройках программы появляется вкладка <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Вести учет маркируемой продукции ИСМП - устанавливается для включения функционала работы с маркировкой. При включении в настройках программы появляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Настройки маркировки</span>
 </span>.</p>
 </li>
 </ul>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Число дней переноса</span>
 </span> - указывается количество периодов динамики потребления при переносе контакта оператора.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Задержка обзвона</span>
 </span> - указывается n-количество дней, которое необходимо доьбавить перед звонком клиенту.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Настройки подмены номеров</span>
 </span> - указывается код города при использовании подмены номеров в мобильном приложении экспедитора.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Количество дней анализа счетов</span>
 </span> - указывается количество дней, которые даны на анализ счетов на оплату.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Почта для отправки чеков</span>
 </span> - указывается e-mail c которого будет проходить отправка чеков.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Настройка нумерации договоров</span>
 </span> - предназначена для настройки автоматического формирования номера договора. Доступны следующие варианты: по типу договора, по годам, по менеджеру.</p>
-<p><span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Шаблон номера договора</span>
 </span> - указывается вариант шаблона формирования номера договора.</p>
 
@@ -320,6 +353,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Расширенные", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Расширенные", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
