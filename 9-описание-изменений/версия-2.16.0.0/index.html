@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.747826824897">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748333630737">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.4.1">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Изменения в версии 2.16.0.0</title>
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.4.1.747826824897" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.748333630737" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.4.1.747826824897" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.4.1.747826824897" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748333630737" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748333630737" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -197,20 +197,20 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-08-14</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-09-18</span></div>
 </div>
 
 <doc-anchor-target id="константы">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#константы">#</doc-anchor-trigger>
         <span>Константы</span>
-    </h3>
+    </h2>
 </doc-anchor-target>
 <doc-anchor-target id="вид-расчета-по-таре">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#вид-расчета-по-таре">#</doc-anchor-trigger>
         <span>Вид расчета по таре</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
 <p>Константа предназначена для выбора способа денежных взаиморасчетов по таре, который будет проставляться по умолчанию в документах на вкладке &quot;Расчеты по таре&quot;. Сделано для клиентов, которые не работают с залогами. Она находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
     <span>Настройки</span>
@@ -222,23 +222,149 @@
     <span>Сервисные</span>
 </span>.</p>
 <doc-anchor-target id="заполнять-клиентскую-часть">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#заполнять-клиентскую-часть">#</doc-anchor-trigger>
         <span>Заполнять клиентскую часть</span>
-    </h4>
-</doc-anchor-target>
-<p>В акт сверки добавлена константа, при включении которой в печатной форме документа заполняется клиентская часть.</p>
-<doc-anchor-target id="исправление-ошибок">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#исправление-ошибок">#</doc-anchor-trigger>
-        <span>Исправление ошибок</span>
     </h3>
 </doc-anchor-target>
+<p>В акт сверки добавлена константа, при включении которой в печатной форме документа заполняется клиентская часть.</p>
+<doc-anchor-target id="печатные-формы">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#печатные-формы">#</doc-anchor-trigger>
+        <span>Печатные формы</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="счет-на-оплату">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#счет-на-оплату">#</doc-anchor-trigger>
+        <span>Счет на оплату</span>
+    </h3>
+</doc-anchor-target>
+<p>В макете печатной формы счета на оплату увеличен размер подписи и печати.</p>
+<doc-anchor-target id="упд">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#упд">#</doc-anchor-trigger>
+        <span>УПД</span>
+    </h3>
+</doc-anchor-target>
+<p>Добавлено заполнение данных о транспортировке и грузе с нарастабщим итогом: кг, шт, упак. и т.п.</p>
+<doc-anchor-target id="отчеты">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#отчеты">#</doc-anchor-trigger>
+        <span>Отчеты</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="тара-на-торговых-точках">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#тара-на-торговых-точках">#</doc-anchor-trigger>
+        <span>Тара на торговых точках</span>
+    </h3>
+</doc-anchor-target>
+<p>Добавлен отчет, который предназначен для просмотра остатка тары на торговых точках самовывоза. Он находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Торговые точки</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Отчеты</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Тара на торговых точках</span>
+</span>. Для работы с отчетом пользователям должна быть назначана роль <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Работа с торговыми точками</span>
+</span>.</p>
+<doc-anchor-target id="улучшения">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#улучшения">#</doc-anchor-trigger>
+        <span>Улучшения</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="план-обзвона">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#план-обзвона">#</doc-anchor-trigger>
+        <span>План обзвона</span>
+    </h3>
+</doc-anchor-target>
+<p>Увеличен период отображения заказов покупателя. Список заказов отображается за текущий и предыдущий месяцы от текущей даты.</p>
+<doc-anchor-target id="приложение-1с-экспедитор">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#приложение-1с-экспедитор">#</doc-anchor-trigger>
+        <span>Приложение 1с Экспедитор</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Разработан функционал добавления произвольного заказа экспедитором.</li>
+<li>Добавлена возможность выкупа тары по заказу.</li>
+</ol>
+<doc-anchor-target id="эдо">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#эдо">#</doc-anchor-trigger>
+        <span>ЭДО</span>
+    </h3>
+</doc-anchor-target>
+<p>Доработан модуль ЭДО до версии 1.9.7.0.</p>
+<doc-anchor-target id="легкая-логистика">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#легкая-логистика">#</doc-anchor-trigger>
+        <span>Легкая логистика</span>
+    </h3>
+</doc-anchor-target>
+<p>Добавлен функционал работы с торговыми точками.</p>
+<doc-anchor-target id="мико-телефония">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#мико-телефония">#</doc-anchor-trigger>
+        <span>МИКО телефония</span>
+    </h3>
+</doc-anchor-target>
+<p>Доработан механизм открытия карточки при входящем звонке.</p>
+<doc-anchor-target id="индивидуальные-цены">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#индивидуальные-цены">#</doc-anchor-trigger>
+        <span>Индивидуальные цены</span>
+    </h3>
+</doc-anchor-target>
+<p>Отчет <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Номенклатура по адресу</span>
+</span> переименован в <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Индивидуальные цены</span>
+</span> и изменен механизм его формирования.</p>
+<doc-anchor-target id="поступление-товаров-и-услуг">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#поступление-товаров-и-услуг">#</doc-anchor-trigger>
+        <span>Поступление товаров и услуг</span>
+    </h3>
+</doc-anchor-target>
+<p>В документе снят контроль проверки ЭЦП при сканировании кодов маркировки товаров.</p>
+<doc-anchor-target id="перемещение-тмц">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#перемещение-тмц">#</doc-anchor-trigger>
+        <span>Перемещение ТМЦ</span>
+    </h3>
+</doc-anchor-target>
+<p>При работе с торговыми точками добавлена возможность передавать на них тару собранную по маршруту, а не только забирать. Изменен внешний вид документа, стандартизирована командная панель.</p>
+<doc-anchor-target id="отчет-о-розничных-продажах">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#отчет-о-розничных-продажах">#</doc-anchor-trigger>
+        <span>Отчет о розничных продажах</span>
+    </h3>
+</doc-anchor-target>
+<p>Добавлен реквизит <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Вид оплаты</span>
+</span>, доработана форма автоформирования. Добавлена возможность формирования документа по конкретному виду оплаты, а так же отбор по юр/физ лицу.</p>
+<doc-anchor-target id="выгрузка-в-бухгалтерию">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#выгрузка-в-бухгалтерию">#</doc-anchor-trigger>
+        <span>Выгрузка в бухгалтерию</span>
+    </h3>
+</doc-anchor-target>
+<p>Обновлены правила выгрузки. Для выгрузки добавлены следующие документы: списание ТМЦ, перемещение ТМЦ, поступление с расчетного счета, списание с расчетного счета. Так же добавлена возможность выгружать счета на оплату,если они связаны с товарной накладной или поступлением на расчетный счет.</p>
+<doc-anchor-target id="исправление-ошибок">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#исправление-ошибок">#</doc-anchor-trigger>
+        <span>Исправление ошибок</span>
+    </h2>
+</doc-anchor-target>
 <doc-anchor-target id="загрузка-банковских-выписок">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#загрузка-банковских-выписок">#</doc-anchor-trigger>
         <span>Загрузка банковских выписок</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
 <ol>
 <li>Исправлена ошибка автоматического заполнения данных в договоре котрагента, который не был заведен ранее в программе.</li>
@@ -246,32 +372,34 @@
     <span>Списание с расчетного счета</span>
 </span> исправлена ошибка автоматического заполнения вида операции.</li>
 </ol>
-<doc-anchor-target id="печатные-формы">
+<doc-anchor-target id="чек-ккм">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#печатные-формы">#</doc-anchor-trigger>
-        <span>Печатные формы</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#чек-ккм">#</doc-anchor-trigger>
+        <span>Чек ККМ</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="счет-на-оплату">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#счет-на-оплату">#</doc-anchor-trigger>
-        <span>Счет на оплату</span>
-    </h4>
-</doc-anchor-target>
-<p>В макете печатной формы счета на оплату увеличен размер подписи и печати.</p>
-<doc-anchor-target id="улучшения">
+<p>Исправлена ошибка в автокорректировке чека, в случае если в возврате товаров от покупателя введена сумма меньше, чем было заполанировано получить от клиента.</p>
+<doc-anchor-target id="акт-сверки">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#улучшения">#</doc-anchor-trigger>
-        <span>Улучшения</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#акт-сверки">#</doc-anchor-trigger>
+        <span>Акт сверки</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="план-обзвона">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#план-обзвона">#</doc-anchor-trigger>
-        <span>План обзвона</span>
-    </h4>
+<p>Исправлена ошибка в печатной форме заполнения данных в подписи под таблицей со стороны организации.</p>
+<doc-anchor-target id="планирование-по-дням-недели">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#планирование-по-дням-недели">#</doc-anchor-trigger>
+        <span>Планирование по дням недели</span>
+    </h3>
 </doc-anchor-target>
-<p>Увеличен период отображения заказов покупателя. Список заказов отображается за текущий и предыдущий месяцы от текущей даты.</p>
+<p>Исправлена ошибка в формировании планов обзвона у КА, которым установлен данный вид планирования.</p>
+<doc-anchor-target id="бизнес-процесс-задание">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#бизнес-процесс-задание">#</doc-anchor-trigger>
+        <span>Бизнес-процесс задание</span>
+    </h3>
+</doc-anchor-target>
+<p>Исправлена ошибка перенаправления задачи на другого исполнителя.</p>
 
                                 
                                 <!-- Required only on API pages -->
