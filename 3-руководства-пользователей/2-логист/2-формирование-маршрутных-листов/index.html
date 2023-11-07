@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752002232865">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752671433306">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Формирование маршрутных листов</title>
     <meta name="title" content="Формирование маршрутных листов">
+    <meta name="description" content="Чтобы обработать поступившие заявки, сформировать маршрутные листы, перенести заявки из одного маршрутного листа в другой, при необходимости, имеются...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/3-руководства-пользователей/2-логист/2-формирование-маршрутных-листов/">
@@ -19,20 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/3-руководства-пользователей/2-логист/2-формирование-маршрутных-листов/">
     <meta property="og:title" content="Формирование маршрутных листов">
+    <meta property="og:description" content="Чтобы обработать поступившие заявки, сформировать маршрутные листы, перенести заявки из одного маршрутного листа в другой, при необходимости, имеются...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/3-руководства-пользователей/2-логист/2-формирование-маршрутных-листов/">
     <meta property="twitter:title" content="Формирование маршрутных листов">
+    <meta property="twitter:description" content="Чтобы обработать поступившие заявки, сформировать маршрутные листы, перенести заявки из одного маршрутного листа в другой, при необходимости, имеются...">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.752002232865" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.752671433306" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.752002232865" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.752671433306" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.752002232865" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.752671433306" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -201,6 +204,306 @@
         <span>Формирование маршрутных листов</span>
     </h1>
 </doc-anchor-target>
+<p>Чтобы обработать поступившие заявки, сформировать маршрутные листы, перенести заявки из одного маршрутного листа в другой, при необходимости, имеются два раздела, где это можно сделать.</p>
+<doc-anchor-target id="рабочее-место-логиста">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#рабочее-место-логиста">#</doc-anchor-trigger>
+        <span>Рабочее место логиста.</span>
+    </h2>
+</doc-anchor-target>
+<p>Найти его можно <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Обслуживание</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Логистика</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Рабочее место логиста</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%B5.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Форма состоит из двух табличных частей.
+В левой табличной части находятся нераспределенные заявки по адресу доставки. Они сгруппированные по маршрутам, с указанием интервала доставки, времени, количества заказов и бутылей в них, а также указана общая масса заказа. Заявки выводятся на дату, указанную в поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Дата</span>
+</span>. Правая табличная часть пустая. Впоследствии в ней будут отображаться сформированные логистом маршрутные листы. Сортировка маршрутных листов происходит по <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Маршруту</span>
+</span> и <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Интервалу</span>
+</span>.</p>
+<p>Есть два варианта создания маршрутного листа.</p>
+<doc-anchor-target id="вариант-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вариант-1">#</doc-anchor-trigger>
+        <span>Вариант 1</span>
+    </h3>
+</doc-anchor-target>
+<p>Для создания маршрутного листа необходимо в правой колонке нажать кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Добавить МЛ</span>
+</span>.
+Заполняем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Реквизиты маршрутного листа</span>
+</span>:</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Организация</span>
+</span> проставлена ситемой автоматически.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Маршрут</span>
+</span> установлен сразу, если к маршруту прекреплены машина, водитель и грузчик, то <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Автомобиль</span>
+</span>, <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Водитель</span>
+</span> и <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Экспедитор</span>
+</span> выставляются автоматичетки, если нет, то заполняем. При необходимости маршрут можно поменять.</p>
+<p>Далее нажимаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Провести и закрыть</span>
+</span>.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB5.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В правой колонке у нас появится созданный маршрутный лист.
+Лучше создать сразу несколько маршрутов, так более удобно переносить заявки.</p>
+<doc-anchor-target id="вариант-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вариант-2">#</doc-anchor-trigger>
+        <span>Вариант 2</span>
+    </h3>
+</doc-anchor-target>
+<p>В левой табличной части нажмите правой кнопкой мыши по группировке (названию маршрута), откроется меню,
+выберите в нем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Создать МЛ</span>
+</span>.
+Все заявки из данной группировки попадут в маршрутный лист.
+Маршрут создан, проводим и закрываем.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB0.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Для переноса заявок из левой таблицы в маршрутный лист, необходимо зажать левую кнопку мыши, удерживая ее, перенести выбранные заявки в нужный нам маршрут.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D1%811.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="легкая-логистика">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#легкая-логистика">#</doc-anchor-trigger>
+        <span>Легкая логистика.</span>
+    </h2>
+</doc-anchor-target>
+<p>Найти ее можно <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Планирование автодоставки</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Планирование автодоставки</span>
+</span>.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB%D0%BB.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Она представлена в виде трех табличный частей и карты в правом верхнем углу.
+В первой табличной части, в верхнем левом углу, будут отображаться все нерассортированные заявки по маршрутным листам. Во второй табличной части, которая находится в левом нижнем углу, будут находится заявки, которые входят в маршрутный лист. В правом нижнем углу - будут отображаться автомобили.</p>
+<p>Давайте сформируем маршрутный лист</p>
+<doc-anchor-target id="выгрузка-заявок">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#выгрузка-заявок">#</doc-anchor-trigger>
+        <span>Выгрузка заявок</span>
+    </h3>
+</doc-anchor-target>
+<p>Выбирем дату в поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Дата планирования</span>
+</span>. Если требуется, то можно выставить временные интервалы.</p>
+<p>Далее, для того, что бы наши заявки появились в табличной части нужно нажать кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Геокодировать</span>
+</span>, выделена синим цветом.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Геокодирование</span>
+</span> нужно для опознования системой адреса на карте.
+Все ваши адреса, в карточке контрагента, должны быть созданы <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>По классификатору</span>
+</span>.</p>
+        </div>
+    </div>
+</div>
+<p>Нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Геокодировать</span>
+</span> система сама распознает адреса и определяет точку на карте. Если она распознала адрес, то автоматически устанавливается галочка. Если нет, то мы проверяем: верхняя строка показывает тот адрес, который мы создали в программе. Нижняя (выделена жирным шрифтом) - адрес, который сопоставила система. Если они совпадают, то мы в ручную ставим галочки и нажимаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Сохранить</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB4.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После сохранения, наши заявки появятся в вехней левой части и на карте.</p>
+<p>Так же в этой части мы увидим столбики, в которых отражены: интервал доставки, количество бутылок и их вес, комментарии, ответственный и другая полезная информация.</p>
+<p>Для просмотра одной заявки или несколько заявок на карте необходимо выполнить действия:</p>
+<ul>
+<li><p>клик правой кнопкой мыши - красным кружком отобразится выделенная заявка;</p>
+</li>
+<li><p>зажать <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Ctrl</span>
+</span> и правой кнопкой мыши можно выбрать несколько заявок - они так же отобразятся на карте красными кружками;</p>
+</li>
+<li><p>зажимаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Shift</span>
+</span>, кликаем на начальную заявку и кликаем на конечную заявку. Выделятся все заявки находящиеся между ними, как и начальная так и конечная Все выбранные заявки выделятся на карте красными кружками.
+Те же манипуляции можно делать на карте.</p>
+</li>
+</ul>
+<p>В нижней части верхнего левого столбца находится таблица, которая отражает количество заявок, бутылок и их вес, а также количество точек. Разделяется на <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выделенные заявки</span>
+</span> и <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Общие заявки</span>
+</span>.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB3.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="добавление-автомобиля">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#добавление-автомобиля">#</doc-anchor-trigger>
+        <span>Добавление автомобиля</span>
+    </h3>
+</doc-anchor-target>
+<p>В нижней правой части нажимаем на кнопку  <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выбрать автомобиль</span>
+</span>. Откроется окно:
+Устанавливаем галочки на нужных нам машинах (можно выбрать одну машину, можно - несколько) и нажимаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Закончить редактирование</span>
+</span>.
+Выбранные машины появятся в правой нижней части.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB%D0%BB.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+Для удобства в столбцах отображены вес (грузоподъемность) и другая полезная информация.
+Выбираем машину для формирования маршрутного листа. Если поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Экспедитор</span>
+</span> не заполнено, то проставим экспедитора.</p>
+<doc-anchor-target id="заполнение-машины-заявками">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#заполнение-машины-заявками">#</doc-anchor-trigger>
+        <span>Заполнение машины заявками</span>
+    </h3>
+</doc-anchor-target>
+<p>В левом верхнем углу, зажимаем Ctrl и кликаем на те заявки, которые хотим перенести. В нижнем правом углу нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Добавить в рейс</span>
+</span>. Все выбранные заявки перенесутся в нижний левый угол. Это означает, что заявки добавились в маршрутный лист.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB1.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Возвращаемся в нижнию правую часть. Обратим внимание на столбцы в строке выбранной машины. В первом столбце отображено количество заявок, во втором - точки, в третьем - общее количество заявок (так же включен склад с которого будет отгрузка, как первая точка).</p>
+<doc-anchor-target id="расчет-маршрута">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#расчет-маршрута">#</doc-anchor-trigger>
+        <span>Расчет маршрута</span>
+    </h4>
+</doc-anchor-target>
+<p>Теперь нам нужно провести расчет маршрута (система сама расставит точки с учетом оптимального времени (прибытия и убытия), расстояния и установленных временных рамок). Есть несколько вариантов расчета</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выделенные</span>
+</span> - расчитывает заявки, которые выделены в левом нижнем углу.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Не расчитанные</span>
+</span> - расчитывает все не расчитанные заявки.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Все</span>
+</span> - расчитывает все заявки</p>
+        </div>
+    </div>
+</div>
+<p>Для проведения расчета нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Расчет маршрута</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Не расчитанные</span>
+</span> (используется чаще всего)
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB3.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Теперь обратим внимание на столбцы в нижнем левом углу. В шестом столбце <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB7.jpg" alt="" /> если галочки отображены зеленым цветом, то значит водитель успеет в эти точки по установленным временным рамкам. Если красным - значит водитель не успеет в установленные временные рамки привезти товар. Тогда следует пересмотреть временной промежуток или перенести заявку в другой маршрут или день. Так же в столбцах отражена другая полезная информация.</p>
+<doc-anchor-target id="формирование-маршрутного-листа">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#формирование-маршрутного-листа">#</doc-anchor-trigger>
+        <span>Формирование маршрутного листа</span>
+    </h3>
+</doc-anchor-target>
+<p>Для формирования маршрутного листа выделяем машину и нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Рейсы</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Сформировать выделенные рейсы</span>
+</span>
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB%D0%BB1.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После формирования рейсов, маршрут выделится черным цветом. Чтобы зайти в созданный маршрут, необходимо в последнем столбце <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Рейс</span>
+</span> два раза кликнуть на маршрутный лист.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB%D0%BB3.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В случае, когда мы совершили ошибку или в маршрутный лист нужно добавить заявку мы нажимаем на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Рейсы</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Вернуться к редактированию рейса</span>
+</span>, маршрут будет расформирован.</p>
+<p>Для удаления заявки из маршрутного листа нужно в левой нижней части выбрать заявку и нажать <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Удалить из рейса</span>
+</span>. Заявка вернется в верхнюю левую часть.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB%D0%BB4.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Для переноса заявки нужно нажать кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Переместить в другой рейс</span>
+</span>. В открывшемся окне выбираем нужный автомобиль и нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выбрать</span>
+</span>. Заявка перенесется в выбранную машину.
+<figure class="content-center">
+    <img src="/images/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0/%D0%BB%D0%BB%D0%BB5.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+Далее формируем маршрутный лист, действуя как описано выше.</p>
 
                                 
                                 <!-- Required only on API pages -->
