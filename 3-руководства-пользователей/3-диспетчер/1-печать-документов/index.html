@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753386116328">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753789035829">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Печать документов</title>
     <meta name="title" content="Печать документов">
+    <meta name="description" content="В программе реализовано несколько видов печати, разберем все по очереди.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/3-руководства-пользователей/3-диспетчер/1-печать-документов/">
@@ -19,20 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/3-руководства-пользователей/3-диспетчер/1-печать-документов/">
     <meta property="og:title" content="Печать документов">
+    <meta property="og:description" content="В программе реализовано несколько видов печати, разберем все по очереди.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/3-руководства-пользователей/3-диспетчер/1-печать-документов/">
     <meta property="twitter:title" content="Печать документов">
+    <meta property="twitter:description" content="В программе реализовано несколько видов печати, разберем все по очереди.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.753386116328" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.753789035829" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.753386116328" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.753789035829" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.753386116328" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.753789035829" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -201,6 +204,281 @@
         <span>Печать документов</span>
     </h1>
 </doc-anchor-target>
+<p>В программе реализовано несколько видов печати, разберем все по очереди.</p>
+<doc-anchor-target id="печать-через-маршрутный-лист">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#печать-через-маршрутный-лист">#</doc-anchor-trigger>
+        <span>Печать через маршрутный лист</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/8n2OkkK9g40" allowfullscreen></iframe>
+    </div>
+    <figcaption class="caption">Создание контрагента</figcaption>
+</figure>
+</p>
+<p>Для распечатывания документов по маршрутному листу служит кнопка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Печать</span>
+</span>. Кнопка расположена как на форме списка маршрутных листов, так и в самом маршрутном листе.
+На форме списка все маршрутные листы, которые необходимо распечатать, выделены красным шрифтом.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Так же можно включить фильтр<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>На печать</span>
+</span>, система отобразит только маршрутные листы со статусом <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>На печать</span>
+</span>.</p>
+<p>Для распечатывания маршрута выделите требуемый и нажмите кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Печать&quot;</span>
+</span> и выберите пункт который необходим. Система предложит выбор: <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C1.jpg" alt="" /></p>
+<ul>
+<li><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Комплект документов по МЛ</span>
+</span> - под комплектом подразумеваются: бланк заказа, все документы прикрепленные к закзазу (УПД, счет, Акты и т.д.).</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C3.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Обратите внимание</h5>
+<p>Программа выведет для просмотра комплект документов только в том случае, если в персональных настройках пользователя установлена галочка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выводить документы по МЛ на экран</span>
+</span>. <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C13.jpg" alt="" /> Найти их можно <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Главное</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Сервис</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Персональные настройки пользователя</span>
+</span>.</p>
+        </div>
+    </div>
+</div>
+<ul>
+<li><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Маршрутный лист</span>
+</span> - распечатается только маршрутный лист, в котором будут отображаться все заявки из данного маршрутного листа. Необходим для водителя.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C11.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После распечатывания система автоматически установит статус маршрутного листа
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Распечатан</span>
+</span>. Распечатанные маршруты автоматически выделяются синим цветом.</p>
+<doc-anchor-target id="печать-через-заказ">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#печать-через-заказ">#</doc-anchor-trigger>
+        <span>Печать через заказ</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/cwxkvkOTEFI" allowfullscreen></iframe>
+    </div>
+    <figcaption class="caption">Создание контрагента</figcaption>
+</figure>
+</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Обслуживание</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Взаиморасчеты</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Журнал Заказы покупателей</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C4.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Заходим в заказ, который нужно распечатать и нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Печать</span>
+</span>. Из списка выбираем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Комплект документов</span>
+</span> и система пускает на печать комплект документов.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Обратите внимание</h5>
+<p>После распечатывания комплекта документов, в столбце со значком <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C5.jpg" alt="" /> установится галочка. Создано для удобства отслеживания печати документов.</p>
+        </div>
+    </div>
+</div>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="диспетчер-печати">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#диспетчер-печати">#</doc-anchor-trigger>
+        <span>Диспетчер печати</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/dOk6UkZlck4" allowfullscreen></iframe>
+    </div>
+    <figcaption class="caption">Создание контрагента</figcaption>
+</figure>
+</p>
+<p>Диспетчер печати служит для печати комплекта документов по заказу или по маршрутному листу на указанную дату. Это более продвинутая форма печати, которая позволяет печатать документы с учетом тех документов, которые уже были распечатаны. Например: мы напечатали маршрутный лист, а на следующий день в этот маршрут добавились еще заявки. Чтобы не печатать весь маршрутный лист или каждую заявку отдельно, мы для этого используем диспетчер печати. Так же данный инструмент позволяет печатать по организациям, что сокращает время оформления документов. Сотруднику не нужно перебирать заказы.</p>
+<p>Найти его можем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Обслуживание</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Печать</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Диспетчер печати</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C6.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>При помощи отбора можно указать, что будет выведено:<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>По маршрутам</span>
+</span> это заказы или <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>По маршрутным листам</span>
+</span>.
+Дата доставки по умолчанию завтрашняя.</p>
+<p>Если отбор установлен в положении <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>По маршрутным листам</span>
+</span>, то в табличной части будут выведены
+все маршрутные листы с детализацией кроме выполненных на указанную дату.
+Так же можно установить отбор по организации, маршруту и маршрутному листу. На рисунке установлен отбор по организации.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C7.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>В табличной части справочно выводятся маршрут, документ, водитель, контрагент, код клиента, организация, количество (количество документов на печать), печать и распечатан по каждому маршрутному листу.</p>
+<p>В столбце <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Печать</span>
+</span> мы устанавливаем или убираем галочки. Установка галочки означает, что документы с данного заказа будут распечатаны.</p>
+<p>В <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Распечатан</span>
+</span> автоматически устанавливаются галочки у маршрутных листов и заявок, которые уже были распечатаны.</p>
+<p>Устанавливаем (снимаем) галочки напротив заявок, которые нужно распечатать и нажимаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Распечатать документы</span>
+</span>. После нажатия на кнопку, система спросит <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C14.jpg" alt="" /> и только после выбора Да, установит галочку в поле Распечатан, что документы распечатаны.</p>
+<doc-anchor-target id="очередь-печати">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#очередь-печати">#</doc-anchor-trigger>
+        <span>Очередь печати</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/H9XMLDog4VI" allowfullscreen></iframe>
+    </div>
+    <figcaption class="caption">Создание контрагента</figcaption>
+</figure>
+</p>
+<p>Данный инструмент необходим, когда в момент доставки делаются изменения заказа и нам необходимо передать со следующей поставкой исправленные документы. Так же, мы можем использовать в случае, когда у контрагента несколько адресов, но документы необходимо доставлять на один.</p>
+<doc-anchor-target id="очередь-печати-из-заказа-покупателя">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#очередь-печати-из-заказа-покупателя">#</doc-anchor-trigger>
+        <span>Очередь печати из заказа покупателя</span>
+    </h3>
+</doc-anchor-target>
+<p>Заходим <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Обслуживание</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Журнал заказы покупателей</span>
+</span> и выбираем заявку, которая нам необходима.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C0.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Заходим в заявку и нажимам кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Список иеархических документов</span>
+</span> <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C8.jpg" alt="" />. Переходим в реализацию товаров и услуг, вносим корректировку в количество отгруженных бутылей и прведем реализацию. Далее нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Перезаполнить документы</span>
+</span> <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C9.jpg" alt="" />. Программа откроет форму <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Печать документов</span>
+</span>, в ней будут отображены документы, которые мы изменили. В этой форме нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Добавить в очередь</span>
+</span>, система предложит выбрать адрес на который их нужно доставить (если адресов несколько) и документы добавятся в общую очередь печати для данного контрагента.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C1.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="очередь-печати-из-адреса-доставки">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#очередь-печати-из-адреса-доставки">#</doc-anchor-trigger>
+        <span>Очередь печати из адреса доставки</span>
+    </h3>
+</doc-anchor-target>
+<p>Данным инструментом можно воспользоваться из <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Главное</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Контрагенты</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Адрес доставки</span>
+</span>. Заходим в адрес доставки документы которого должны приходить на другой адрес доставки.</p>
+<p>В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Доставка документов</span>
+</span> есть два переключателя На текущий адрес и На адрес. Мы должны выбрать На адрес и в активном поле выбрать адрес, на который будут при заказе печататься документы.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C3.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Проверить встали ли документы в очередь печати можно в карточке контрагента на вкладке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Очередь печати</span>
+</span>. В ней отображается список документов, находящихся в очереди печати. Документ можно
+открыть и просмотреть. По каждому документу указывается адрес доставки, и количество экземпляров.
+При оформлении Заказа покупателя документы по соответствующему адресу доставки подтянутся
+в заказ, они будут выделены зеленым цветом. После проведения заказа документ с данной вкладки очищается.
+Кнопка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Удалить из очереди печати</span>
+</span> служит для очищения документов из очереди печати.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C10.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>После распечатывания комплекта документов, документы удаляются из очереди печати.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C4.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 
                                 
                                 <!-- Required only on API pages -->
