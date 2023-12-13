@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.755698065755">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.755772386388">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.755698065755" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.755772386388" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.755698065755" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.755772386388" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.755698065755" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.755772386388" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -269,7 +269,11 @@
 <p>Для удобства оформления и поиска номенклатуры в справочнике, советуем создавать <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Группы</span>
 </span>, папки, в которых будет находиться соответствующая номенклатура (товар).</p>
-<p>Например, если у вас тара разделятся на виды, например &quot;Тара ПЭТ&quot; или &quot;Тара ПК&quot;, то мы создаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<p>Например, если у вас тара разделятся на виды, например <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Тара ПЭТ</span>
+</span> или <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Тара ПК</span>
+</span>, то мы создаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Группу</span>
 </span> (папку). Для этого на основной форме нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Создать группу</span>
@@ -281,7 +285,9 @@
 </p>
 <p>В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Наименование</span>
-</span> пишем наименование группы, которую хотим создать. В нашем случае &quot;Тара 19 литров&quot;. Создастся папка &quot;Тара 19 литров&quot;, в которую мы можем перенести всю созданную номенклатуру с названием &quot;Тара&quot;.</p>
+</span> пишем наименование группы, которую хотим создать. В нашем случае <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Тара 19 литров</span>
+</span>. Создастся папка тара 19 литров, в которую мы можем перенести всю созданную номенклатуру с названием тара.</p>
 <p><figure class="content-center">
     <img src="../../../images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D0%BD%D0%BE%D0%BC%D0%B5%D0%BD%D0%BA%D0%BB%D0%B0%D1%82%D1%83%D1%80%D0%B04.gif" alt="">
     <figcaption class="caption"></figcaption>
@@ -292,16 +298,22 @@
 <template #title>Создание Тары</template>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Тип номенклатуры</span>
-</span> устанавливаем &quot;Товар&quot;.</p>
+</span> устанавливаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Товар</span>
+</span>.</p>
 <p>В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Является возвратной тарой</span>
 </span> устанавливаем галочку и только потом переходим к номенклатурной группе.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Номенклатурная группа</span>
-</span> устанавливаем &quot;Тара 19 литров&quot;.</p>
+</span> устанавливаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Тара 19 литров</span>
+</span>.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Особенность учета</span>
-</span> выбираем &quot;Без особенностей учета&quot;.</p>
+</span> выбираем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Без особенностей учета</span>
+</span>.</p>
 </doc-tab>
 <doc-tab v-cloak id="создание-товар-с-тарой">
 <template #title>Создание Товар с тарой</template>
@@ -320,11 +332,15 @@
     <span>Услуга</span>
 </span>, <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Вода в розлив</span>
-</span>. Выбираем нужное. В нашем случае для создания примера мы выбираем &quot;Товар с тарой&quot;.</p>
+</span>. Выбираем нужное. В нашем случае для создания примера мы выбираем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Товар с тарой</span>
+</span>.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Номенклатурная группа</span>
 </span> - имеет несколько основных групп, но можно создавать свои. Мы выберем
-&quot;Вода 19 литров&quot;.</p>
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Вода 19 литров</span>
+</span>.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Тара для номенклатуры</span>
 </span> - необходимо указать какая тара входит в состав данной номенклатуры.</p>
@@ -365,10 +381,14 @@
 </doc-tab>
 <doc-tab v-cloak id="создание-услуги">
 <template #title>Создание Услуги</template>
-<p>В &quot;Номенклатуре&quot; указываем название услуги, например &quot;Профилактика&quot;.</p>
+<p>В <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Номенклатуре</span>
+</span> указываем название услуги, например профилактика.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Тип номенклатуры</span>
-</span> устанавливаем &quot;Услуга&quot;. Форма создания будет иметь вид</p>
+</span> устанавливаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Услуга</span>
+</span>. Форма создания будет иметь вид</p>
 <p><figure class="content-center">
     <img src="../../../images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D0%BD%D0%BE%D0%BC%D0%B5%D0%BD%D0%BA%D0%BB%D0%B0%D1%82%D1%83%D1%80%D0%B05.jpg" alt="">
     <figcaption class="caption"></figcaption>
@@ -376,7 +396,9 @@
 </p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Номенклатурная группа</span>
-</span> устанавливаем &quot;Услуги&quot;.</p>
+</span> устанавливаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Услуги</span>
+</span>.</p>
 <p>В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Менять дату обслуживания</span>
 </span> устанавливается галочка для услуг, которые выполняются при
@@ -386,7 +408,9 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Рассмотрим так же пример создания &quot;Платной доставки&quot;, в данном случае галочку в <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+<p>Рассмотрим так же пример создания <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Платной доставки</span>
+</span>, в данном случае галочку в <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Менять дату обслуживания</span>
 </span> не ставим.</p>
 <p><figure class="content-center">
@@ -399,10 +423,14 @@
 <template #title>Создание оборудования</template>
 <p>В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Тип номенклатуры</span>
-</span> устанавливаем &quot;Товар&quot;.</p>
+</span> устанавливаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Товар</span>
+</span>.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Номенклатурная группа</span>
-</span> устанавливаем &quot;Оборудование&quot;.</p>
+</span> устанавливаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Оборудование</span>
+</span>.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
     <span>Является оборудованием</span>
 </span> устанавливаем галочку и устанавливаем период профилактики (через какое количество дней нужно почистить оборудование). В основном он составляет 90 - 180 дней.</p>
