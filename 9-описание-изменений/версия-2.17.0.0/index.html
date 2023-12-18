@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.755856004618">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.756203690477">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.755856004618" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.756203690477" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.755856004618" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.756203690477" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.755856004618" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.756203690477" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -230,6 +230,7 @@
     </h3>
 </doc-anchor-target>
 <p>Реализована возможность работы с провайдером СБИС (Тензор). Добавлена внешняя обработка и настройки для работы.</p>
+<p>Обновлен принцип работы с договорами по ЭДО. Добавлен признак способа выбытия продукции, в соответсвии с изменениями законодательства, по правопередаче собственности для гос. учереждения и сегмента HoReCa.</p>
 <doc-anchor-target id="улучшения-и-оптимизация-работы">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#улучшения-и-оптимизация-работы">#</doc-anchor-trigger>
@@ -256,6 +257,15 @@
 <p>Доработана форма задачи оператора, скорректировано планирование по дням недели.
 Оптимизирован выход задачи при ежедневном обзвоне.
 Доработан отчет &quot;Оперативная работа по обзвону&quot;, теперь корректно отображается информация о переносах заказов сделанных до обзвона.</p>
+<doc-anchor-target id="проверка-отвала">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-отвала">#</doc-anchor-trigger>
+        <span>Проверка отвала</span>
+    </h3>
+</doc-anchor-target>
+<p>Переработана форма документа &quot;Проверка отвала&quot;, добавлена страничная вложенность, добавлен журнал звонков, добавлена вкладка оборудования.
+Удалена вкладка комментарии, как дублирующая информацию с журнала работы.
+Добавлен дополнительный функционал контроля, по наличию у клиента оборудованию компании и не завершенной аренды.</p>
 <doc-anchor-target id="работа-с-присоединяемыми-файлами">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#работа-с-присоединяемыми-файлами">#</doc-anchor-trigger>
@@ -313,6 +323,8 @@
 Удалена константа &quot;Не учитывать долг по таре КА&quot;, как устаревшая, логика расчета тары была изменена и константа не оказывала влияния на работу программы.</p>
 <p>Удален регистр &quot;Продажи маркированной продукции&quot;, как рудиментарный, логика работы переделана на регистр &quot;Маркировка по реализациям&quot;
 Удален отчет &quot;Продажи маркированный продукции&quot;, вместо него используется отчет &quot;Контроль продаж ИСМП&quot;</p>
+<p>Оптимизирован код общих модулей. Удалены устаревший процедуры и функции.
+Перемещены процедуры некоторых модулей, в более актуальный согласно их назначениям.</p>
 <doc-anchor-target id="исправление-ошибок">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#исправление-ошибок">#</doc-anchor-trigger>
@@ -345,6 +357,13 @@
 <p>Исправлена логика формирования пакетных накладных. Теперь учитываются данные внесенные в заказе на вкладке &quot;Товарная накладная&quot;
 Исправлено отображение сумм в обработке маршрутного листа
 На форме журнала банковских документов исправлено не корректное отображение сумм</p>
+<doc-anchor-target id="сбп">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#сбп">#</doc-anchor-trigger>
+        <span>СБП</span>
+    </h3>
+</doc-anchor-target>
+<p>Исправлена ошибка когда при отправке почтой брался телефон контактного лица, а при отправке СМС наоборот бралась почта.</p>
 
                                 
                                 <!-- Required only on API pages -->
