@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758360171786">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.758360589435">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Диадок</title>
-    <meta name="title" content="Диадок">
+    <title>Работа с ЭДО</title>
+    <meta name="title" content="Работа с ЭДО">
+    <meta name="description" content="Модуль предназначен для отправки и получения электронных документов, передаваемых через систему электронного документооборота ">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/3-руководства-пользователей/6-бухгалтер/работа-с-эдо/диадок/">
@@ -18,21 +19,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/3-руководства-пользователей/6-бухгалтер/работа-с-эдо/диадок/">
-    <meta property="og:title" content="Диадок">
+    <meta property="og:title" content="Работа с ЭДО">
+    <meta property="og:description" content="Модуль предназначен для отправки и получения электронных документов, передаваемых через систему электронного документооборота ">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/3-руководства-пользователей/6-бухгалтер/работа-с-эдо/диадок/">
-    <meta property="twitter:title" content="Диадок">
+    <meta property="twitter:title" content="Работа с ЭДО">
+    <meta property="twitter:description" content="Модуль предназначен для отправки и получения электронных документов, передаваемых через систему электронного документооборота ">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.5.0.758360171786" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.5.0.758360589435" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.5.0.758360171786" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.5.0.758360589435" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.5.0.758360171786" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.5.0.758360589435" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -196,19 +199,260 @@
                                         </li>
                                         <li class="pr-4">
                                             <a href="../../../../3-руководства-пользователей/6-бухгалтер/работа-с-эдо/диадок/" class="pr-4">
-                                                Диадок
+                                                Работа с ЭДО
                                             </a>
                                         </li>
                                     </ol>
                                 </nav>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="диадок" class="break-words">
+<doc-anchor-target id="работа-с-эдо" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#диадок">#</doc-anchor-trigger>
-        <span>Диадок</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#работа-с-эдо">#</doc-anchor-trigger>
+        <span>Работа с ЭДО</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="диадок">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#диадок">#</doc-anchor-trigger>
+        <span>Диадок</span>
+    </h2>
+</doc-anchor-target>
+<p>Модуль предназначен для отправки и получения электронных документов, передаваемых через систему
+электронного документооборота <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Диадок</span>
+</span>. Модуль позволяет отправлять и получать
+следующие типы документов:</p>
+<ul>
+<li><p>Торг-12</p>
+</li>
+<li><p>Акт выполненных работ</p>
+</li>
+<li><p>Счет-фактура, корректировочный счет-фактура</p>
+</li>
+<li><p>Счет на оплату</p>
+</li>
+<li><p>Неформализованные документы произвольного формата.</p>
+</li>
+</ul>
+<p>С помощью модуля можно:</p>
+<ul>
+<li><p>отправлять электронные документы в адрес контрагентов на основании документов 1С, просматривать списки отправленных и
+полученных электронных документов;</p>
+</li>
+<li><p>создавать на основании электронных документов, полученных из Диадока, документы в 1С, а также переносить фактурную часть
+накладной и акта из полученного документа в документ 1С;</p>
+</li>
+<li><p>согласовывать документы, а также передавать их на подпись и согласование;</p>
+</li>
+<li><p>аннулировать документы;</p>
+</li>
+<li><p>отправлять любые неформализованные документы с компьютера;</p>
+</li>
+<li><p>перевыставлять или удалять документы.</p>
+</li>
+</ul>
+<doc-anchor-target id="вход-в-диадок">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вход-в-диадок">#</doc-anchor-trigger>
+        <span>Вход в Диадок</span>
+    </h2>
+</doc-anchor-target>
+<p>Модуль Диадок можно открыть как внешнюю обработку или он у вас установлен в <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Избранное</span>
+</span> под Звездочкой.</p>
+<p>Путь открытия из <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Внешней обработки</span>
+</span>:</p>
+<ul>
+<li><p>Откройте справочник <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Дополнительные отчеты и обработки</span>
+</span>.</p>
+</li>
+<li><p>Выберите пункт меню <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Администрирование</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Печатные формы, отчеты и обработки</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Дополнительные отчеты и обработки</span>
+</span></p>
+</li>
+<li><p>Запустите обработку с помощью кнопки <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выполнить</span>
+</span>.</p>
+</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE8.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Путь открытия из <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Избранное</span>
+</span></p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE9.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="отправка-документов">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#отправка-документов">#</doc-anchor-trigger>
+        <span>Отправка документов</span>
+    </h2>
+</doc-anchor-target>
+<p>Для отправки документов в Диадоке используется квалифицированная электронная подпись <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>КЭП</span>
+</span> лица, уполномоченного подписывать электронные документы.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE3.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="отправка-одного-пакета-документов">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#отправка-одного-пакета-документов">#</doc-anchor-trigger>
+        <span>Отправка одного пакета документов</span>
+    </h3>
+</doc-anchor-target>
+<p>Нужно перейти в раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Для отправки</span>
+</span>. Здесь отображаются все неотправленные документы.</p>
+<p>Откройте документ, дважды нажав на название. В пакет для отправки можно добавить любой неформализованный документ. Для этого откройте пакет и нажмите на кнопку <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE.jpg" alt="" />. Чтобы удалить документ, нажмите на кнопку <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE1.jpg" alt="" />.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>При необходимости укажите или измените <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Организацию</span>
+</span> и/или ее <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Подразделение</span>
+</span>, <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Контрагента</span>
+</span> и его <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Подразделение</span>
+</span>, куда будут отправлены документы.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE4.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Если ранее не заполняли полномочия подписанта, нажмите на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Заполнить полномочия подписанта</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE5.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Заполните полномочия и они сохранятся, их не нужно будет заполнять каждый раз.</p>
+<p>Если требуется передать документ на согласование, согласовать его или отказать в согласовании, нажмите на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Согласование пакета</span>
+</span>. Чтобы отправить пакет, нажмите <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Подписать и отправить</span>
+</span>.</p>
+<doc-anchor-target id="массовая-отправка-документов">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#массовая-отправка-документов">#</doc-anchor-trigger>
+        <span>Массовая отправка документов</span>
+    </h3>
+</doc-anchor-target>
+<p>Массовая отправка документов происходит в разделе <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Для отправки</span>
+</span>. Выделяем галочками те документы, которые необходимо отправить и нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Подписать и отправить</span>
+</span>. Все выбранные документы отправятся.</p>
+<p>Так же можно воспользоваться кнопкой <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Выделить все</span>
+</span>, тогда отметятся галочками все документы выгруженные для отправки в выбранный день или период.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE5.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="добавление-доверенности">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#добавление-доверенности">#</doc-anchor-trigger>
+        <span>Добавление доверенности</span>
+    </h3>
+</doc-anchor-target>
+<p>Если доверенность <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>МЧД</span>
+</span> не добавлена, то при подписании откроется окно</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE6.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Нужно добавить доверенность. Заходим в <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Настройки</span>
+</span> <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE7.jpg" alt="" /> и выбираем
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Доверенности</span>
+</span>. Откроется окно заполнения доверенности.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE8.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Далее нажимаем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Добавить доверенность</span>
+</span>. Есть два варианта добавления доверенности.</p>
+<ul>
+<li><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Регистрационный номер</span>
+</span> в поле нужно ввести номер доверенности.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE1.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ul>
+<li><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Загрузить файл</span>
+</span> нужно загрузить файл доверенности и подпись.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE4.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="добавление-контрагента">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#добавление-контрагента">#</doc-anchor-trigger>
+        <span>Добавление контрагента</span>
+    </h3>
+</doc-anchor-target>
+<p>Чтобы открыть карточку контрагента: Нажмите на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Настройки</span>
+</span> <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE9.jpg" alt="" />  и выберите <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Контрагенты</span>
+</span>.</p>
+<p>В открывшемся окне выберите <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Организацию</span>
+</span> для построения списка контрагентов и нажмите <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Ок</span>
+</span>. Дважды нажмите левой кнопкой мыши на строку контрагента. Если список контрагентов не отображается, нажмите на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Синхронизировать с сервером</span>
+</span>. Кнопка отображается только в 1С с добавленными объектами Диадока. Если в 1С не было добавления объектов Диадока, кнопка не доступна. Список контрагентов загружается автоматически.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE6.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Найти контрагента из списка можно по ИНН или наименованию в нижней части таблицы.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80/%D1%8D%D0%B4%D0%BE7.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Если в списке нужного контрагента нет, то нужно убедиться, что он добавлен в контрагенты в Диадоке и нажать кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Синхронизировать с сервером</span>
+</span> и после того, как он появится в правой колонке нажать кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Групповое сопоставление контрагентов</span>
+</span>.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -275,6 +519,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Диадок", level: 4, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Работа с ЭДО", level: 4, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
