@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.761899495681">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.761899602291">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>9 Очистка КЭШ</title>
-    <meta name="title" content="9 Очистка КЭШ">
+    <title>Очистка КЭШ</title>
+    <meta name="title" content="Очистка КЭШ">
+    <meta name="description" content="Использование кэша ускоряет работу программы. Если на одном компьютере программа 1С ведет себя некорректно, то есть появляются какие-то ошибки,...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/1-руководство-администратора/9-очистка-кэш/">
@@ -18,21 +19,25 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/1-руководство-администратора/9-очистка-кэш/">
-    <meta property="og:title" content="9 Очистка КЭШ">
+    <meta property="og:title" content="Очистка КЭШ">
+    <meta property="og:description" content="Использование кэша ускоряет работу программы. Если на одном компьютере программа 1С ведет себя некорректно, то есть появляются какие-то ошибки,...">
+    <meta property="og:image" content="https://vodavoz.github.io/images/администратор/кэш.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/1-руководство-администратора/9-очистка-кэш/">
-    <meta property="twitter:title" content="9 Очистка КЭШ">
+    <meta property="twitter:title" content="Очистка КЭШ">
+    <meta property="twitter:description" content="Использование кэша ускоряет работу программы. Если на одном компьютере программа 1С ведет себя некорректно, то есть появляются какие-то ошибки,...">
+    <meta property="twitter:image" content="https://vodavoz.github.io/images/администратор/кэш.jpg">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.761899495681" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.761899602291" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.761899495681" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.761899602291" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.761899495681" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.761899602291" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -180,19 +185,57 @@
                                         </li>
                                         <li class="pr-4">
                                             <a href="../../1-руководство-администратора/9-очистка-кэш/" class="pr-4">
-                                                9 Очистка КЭШ
+                                                Очистка КЭШ
                                             </a>
                                         </li>
                                     </ol>
                                 </nav>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="9-очистка-кэш" class="break-words">
+<doc-anchor-target id="очистка-кэш" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#9-очистка-кэш">#</doc-anchor-trigger>
-        <span>9 Очистка КЭШ</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-кэш">#</doc-anchor-trigger>
+        <span>Очистка КЭШ</span>
     </h1>
 </doc-anchor-target>
+<p>Использование кэша ускоряет работу программы. Если на одном компьютере программа 1С ведет себя некорректно, то есть появляются какие-то ошибки, неправильное отображение формы, открывается старая форма и т.д., а на других компьюерах программа работает нормально, то скорей всего нужно очищать кэш 1С на данном компьютере.</p>
+<p>Временные файлы хранятся в windows, для каждого пользователя, в перечисленных ниже папках:</p>
+<p>C:\Users\ИмяПользователя\AppData\Local\1C
+C:\Users\ИмяПользователя\AppData\Roaming\1C</p>
+<p>Если директории «Roaming» не видно, необходимо включить видимость скрытых файлов и папок в windows;</p>
+<p>Из указанных папок надо удалить файлы вида, как на изображении</p>
+<p><figure class="content-center">
+    <img src="../../images/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80/%D0%BA%D1%8D%D1%88.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><figure class="content-center">
+    <img src="../../images/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80/%D0%BA%D1%8D%D1%88.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Так же помогает справиться с такими ошибками очистка настроек пользователя.</p>
+<p>Заходим <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>Администрирование</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Настройки пользователей и прав</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Пользователи</span>
+</span>.</p>
+<p>Выбраем <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Пользователя</span>
+</span>, которому нужно почистить настройки и пререходим во вкладку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Настройки</span>
+</span>. В табличной части, во вкладке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Внешний вид</span>
+</span> выбираем раздел, который нужно очистить и нажимаем кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Очистить</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="../../images/%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80/%D0%BA%D1%8D%D1%880.gif" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -259,6 +302,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "9 Очистка КЭШ", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Очистка КЭШ", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
