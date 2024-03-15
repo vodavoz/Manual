@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763821128008">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.763826045563">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.5.0.763821128008" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.5.0.763826045563" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.5.0.763821128008" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.5.0.763826045563" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.5.0.763821128008" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.5.0.763826045563" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -271,7 +271,7 @@
 <template #title>Общие</template>
 <p>Вкладка содержит основную информацию о договоре.</p>
 <p><figure class="content-center">
-    <img src="../../../../images/%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%BE%D0%B1%D1%89%D0%B8%D0%B5_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B.jpg" alt="">
+    <img src="/images/%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%801.jpg" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -314,6 +314,23 @@
     <span>Заключил договор</span>
 </span> - указывается менеджер, который заключил договор с КА. В дальнейшем используется для аналитики продаж.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span>Сведения о выбытии маркированных товаров</span>
+</span> - выбирается причина, по которой будут выводиться из оборота коды маркировки.</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Без регистрации в ЭДО, автоматический вывод - покупка товаров юридическими лицами и индивидуальными предпринимателями в целях использования для собственных нужд, не связанных с их последующей реализацией (продажей). Для клиентов не работающих с ЭДО, идет автоматический вывод из оборота.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Передача без вывода - продажа товаров юридическим лицам и индивидуальным предпринимателям с передачей права собственности для последующей реализации.  Устанавливается признак СвВыбытияМАРК 0.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Продажа с автоматическим выводом из оборота - покупка товаров юридическими лицами и индивидуальными предпринимателями в целях использования для собственных нужд, не связанных с их последующей реализацией (продажей). Устанавливается признак СвВыбытияМАРК 1.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Безвозмездная продажа без передачи - безвозмездная передача товаров юридическими лицами и индивидуальным предпринимателям, не связанная с их последующей реализацией (продажей). Устанавливается признак СвВыбытияМАРК 2.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Продажа для производственных нужд, без вывода - использование товаров для производственных целей, не связанных с их последующей реализацией (продажей). Устанавливается признак СвВыбытияМАРК 3. Используется для кафе, столовых.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Продажа по гос. контракту - продажа товаров по государственному (муниципальному) контракту (приоритетно к использованию). Устанавливается признак СвВыбытияМАРК 4.</p>
+</li>
+</ul>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Сумма договора</span>
 </span> - прописывается сумма договора, если она указана. Если включен контроль по сумме дебиторской задолженности, после превышения этого значения работа с КА прекращается до погашения задолженности.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
@@ -342,20 +359,6 @@
 </span> - указывается период действия договора.</p>
 <ul class="contains-task-list">
 <li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Подписан - устанавливается, когда договор подписан.</li>
-</ul>
-<doc-anchor-target id="функциональные-поля">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#функциональные-поля">#</doc-anchor-trigger>
-        <span>Функциональные поля:</span>
-    </h4>
-</doc-anchor-target>
-<ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Участник ЭДО по маркировке - признак указывает на необходимость передачи права собственности на маркированную продукцию.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Агентский договор - устанавливается для использования агентского договора.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Печатать QR-код - устанавливается для формирования в печатной форме бланка заказа QR-кода для оплаты через Сбербанк - онлайн. .</p>
-</li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="контроль">
@@ -477,20 +480,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../../2-описание-справочников-и-документов/1-справочники/2-работа-с-контрагентами/2-адреса-доставки/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../../2-описание-справочников-и-документов/1-справочники/2-работа-с-контрагентами/9-причины-отмены-заказов/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Адреса доставки</span>
+                                                <span class="block mt-1">Причины отмены заказов</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../../2-описание-справочников-и-документов/1-справочники/2-работа-с-контрагентами/4-контактные-лица/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../../2-описание-справочников-и-документов/1-справочники/3-товары-и-ценообразование/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Контактные лица</span>
+                                                <span class="block mt-1">Товары и ценобразование</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
