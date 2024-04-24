@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767281201574">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767281293240">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,6 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Описание изменений</title>
     <meta name="title" content="Описание изменений">
+    <meta name="description" content="Исправлена ошибка интерфейса 1.7.4">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/5-приложение-экспедитора/описание-изменений/">
@@ -19,20 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/5-приложение-экспедитора/описание-изменений/">
     <meta property="og:title" content="Описание изменений">
+    <meta property="og:description" content="Исправлена ошибка интерфейса 1.7.4">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/5-приложение-экспедитора/описание-изменений/">
     <meta property="twitter:title" content="Описание изменений">
+    <meta property="twitter:description" content="Исправлена ошибка интерфейса 1.7.4">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.767281201574" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.767281293240" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767281201574" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767281293240" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767281201574" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767281293240" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -193,6 +196,219 @@
         <span>Описание изменений</span>
     </h1>
 </doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2024-04-24</span></div>
+</div>
+
+<doc-anchor-target id="изменение-180">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-180">#</doc-anchor-trigger>
+        <span>Изменение 1.8.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Исправлена ошибка интерфейса 1.7.4</p>
+<doc-anchor-target id="изменение-181">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-181">#</doc-anchor-trigger>
+        <span>Изменение 1.8.1</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлена проверка версии ЦБ.</p>
+<p>Доработан механизм работы причин отключения.</p>
+<p>Исправлен обрабочик неудачного обращения к базе лицензирования.</p>
+<doc-anchor-target id="изменение-182">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-182">#</doc-anchor-trigger>
+        <span>Изменение 1.8.2</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлена проверка понижения версии при выводе сообщения обновления.</p>
+<doc-anchor-target id="изменение-184">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-184">#</doc-anchor-trigger>
+        <span>Изменение 1.8.4</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлен параметр chart_time_work отвечающий за передачу графика работы клиента.</p>
+<p>Добавлен Gtin для номенклатуры для разбора кодов маркировки.</p>
+<p>Переделан обработчик сканирования кодов, добавлены различные сообщения при сканировании. Добавлена проверка на сканирование не корректных кодов номенклатуры. Добавлены обработчики по количеству кодов и дублей при сканировании.</p>
+<doc-anchor-target id="изменение-185">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-185">#</doc-anchor-trigger>
+        <span>Изменение 1.8.5</span>
+    </h2>
+</doc-anchor-target>
+<p>При обмене данными добавлен параметр dont_control_mark, используется для отключение необходимости сканирования кодов маркировки для организаций которым коды списываем по ОСУ (юр лица).</p>
+<p>Изменена видимость формы сканирования штрихкодов.</p>
+<doc-anchor-target id="изменение-186">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-186">#</doc-anchor-trigger>
+        <span>Изменение 1.8.6</span>
+    </h2>
+</doc-anchor-target>
+<p>Изменен обработчик считывания штрихкодов</p>
+<doc-anchor-target id="изменение-187">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-187">#</doc-anchor-trigger>
+        <span>Изменение 1.8.7</span>
+    </h2>
+</doc-anchor-target>
+<p>Переделана работа штрихкода, добавлено сканирование до момента отгрузки товара.</p>
+<doc-anchor-target id="изменение-188">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-188">#</doc-anchor-trigger>
+        <span>Изменение 1.8.8</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлена совместимость с Торговыми точками. Добавлена возможность указания возврата товара.</p>
+<p>Доработана видимость команды сканирования</p>
+<doc-anchor-target id="изменение-189">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-189">#</doc-anchor-trigger>
+        <span>Изменение 1.8.9</span>
+    </h2>
+</doc-anchor-target>
+<p>Доработана видимость команд сканирования</p>
+<doc-anchor-target id="изменение-192">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-192">#</doc-anchor-trigger>
+        <span>Изменение 1.9.2</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлена статистика по продажам маркируемой продукции.</p>
+<p>Добавлен формат даты на выбор даты доставки, для исключения региональных проблем</p>
+<doc-anchor-target id="изменение-193">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-193">#</doc-anchor-trigger>
+        <span>Изменение 1.9.3</span>
+    </h2>
+</doc-anchor-target>
+<p>Изменена запись номенклатуры при получении</p>
+<p>Изменена форма заказа</p>
+<p>Добавлен криптохвост при сканировании кодов</p>
+<doc-anchor-target id="изменение-194">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-194">#</doc-anchor-trigger>
+        <span>Изменение 1.9.4</span>
+    </h2>
+</doc-anchor-target>
+<p>Исправлена ошибка ссылочности при перезаписи номенклатуры.</p>
+<doc-anchor-target id="изменение-195">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-195">#</doc-anchor-trigger>
+        <span>Изменение 1.9.5</span>
+    </h2>
+</doc-anchor-target>
+<p>Изменен формат передачи штрихкода, с обычной строки на строку формата Base64</p>
+<doc-anchor-target id="изменение-1100">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1100">#</doc-anchor-trigger>
+        <span>Изменение 1.10.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлено СБП</p>
+<doc-anchor-target id="изменение-1101">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1101">#</doc-anchor-trigger>
+        <span>Изменение 1.10.1</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлен адрес сайта с инструкцией и инетрвалы доставки</p>
+<doc-anchor-target id="изменение-1102">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1102">#</doc-anchor-trigger>
+        <span>Изменение 1.10.2</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлены возможности отключения звонков и отмены доставки у водителей.</p>
+<p>Изменен внешний вид оплат.</p>
+<p>Добавлены отступы перед командой СБП.</p>
+<doc-anchor-target id="изменение-1110">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1110">#</doc-anchor-trigger>
+        <span>Изменение 1.11.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлены команды по загрузке и получению статистики на форму МЛ и настроек. Конечный релиз для СБП</p>
+<doc-anchor-target id="изменение-1111">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1111">#</doc-anchor-trigger>
+        <span>Изменение 1.11.1</span>
+    </h2>
+</doc-anchor-target>
+<p>Изменена ссылка на приложение экспедитора</p>
+<doc-anchor-target id="изменение-1120">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1120">#</doc-anchor-trigger>
+        <span>Изменение 1.12.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлена возможность выкупа тары из формы оплаты.</p>
+<p>Добавлена возможность создания заказов курьером.</p>
+<doc-anchor-target id="изменение-1121">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1121">#</doc-anchor-trigger>
+        <span>Изменение 1.12.1</span>
+    </h2>
+</doc-anchor-target>
+<p>Исправлены ошибки в логике заполнения ТЧ.</p>
+<p>Доработана логика добавления тары на выкуп в заказ.</p>
+<doc-anchor-target id="изменение-1122">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1122">#</doc-anchor-trigger>
+        <span>Изменение 1.12.2</span>
+    </h2>
+</doc-anchor-target>
+<p>Разрешено изменение цены в товаре.</p>
+<p>Добавлен пересчет цены по количеству.</p>
+<doc-anchor-target id="изменение-1124">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1124">#</doc-anchor-trigger>
+        <span>Изменение 1.12.4</span>
+    </h2>
+</doc-anchor-target>
+<p>Доработана передача номера телефона.</p>
+<p>Добавлено поле для показа состава заказа.</p>
+<doc-anchor-target id="изменение-1125">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1125">#</doc-anchor-trigger>
+        <span>Изменение 1.12.5</span>
+    </h2>
+</doc-anchor-target>
+<p>Исправлена ошибка предупреждения по дате отключения, когда предупреждало вне зависимости от количества дней предупреждения.</p>
+<doc-anchor-target id="изменение-200">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-200">#</doc-anchor-trigger>
+        <span>Изменение 2.0.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Обновлено сканирование, добавлена функция работы с внешними приложениями для сканирования.</p>
+<p>Обновлена форма оплат, проведена адаптация для узких экранов.</p>
+<doc-anchor-target id="изменение-210">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-210">#</doc-anchor-trigger>
+        <span>Изменение 2.1.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Добавлен режим работы кладовщика.</p>
+<p>Добавлен счетчик отсканированных товаров.</p>
+<p>Изменена логика обработки цены по заказам.</p>
+<doc-anchor-target id="изменение-221">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-221">#</doc-anchor-trigger>
+        <span>Изменение 2.2.1</span>
+    </h2>
+</doc-anchor-target>
+<p>Исправлены ошибки совместимости ТСД и передачи данных.</p>
+<p>Доработан интерфейс установки драйверов для ТСД и его внешний вид.</p>
+<doc-anchor-target id="изменение-230">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-230">#</doc-anchor-trigger>
+        <span>Изменение 2.3.0</span>
+    </h2>
+</doc-anchor-target>
+<p>Исправлены ошибки передачи цены тары, удаления строк товара.</p>
+<p>Вкладка &quot;Залоговая тара&quot; переименована в &quot;Оплата тары&quot;.</p>
 
                                 
                                 <!-- Required only on API pages -->
