@@ -6,6 +6,8 @@
 
 Скачать актуальную версию приложения вы можете по ссылке
 
+#### [Версия 2.4.5](https://cloud-edt.e1c-ops.com/applications/cloudedt/api/public/v1/v8-mobile-builder/downloads/android?token=eT4YhyxvRBR9HsjXS8wX0nW_p21-JOqVNkZNM2H4GZhU)
+
 https://cloud-edt.e1c-ops.com/applications/cloudedt/api/public/v1/v8-mobile-builder/downloads/android?token=eT4YhyxvRBR9HsjXS8wX0nW_p21-JOqVNkZNM2H4GZhU
 
 Плюсы использования мобильного приложения:
