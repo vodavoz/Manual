@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+plugins:
+  - retype-image-optimizer  # Автоматическое сжатие
 jobs:
   publish:
     name: Publish to retype branch
@@ -22,3 +23,4 @@ jobs:
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
+          incremental: true
