@@ -1,3 +1,28 @@
+poweredByRetype: true
+scheme:
+  mode: system  # Pro key required
+  
+nav:
+  mode: stack   # Pro key required
+  icons:
+    mode: pages # Pro key required
+
+
+# New Hub link feature, but not used on retype.com
+# hub:
+  # link: https://example.com/
+  # alt: Go to example.com
+  # target: _blank
+
+# Start in "Pro Mode" trial
+start:
+  pro: true
+
+# -------------------
+# Retype
+# -------------------
+
+    
 input: 
 output: build
 url: https://vodavoz.github.io
