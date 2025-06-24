@@ -25,7 +25,7 @@ start:
     
 input: 
 output: build
-url: https://vodavoz.github.io
+url: https://vodavoz.github.io/Manual
 branding:
   title: Работа с программой
   label: Водавоз
