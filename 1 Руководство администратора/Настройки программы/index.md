@@ -4,7 +4,7 @@
 
 Их можно открыть [!badge variant="primary" text="Настройки"]->[!badge variant="success" text="Сервис"]->[!badge variant="light" text="Настройки программы"].
 
-![Настройки программы](/images/Настройки_программы.jpg)
+![](/images/администратор/настройка1.jpg)
 
 ## Права доступа
 
