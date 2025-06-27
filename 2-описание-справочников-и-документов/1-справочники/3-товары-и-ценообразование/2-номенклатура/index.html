@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.804330427306">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.804330688172">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.1">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.10.1.804330427306" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.10.1.804330688172" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.10.1.804330427306" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.10.1.804330688172" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.10.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.10.1.804330427306" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.10.1.804330688172" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -316,7 +316,7 @@
 <template #title>Основные</template>
 <p>Вкладка содержит информацию об основных параметрах номенклатуры.</p>
 <p><figure class="content-center">
-    <img src="../../../../images/%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5_%D0%BD%D0%BE%D0%BC%D0%B5%D0%BD%D0%BA%D0%BB%D0%B0%D1%82%D1%83%D1%80%D0%B0.jpg" alt="" />
+    <img src="/images/%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F/%D0%BD%D0%BE%D0%BC2.jpg" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -379,49 +379,6 @@
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>GTIN</span>
 </span> - код воды в классификаторе, который указывает производитель.</p>
-<ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Основная номенклатура - устанавливается, если это товар с тарой 19 литров. Если есть такая номенклатура в реализации, то статус адреса меняется на <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
-    <span>Активный</span>
-</span>, система считает динамику потребления и если не заполнена <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
-    <span>Номенклатура клиента</span>
-</span>, то система автоматически заполняет этой номенклатурой.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Считать количество в заявке - устанавливается, только для товара с тарой 19 литров.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Выгружать в приложение - устанавливается для того, чтобы данная номенклатура отображалась в приложении экспедитора, для работы с произвольным добавлением заказа.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Не контролировать остатки - устанавливается в том случае, если по данной номенклатуре не нужно вести учет остатков. При этом система не предупредит о нехватке товаров на складе и позволит вести минусовые остатки.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Запретить отгрузку - устанавливается, когда необходимо запретить отгрузку конкретной позиции номенклатуры.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Является возвратной тарой - устанавливается, если товар является возвратной тарой.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Является оборудованием - устанавливается, если товар является оборудованием. Становится доступным, если выбран тип номенклатуры <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
-    <span>Товар</span>
-</span>.</p>
-</li>
-</ul>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
-    <span>Период профилактики</span>
-</span> - служит для ввода периода профилактики оборудования.</p>
-<ul class="contains-task-list">
-<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Менять дату обслуживания - устанавливается для услуг, которые выполняются при профилактической чистке оборудования. После оказанных услуг у оборудования меняется дата профилактики. Система прибавляет к дате период профилактики и записывает следующую дату профилактики. Становится доступным, если выбран тип номенклатуры <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
-    <span>Услуга</span>
-</span>.</li>
-</ul>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
-    <span>Гарантийный</span>
-</span> - указывается какой процент от этой услуги будет
-выплачен сотруднику в случае проведения гарантийного ремонта.</p>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
-    <span>Текущий</span>
-</span> - указывается какой процент от оказанной услуги будет начислен сотруднику.</p>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
-    <span>Шаблон ценника</span>
-</span> - служит для выбора шаблона ценника данной номенклатуры.</p>
-<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
-    <span>Шаблон этикетки</span>
-</span> - служит для выбора шаблона этикетки данной номенклатуры.</p>
 <p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
     <span>Набор упаковок</span>
 </span> - используется для реализации продукции в упаковках и паллетах.</p>
@@ -479,6 +436,49 @@
         </div>
     </div>
 </div>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Основная номенклатура - устанавливается, если это товар с тарой 19 литров. Если есть такая номенклатура в реализации, то статус адреса меняется на <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-green-700 bg-green-100 h-6 px-2 text-xs rounded-md">
+    <span>Активный</span>
+</span>, система считает динамику потребления и если не заполнена <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Номенклатура клиента</span>
+</span>, то система автоматически заполняет этой номенклатурой.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Считать количество в заявке - устанавливается, только для товара с тарой 19 литров.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Выгружать в приложение - устанавливается для того, чтобы данная номенклатура отображалась в приложении экспедитора, для работы с произвольным добавлением заказа.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Не контролировать остатки - устанавливается в том случае, если по данной номенклатуре не нужно вести учет остатков. При этом система не предупредит о нехватке товаров на складе и позволит вести минусовые остатки.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Запретить отгрузку - устанавливается, когда необходимо запретить отгрузку конкретной позиции номенклатуры.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Является возвратной тарой - устанавливается, если товар является возвратной тарой.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Является оборудованием - устанавливается, если товар является оборудованием. Становится доступным, если выбран тип номенклатуры <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Товар</span>
+</span>.</p>
+</li>
+</ul>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span>Период профилактики</span>
+</span> - служит для ввода периода профилактики оборудования.</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Менять дату обслуживания - устанавливается для услуг, которые выполняются при профилактической чистке оборудования. После оказанных услуг у оборудования меняется дата профилактики. Система прибавляет к дате период профилактики и записывает следующую дату профилактики. Становится доступным, если выбран тип номенклатуры <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-700 dark:text-dark-600 bg-white border border-gray-300 dark:border-transparent h-6 px-2 text-xs rounded-md">
+    <span>Услуга</span>
+</span>.</li>
+</ul>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span>Гарантийный</span>
+</span> - указывается какой процент от этой услуги будет
+выплачен сотруднику в случае проведения гарантийного ремонта.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span>Текущий</span>
+</span> - указывается какой процент от оказанной услуги будет начислен сотруднику.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span>Шаблон ценника</span>
+</span> - служит для выбора шаблона ценника данной номенклатуры.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-gray-600 dark:text-dark-600 bg-gray-200 h-8 px-4 text-base rounded-md">
+    <span>Шаблон этикетки</span>
+</span> - служит для выбора шаблона этикетки данной номенклатуры.</p>
 </doc-tab>
 <doc-tab v-cloak id="распределение-скидок">
 <template #title>Распределение скидок</template>
