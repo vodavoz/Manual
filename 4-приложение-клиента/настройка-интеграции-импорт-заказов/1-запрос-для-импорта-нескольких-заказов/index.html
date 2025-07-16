@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805976110133">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805976286495">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,11 +32,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.805976110133" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.805976286495" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805976110133" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805976286495" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805976110133" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805976286495" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.805976286495" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -599,7 +600,7 @@ agreement - запрос договора</td>
 </span> будут указаны ошибки.</p>
 <p>Например так:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">{
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
     &quot;success&quot;: true,
     &quot;data&quot;: {
         &quot;external_id_1&quot;: {
@@ -620,7 +621,7 @@ agreement - запрос договора</td>
     </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">[
+<pre translate="no" class="language-json"><code v-pre class="language-json">[
     {
         &quot;id&quot;: &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;,
         &quot;external_id&quot;: null,
@@ -678,7 +679,7 @@ agreement - запрос договора</td>
 </doc-codeblock></div>
 <p>Ответ</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">{
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
     &quot;success&quot;: true,
     &quot;data&quot;: {
         &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;: {
@@ -832,6 +833,6 @@ agreement - запрос договора</td>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "1 Запрос для импорта нескольких заказов", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "1 Запрос для импорта нескольких заказов", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
