@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805973766386">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805976110133">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.805973766386" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.805976110133" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805973766386" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805976110133" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805973766386" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805976110133" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -206,7 +206,7 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-07-12</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-07-16</span></div>
 </div>
 
 <p>METHOD POST
@@ -219,62 +219,18 @@ AUTH Bearer <token></p>
     </h2>
 </doc-anchor-target>
 <p>[order, order...] где order имеет следующие атрибуты</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Название</th>
-<th>Тип</th>
-<th>Обязательный</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>string(255</td>
-<td>true</td>
-<td>Идентификатор в экспортирующей системе</td>
-</tr>
-<tr>
-<td>:----------:</td>
-<td>:---------:</td>
-<td>:------------:</td>
-<td>:--------------------------------------:</td>
-</tr>
-<tr>
-<td>external_id</td>
-<td>integer(11)</td>
-<td>false</td>
-<td>Идентификатор в принимающей системе</td>
-</tr>
-<tr>
-<td>:----------:</td>
-<td>:---------:</td>
-<td>:------------:</td>
-<td>:--------------------------------------:</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
 <table>
   <thead>
     <tr>
       <th>Название</th>
-      <th>Тип</th>
-      <th>Обязательный</th>
-      <th>Описание</th>
+      <th>Тип  2</th>
+      <th>Обязательный 3</th>
+      <th>Описание 3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>id  </td>
+      <td>id</td>
       <td>string(255</td>
       <td>true</td>
       <td>Идентификатор в экспортирующей системе</td>
@@ -286,7 +242,362 @@ AUTH Bearer <token></p>
       <td>Идентификатор в принимающей системе</td>
     </tr>
   </tbody>
+   <tr>
+      <td>status</td>
+      <td>range in 'new', 
+      'approved', 
+      'completed', 
+      'removed'</td>
+      <td>true</td>
+      <td>Статус заказа
+new - новый неразобранный заказ
+approved - назначен курьер для доставки (заказ обработан оператором)
+completed - доставлено
+removed - отменено (диспетчером или клиентом)</td>
+    </tr>
+  </tbody>
+   <tr>
+      <td>created_at</td>
+      <td>datetime</td>
+      <td>false</td>
+      <td>Дата создания</td>
+    </tr>
+  </tbody>
+  </tr>
+      <td>total</td>
+      <td>float</td>
+      <td>true</td>
+      <td>Сумма заказа (стоимость 
+      доставки включена)</td>
+  <tr>
+      <td>delivery_cost</td>
+      <td>float</td>
+      <td>false</td>
+      <td>Стоимость доставки</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>coins</td>
+      <td>float</td>
+      <td>false</td>
+      <td>Кол-во баллов, которые использовались 
+      для оплаты заказа</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>payment_type</td>
+      <td>range</td>
+      <td>false</td>
+      <td>Способ оплаты</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>shipping_date_from</td>
+      <td>datetime</td>
+      <td>true</td>
+      <td>Время доставки от</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>shipping_date_to</td>
+      <td>datetime</td>
+      <td>true</td>
+      <td>Время доставки до</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>comment</td>
+      <td>string</td>
+      <td>false</td>
+      <td>Комментарий</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>ask_for_checkout</td>
+      <td>range in 'bill',
+      'agreement'</td>
+      <td>false</td>
+      <td>Запрос документов
+bill - запрос счёта
+agreement - запрос договора</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>count_of_returned_bottles</td>
+      <td>integer</td>
+      <td>false</td>
+      <td>Кол-во бутылей 
+      к возврату</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>order_item_list</td>
+      <td>array</td>
+      <td>true</td>
+      <td>Массив из заказанных позиций</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>client</td>
+      <td>object</td>
+      <td>true</td>
+      <td>Объект содержащий клиента</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>shipping_address</td>
+      <td>object</td>
+      <td>true</td>
+      <td>Объект содержащий адрес доставки</td>
+    </tr>
+  </tbody>
 </table>
+<p>Атрибуты объекта клиент <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>client</span>
+</span>, если он существует в системе можно посмотреть здесь</p>
+<p>Атрибуты объекта клиент <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>client</span>
+</span>, если заказ от не зарегистрированного пользователя</p>
+<table>
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Тип  2</th>
+      <th>Обязательный 3</th>
+      <th>Описание 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>username</td>
+      <td>string(255</td>
+      <td>true</td>
+      <td>Имя клиента</td>
+    </tr>
+    <tr>
+      <td>phone</td>
+      <td>string(12)(11)</td>
+      <td>true</td>
+      <td>Телефон клиента, например +79191991919</td>
+    </tr>
+  </tbody>
+   <tr>
+      <td>emai</td>
+      <td>string(255)</td>
+      <td>false</td>
+      <td>Электронная почта клиента</td>
+    </tr>
+  </tbody>
+ </table>
+<p>Атрибуты объекта адрес доставки <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>shipping_address</span>
+</span></p>
+<table>
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Тип  2</th>
+      <th>Обязательный 3</th>
+      <th>Описание 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>user_address_id</td>
+      <td>integer(11)</td>
+      <td>false</td>
+      <td>Идентификатор в принимающей системе</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>string(255)</td>
+      <td>true</td>
+      <td>Город</td>
+    </tr>
+  </tbody>  
+  <tr>
+      <td>street</td>
+      <td>string(255)</td>
+      <td>true</td>
+      <td>Улица</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>house</td>
+      <td>string(10)</td>
+      <td>true</td>
+      <td>Дом</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>entrance</td>
+      <td>string(10)</td>
+      <td>false</td>
+      <td>Подъезд</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>floor</td>
+      <td>string(10)</td>
+      <td>false</td>
+      <td>Этаж</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>room</td>
+      <td>string(10)</td>
+      <td>false</td>
+      <td>Номер квартиры или офиса</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>str</td>
+      <td>string(255)</td>
+      <td>true</td>
+      <td>Адрес не структурировано, а единой строкой</td>
+    </tr>
+  </tbody>
+ </table>
+<p>Массив из заказанных позиций <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>order_item_list</span>
+</span>  включает в себя заказанные позиции <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>[order_item, order_item...]</span>
+</span>  со следующими атрибутами</p>
+<table>
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Тип  2</th>
+      <th>Обязательный 3</th>
+      <th>Описание 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>product_id</td>
+      <td>string(255)</td>
+      <td>true</td>
+      <td>Идентификатор продукта в экспортирующей системе</td>
+    </tr>
+    <tr>
+      <td>price</td>
+      <td>decimal(10,2)</td>
+      <td>true</td>
+      <td>Цена продукта</td>
+    </tr>
+  </tbody>  
+  <tr>
+      <td>quantity</td>
+      <td>integer(11)</td>
+      <td>true</td>
+      <td>Кол-во заказанных продуктов</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>order_product_id</td>
+      <td>integer(11)</td>
+      <td>false</td>
+      <td>Идентификатор позиции продукта в заказе в системе Aqua-delivery</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>id</td>
+      <td>string(255)</td>
+      <td>false</td>
+      <td>Идентификатор позиции заказа в экспортирующей системе</td>
+    </tr>
+  </tbody>
+  <tr>
+      <td>name</td>
+      <td>string(255)</td>
+      <td>false</td>
+      <td>Название продукта</td>
+    </tr>
+  </tbody>
+ </table>
+<doc-anchor-target id="ключевые-моменты">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ключевые-моменты">#</doc-anchor-trigger>
+        <span>Ключевые моменты</span>
+    </h2>
+</doc-anchor-target>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Если не будет найден продукт в нашей системе по <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>items.product_id</span>
+</span>, то в заказ он не будет добавлен.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Те продукты, которые не будут найдены в нашей системе по <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>items.product_id</span>
+</span> будут удалены из заказа.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Так же если не будет заполнено какое-то из <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>required</span>
+</span>  полей, то данный заказ или пользователь будет проигнорирован для импорта, а в ответ вернётся сообщение об ошибке.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span> - идентификатор отправляющей системы, <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>external_id</span>
+</span>  - идентификатор внешней системы.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Если внешний идентификатор <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>external_id</span>
+</span> ещё не сохранён, то атрибут можно не выводить или оставлять пустым.
+Но после импорта его обязательно необходимо сохранять и выгружать для избежания дублирования.</p>
+</li>
+<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>order_product_id</span>
+</span>  - нужен для тех случаев когда один и тот же товар представлен в наборах, например клиент заказал 1 набор с водой и еще дополнительно воду.
+В наборе вода стоит дешевле и представлена отдельной позицией в заказе.</p>
+</li>
+</ul>
+<p>Например:</p>
+<p>1С выгружает:</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span> - идентификатор клиента в 1С</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>external_id</span>
+</span> - идентификатор клиента AquaDelivery, сохранённый в 1С</p>
+<p>AquaDelivery выгружает:</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span>- идентификатор клиента в AquaDelivery</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>external_id</span>
+</span> - идентификатор клиента 1С, сохранённый в AquaDelivery</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" /> Атрибут <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>coins</span>
+</span> используется для оплаты заказа баллами, в момент импорта, со счета клиента, будет снято столько баллов, сколько указано в данном атрибуте <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>coins</span>
+</span>.
+Если у клиента на счете не будет столько баллов сколько указано, то такой заказ не будет импортирован в нашу систему.</li>
+</ul>
+<doc-anchor-target id="ответ-при-импорте-нескольких-заказов">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ответ-при-импорте-нескольких-заказов">#</doc-anchor-trigger>
+        <span>Ответ при импорте нескольких заказов</span>
+    </h2>
+</doc-anchor-target>
+<p>Ответ будет содержать объект обработанных заказов либо сообщение об ошибке ключами этого объекта будут Идентификаторы в экспортирующей системе <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>external_id</span>
+</span>  и под каждым ключом будет описание что произошло,
+если при импорте не будет ошибок, то атрибут <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>success</span>
+</span> будет содержать <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>true</span>
+</span>, а в атрибуте <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>data</span>
+</span> будет массив с объектом который был импортирован,
+если при импорте произошла ошибка, то атрибут <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>success</span>
+</span> будет содержать <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>false</span>
+</span>, а в атрибуте <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>data</span>
+</span> будут указаны ошибки.</p>
+<p>Например так:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">{
     &quot;success&quot;: true,
@@ -301,6 +612,159 @@ AUTH Bearer <token></p>
         }
     }
 }</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="пример">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#пример">#</doc-anchor-trigger>
+        <span>Пример</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">[
+    {
+        &quot;id&quot;: &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;,
+        &quot;external_id&quot;: null,
+        &quot;payment_type&quot;: &quot;cash&quot;,
+        &quot;comment&quot;: &quot;comment&quot;,
+        &quot;shipping_date_from&quot;: &quot;2019-11-06T11:00:00Z&quot;,
+        &quot;shipping_date_to&quot;: &quot;2019-11-06T18:00:00Z&quot;,
+        &quot;status&quot;: &quot;new&quot;,
+        &quot;total&quot;: 710,
+        &quot;delivery_cost&quot;: 30,
+        &quot;coins&quot;: 710,
+        &quot;order_item_list&quot;: [
+            {
+                &quot;name&quot;: &quot;Вода 19 л. Ваш бренд&quot;,
+                &quot;id&quot;: &quot;78e66cef-ae2c-11e6-9bf1-f8a9634f667f&quot;,
+                &quot;external_id&quot;: 1,
+                &quot;product_id&quot;: &quot;78e66cef-ae2c-11e6-9bf1-f8a9634f667f&quot;,
+                &quot;price&quot;: 355,
+                &quot;quantity&quot;: 2,
+                &quot;order_product_id&quot;: 1435
+            }
+        ],
+        &quot;shipping_address&quot;: {
+            &quot;city&quot;: &quot;Сыктывкар&quot;,
+            &quot;street&quot;: &quot;Кутузова&quot;,
+            &quot;house&quot;: &quot;19&quot;,
+            &quot;entrance&quot;: null,
+            &quot;floor&quot;: null,
+            &quot;room&quot;: null,
+            &quot;str&quot;: &quot;город Сыктывкар улица Кутузова дом 19&quot;
+        },
+        &quot;client&quot;: {
+            &quot;id&quot;: &quot;jqLbQR3be8jlJZIh4dBrUCyyIhFzuAKK&quot;,
+            &quot;external_id&quot;: 68,
+            &quot;account_number&quot;: 68,
+            &quot;type&quot;: &quot;fiz&quot;,
+            &quot;username&quot;: &quot;Василий Тестовый&quot;,
+            &quot;addresses&quot;: [
+                {
+                    &quot;id&quot;: &quot;78e66cef-ae2c-11e6-9bf1-f8a9634f667f&quot;,
+                    &quot;external_id&quot;: null,
+                    &quot;city&quot;: &quot;Сыктывкар&quot;,
+                    &quot;street&quot;: &quot;Кутузова&quot;,
+                    &quot;house&quot;: &quot;19&quot;,
+                    &quot;entrance&quot;: null,
+                    &quot;floor&quot;: null,
+                    &quot;room&quot;: null,
+                    &quot;str&quot;: &quot;город Сыктывкар улица Кутузова дом 19&quot;
+                }
+            ]
+        }
+    }
+]
+</code></pre>
+</doc-codeblock></div>
+<p>Ответ</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;: {
+            &quot;success&quot;: true,
+            &quot;data&quot;: [
+                {
+                    &quot;id&quot;: &quot;50894&quot;,
+                    &quot;external_id&quot;: &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;,
+                    &quot;status&quot;: &quot;approved&quot;,
+                    &quot;client&quot;: {
+                        &quot;id&quot;: 68,
+                        &quot;external_id&quot;: &quot;jqLbQR3be8jlJZIh4dBrUCyyIhFzuAKK&quot;,
+                        &quot;username&quot;: &quot;Василий Тестовый&quot;,
+                        &quot;comment&quot;: null,
+                        &quot;email&quot;: &quot;ognev@baitek.org&quot;,
+                        &quot;account_number&quot;: 68,
+                        &quot;type&quot;: &quot;fiz&quot;,
+                        &quot;phones&quot;: [
+                            &quot;9083280832&quot;
+                        ],
+                        &quot;addresses&quot;: [
+                            {
+                                &quot;id&quot;: 2647,
+                                &quot;external_id&quot;: null,
+                                &quot;name&quot;: &quot;Кутузова, д. 21, эт. 1, кв./оф. 1, под. 2, г. Сыктывкар – Орбита ближняя (Париж)&quot;,
+                                &quot;city&quot;: &quot;Сыктывкар&quot;,
+                                &quot;street&quot;: &quot;Кутузова&quot;,
+                                &quot;house&quot;: &quot;21&quot;,
+                                &quot;room&quot;: &quot;1&quot;,
+                                &quot;entrance&quot;: &quot;2&quot;,
+                                &quot;floor&quot;: &quot;1&quot;,
+                                &quot;district_id&quot;: 1,
+                                &quot;str&quot;: &quot;Кутузова, д. 21, эт. 1, кв./оф. 1, под. 2, г. Сыктывкар   Орбита ближняя (Париж)&quot;
+                            }
+                        ],
+                        &quot;requisites&quot;: {
+                            &quot;bank_account&quot;: {
+                                &quot;inn&quot;: &quot;1234512345&quot;,
+                                &quot;kpp&quot;: &quot;1234512345&quot;,
+                                &quot;account_number&quot;: &quot;1234512345&quot;,
+                                &quot;correspondent_account&quot;: &quot;1234512345&quot;,
+                                &quot;bik&quot;: &quot;1234512345&quot;,
+                                &quot;bank_name&quot;: &quot;1234512345&quot;
+                            }
+                        },
+                        &quot;legal_address&quot;: [
+                            &quot;г. Сыктывкар,ул. Кутузова,д. 21&quot;
+                        ],
+                        &quot;product_price_list&quot;: {
+                            &quot;36&quot;: {
+                                &quot;product_id&quot;: 36,
+                                &quot;external_product_id&quot;: null,
+                                &quot;price&quot;: &quot;101.00&quot;,
+                                &quot;active&quot;: false
+                            }
+                        },
+                        &quot;coins_amount&quot;: 90,
+                        &quot;loyalty_system_is_active&quot;: true
+                    },
+                    &quot;account_number&quot;: 68,
+                    &quot;total&quot;: 710,
+                    &quot;delivery_cost&quot;: 30,
+                    &quot;coins&quot;: 710,
+                    &quot;payment_type&quot;: &quot;cash&quot;,
+                    &quot;created_at&quot;: &quot;2019-11-07 00:54:05&quot;,
+                    &quot;shipping_address&quot;: null,
+                    &quot;shipping_date_from&quot;: &quot;2019-11-06 14:00:00&quot;,
+                    &quot;shipping_date_to&quot;: &quot;2019-11-06 21:00:00&quot;,
+                    &quot;order_item_list&quot;: [
+                        {
+                            &quot;name&quot;: &quot;Вода 19 л. Ваш бренд&quot;,
+                            &quot;quantity&quot;: 2,
+                            &quot;price&quot;: 355,
+                            &quot;product_id&quot;: 28,
+                            &quot;order_product_id&quot;: 1435
+                        }
+                    ],
+                    &quot;comment&quot;: &quot;comment&quot;,
+                    &quot;ask_for_checkout&quot;: null,
+                    &quot;count_of_returned_bottles&quot;: 0
+                }
+            ]
+        }
+    }
+}
+</code></pre>
 </doc-codeblock></div>
 
                                 
