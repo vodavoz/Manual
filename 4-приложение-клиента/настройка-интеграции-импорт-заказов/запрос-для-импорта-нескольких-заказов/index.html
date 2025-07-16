@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805976418183">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805977582092">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>1 Запрос для импорта нескольких заказов</title>
     <meta name="title" content="1 Запрос для импорта нескольких заказов">
-    <meta name="description" content="METHOD POST URI /v1/order/import/ AUTH Bearer ">
+    <meta name="description" content="METHOD POST">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/4-приложение-клиента/настройка-интеграции-импорт-заказов/запрос-для-импорта-нескольких-заказов/">
@@ -21,23 +21,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/Manual/4-приложение-клиента/настройка-интеграции-импорт-заказов/запрос-для-импорта-нескольких-заказов/">
     <meta property="og:title" content="1 Запрос для импорта нескольких заказов">
-    <meta property="og:description" content="METHOD POST URI /v1/order/import/ AUTH Bearer ">
+    <meta property="og:description" content="METHOD POST">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/Manual/4-приложение-клиента/настройка-интеграции-импорт-заказов/запрос-для-импорта-нескольких-заказов/">
     <meta property="twitter:title" content="1 Запрос для импорта нескольких заказов">
-    <meta property="twitter:description" content="METHOD POST URI /v1/order/import/ AUTH Bearer ">
+    <meta property="twitter:description" content="METHOD POST">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.805976418183" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.805977582092" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805976418183" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805977582092" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805976418183" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.805976418183" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805977582092" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.805977582092" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -210,16 +210,18 @@
     <div class="flex items-center shrink-0">Published&nbsp;<span>2025-07-16</span></div>
 </div>
 
-<p>METHOD POST
-URI /v1/order/import/
-AUTH Bearer <token></p>
+<p>METHOD POST</p>
+<p>URI /v1/order/import/</p>
+<p>AUTH Bearer <token></p>
 <doc-anchor-target id="параметры">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#параметры">#</doc-anchor-trigger>
         <span>Параметры</span>
     </h2>
 </doc-anchor-target>
-<p>[order, order...] где order имеет следующие атрибуты</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>[order, order...]</span>
+</span> где order имеет следующие атрибуты</p>
 <table>
   <thead>
     <tr>
@@ -390,6 +392,7 @@ agreement - запрос договора</td>
     </tr>
   </tbody>
  </table>
+ 
 <p>Атрибуты объекта адрес доставки <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>shipping_address</span>
 </span></p>
@@ -459,6 +462,7 @@ agreement - запрос договора</td>
     </tr>
   </tbody>
  </table>
+ 
 <p>Массив из заказанных позиций <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>order_item_list</span>
 </span>  включает в себя заказанные позиции <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
@@ -600,7 +604,8 @@ agreement - запрос договора</td>
 </span> будут указаны ошибки.</p>
 <p>Например так:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-json"><code v-pre class="language-json">{
+<pre translate="no" class="language-json"><code v-pre class="language-json">
+{
     &quot;success&quot;: true,
     &quot;data&quot;: {
         &quot;external_id_1&quot;: {
@@ -621,7 +626,8 @@ agreement - запрос договора</td>
     </h2>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-json"><code v-pre class="language-json">[
+<pre translate="no" class="language-json"><code v-pre class="language-json">
+[
     {
         &quot;id&quot;: &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;,
         &quot;external_id&quot;: null,
@@ -679,7 +685,8 @@ agreement - запрос договора</td>
 </doc-codeblock></div>
 <p>Ответ</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-json"><code v-pre class="language-json">{
+<pre translate="no" class="language-json"><code v-pre class="language-json">
+{
     &quot;success&quot;: true,
     &quot;data&quot;: {
         &quot;657f9553-ff97-11e9-80d3-001e4f377cd7&quot;: {
@@ -765,7 +772,12 @@ agreement - запрос договора</td>
         }
     }
 }
-</code></pre>
+
+
+
+
+     
+    </code></pre>
 </doc-codeblock></div>
 
                                 
