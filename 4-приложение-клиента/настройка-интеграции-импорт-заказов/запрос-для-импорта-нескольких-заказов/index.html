@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805990898964">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805991142250">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,12 +32,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.805990898964" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.805991142250" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805990898964" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.805991142250" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805990898964" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.805990898964" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.805991142250" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.11.0.805991142250" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -479,7 +479,7 @@ agreement - запрос договора</td>
       <td>product_id</td>
       <td>string(255)</td>
       <td>true</td>
-      <td>Идентификатор продукта в экспортирующей системе</td>
+      <td>Идентификатор продукта в экспортирующей системе (внешнее приложение, сайт)</td>
     </tr>
     <tr>
       <td>price</td>
@@ -506,7 +506,7 @@ agreement - запрос договора</td>
       <td>id</td>
       <td>string(255)</td>
       <td>false</td>
-      <td>Идентификатор позиции заказа в экспортирующей системе</td>
+      <td>Идентификатор позиции заказа в 1с</td>
     </tr>
   </tbody>
   <tr>
@@ -525,12 +525,8 @@ agreement - запрос договора</td>
 </doc-anchor-target>
 <ul class="contains-task-list">
 <li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Если не будет найден продукт в нашей системе по <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
-    <span>items.product_id</span>
-</span>, то в заказ он не будет добавлен.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Те продукты, которые не будут найдены в нашей системе по <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
-    <span>items.product_id</span>
-</span> будут удалены из заказа.</p>
+    <span>items.id</span>
+</span>, то в заказ будет добавлена пустая строка.</p>
 </li>
 <li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Так же если не будет заполнено какое-то из <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>required</span>
@@ -546,11 +542,6 @@ agreement - запрос договора</td>
     <span>external_id</span>
 </span> ещё не сохранён, то атрибут можно не выводить или оставлять пустым.
 Но после импорта его обязательно необходимо сохранять и выгружать для избежания дублирования.</p>
-</li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
-    <span>order_product_id</span>
-</span>  - нужен для тех случаев когда один и тот же товар представлен в наборах, например клиент заказал 1 набор с водой и еще дополнительно воду.
-В наборе вода стоит дешевле и представлена отдельной позицией в заказе.</p>
 </li>
 </ul>
 <p>Например:</p>
