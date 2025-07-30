@@ -1,6 +1,15 @@
 # Аренда оборудования
 
-[!embed text="Создание контрагента"](https://youtu.be/4QIYiwfqQ7Y)
+
+      <iframe
+        width="720"
+        height="405"
+        src="https://rutube.ru/play/embed/6ab6a551cceb2f23017fc58f8c2d3696"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        allowFullScreen
+      ></iframe>
+    
 
 Раздел [!badge variant="success" text="Аренда"] предназначен для компаний, предоставляющих оборудование в аренду.
 
