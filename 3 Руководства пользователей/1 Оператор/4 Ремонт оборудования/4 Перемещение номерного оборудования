@@ -5,7 +5,16 @@ Date: 20.11.2023
 
 # Перемещение номерного оборудования
 
-[!embed text="Создание контрагента"](https://youtu.be/eKPb6ctjjxk)
+Перемещение оборудования 
+      <iframe
+        width="720"
+        height="405"
+        src="https://rutube.ru/play/embed/7d87131905aa2c065571101621607a57"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        allowFullScreen
+      ></iframe>
+    
 
 Оно нам потребуется если оборудованию нужно изменить статус, а именно переместить со склада Ремонт  на другой склад и наоборот.
 
