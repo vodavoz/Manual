@@ -1,6 +1,7 @@
 
 icon: repo
 order: 1000
+has_children: true
 
 
 
