@@ -3,9 +3,10 @@ scheme:
   mode: system  # Pro key required
   
 nav:
-  mode: stack   # Pro key required
-  icons:
-    mode: pages # Pro key required
+- Руководство администратора:
+  - index.md
+  - Настройки программы:
+    - test.md   
 
 
 # New Hub link feature, but not used on retype.com
@@ -36,3 +37,4 @@ favicon: static/logo.png
 footer:
   copyright: "Все права защищены"
   
+
