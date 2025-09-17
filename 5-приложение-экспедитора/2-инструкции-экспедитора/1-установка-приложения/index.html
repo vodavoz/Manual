@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.811427451600">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.811430071154">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.811427451600" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.811430071154" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.811427451600" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.811430071154" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.811427451600" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.811430071154" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -363,6 +363,48 @@
 </figure>
 </p>
 <p>С помощью сканера ТСД нужно считать количество кодов, которое указано в накладной. Считанные коды добавятся в данную накладную.</p>
+<doc-anchor-target id="настройки-водителя">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#настройки-водителя">#</doc-anchor-trigger>
+        <span>Настройки водителя</span>
+    </h2>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="/images/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D0%B4%D0%B8%D1%82%D0%BE%D1%80/%D0%BC%D0%BF.jpg" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ul>
+<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Автоматически обновлять МП</span>
+</span> - если включить данную функцию, то при каждом завершении заказа, будет автоматически обновляться МЛ, т.е. будут появляться все изменения созданные в 1С (новые заявки, отмены заказа и т.д.)</p>
+</li>
+<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Отключить перерасчет цены</span>
+</span> - включенная функция отключает все установки по скидкам и бонусам.</p>
+</li>
+<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Контроль сканирования по организации</span>
+</span> - если установлена, то прверяет при сканировании, имеет ли организация право на эту марку. Т.е. занесли ли ее в центральную базу, передачей между своими организациями, приходом товара или производством товара.</p>
+</li>
+<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Время связи с сервером</span>
+</span> - установливается время (в секундах). Устанавливается максимальное время, какое может позволить себе МП делать запрос в ИС МП. Советуем ставить 150.</p>
+</li>
+<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Получить штрихкоды</span>
+</span> - Позволяет получить все GTIN по товарам принудительно.</p>
+</li>
+<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Номер телефона</span>
+</span> - указывается номер телефона водителя (без восьмерки) для возможности использования общего номера организации при звонке из приложения.</p>
+</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/images/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D0%B4%D0%B8%D1%82%D0%BE%D1%80/%D0%BC%D0%BF1.gif" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <doc-anchor-target id="допольнительные-опции">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#допольнительные-опции">#</doc-anchor-trigger>
@@ -390,20 +432,6 @@
     </h3>
 </doc-anchor-target>
 <p>Служит для отключения МП и приостановки оплаты.</p>
-<doc-anchor-target id="автоматическое-обновление">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#автоматическое-обновление">#</doc-anchor-trigger>
-        <span>Автоматическое обновление</span>
-    </h3>
-</doc-anchor-target>
-<p>Если включить данную функцию, то при каждом завершении заказа, будет автоматически обновляться МЛ, т.е. будут появляться все изменения созданные в 1С (новые заявки, отмены заказа и т.д.)</p>
-<doc-anchor-target id="отключить-перерасчет-цены">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#отключить-перерасчет-цены">#</doc-anchor-trigger>
-        <span>Отключить перерасчет цены</span>
-    </h3>
-</doc-anchor-target>
-<p>Включенная функция отключает все установки по скидкам и бонусам.</p>
 <doc-anchor-target id="режим-работы-кладовщика">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#режим-работы-кладовщика">#</doc-anchor-trigger>
