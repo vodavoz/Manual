@@ -20,6 +20,7 @@ date: 2025-07-16
         "id": "657f9553-ff97-11e9-80d3-001e4f377cd7",
         "external_id": null,
         "payment_type": "cash",
+        "payment_status": "false",
         "comment": "comment",
         "shipping_date_from": "2019-11-06T11:00:00Z",
         "shipping_date_to": "2019-11-06T18:00:00Z",
@@ -141,6 +142,7 @@ date: 2025-07-16
                     "delivery_cost": 30,
                     "coins": 710,
                     "payment_type": "cash",
+                    "payment_status": "false",
                     "created_at": "2019-11-07 00:54:05",
                     "shipping_address": null,
                     "shipping_date_from": "2019-11-06 14:00:00",
@@ -235,6 +237,13 @@ removed - отменено (диспетчером или клиентом)</td>
       <td>range</td>
       <td>false</td>
       <td>Способ оплаты (указывается строкой, соответствие настраивается в соответствующем разделе настроек) </td>
+    </tr>
+  </tbody>
+ <tr>
+      <td>payment_status</td>
+      <td>range</td>
+      <td>false</td>
+      <td> Статус платежа, передается булево, в случае оплаты истина </td>
     </tr>
   </tbody>
   <tr>
