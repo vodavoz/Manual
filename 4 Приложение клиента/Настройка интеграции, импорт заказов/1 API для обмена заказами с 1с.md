@@ -172,7 +172,6 @@ date: 2025-07-16
     <tr>
       <th>Название</th>
       <th>Тип  2</th>
-      <th>Обязательный 3</th>
       <th>Описание 3</th>
     </tr>
   </thead>
@@ -180,13 +179,11 @@ date: 2025-07-16
     <tr>
       <td>id</td>
       <td>string(255</td>
-      <td>true</td>
       <td>Идентификатор в экспортирующей системе (внешнее приложение или сайт)</td>
     </tr>
     <tr>
       <td>external_id</td>
       <td>integer(11)</td>
-      <td>false</td>
       <td>Идентификатор в принимающей системе (1с)</td>
     </tr>
   </tbody>
@@ -196,7 +193,6 @@ date: 2025-07-16
       'approved', 
       'completed', 
       'removed'</td>
-      <td>true</td>
       <td>Статус заказа
 new - новый неразобранный заказ
 approved - назначен курьер для доставки (заказ обработан оператором)
@@ -207,27 +203,23 @@ removed - отменено (диспетчером или клиентом)</td>
    <tr>
       <td>created_at</td>
       <td>datetime</td>
-      <td>false</td>
       <td>Дата создания</td>
     </tr>
   </tbody>
   </tr>
       <td>total</td>
       <td>float</td>
-      <td>true</td>
       <td>Сумма заказа (стоимость 
       доставки включена)</td>
   <tr>
       <td>delivery_cost</td>
       <td>float</td>
-      <td>false</td>
       <td>Стоимость доставки</td>
     </tr>
   </tbody>
   <tr>
       <td>coins</td>
       <td>float</td>
-      <td>false</td>
       <td>Кол-во баллов, которые использовались 
       для оплаты заказа</td>
     </tr>
@@ -235,42 +227,36 @@ removed - отменено (диспетчером или клиентом)</td>
   <tr>
       <td>payment_type</td>
       <td>range</td>
-      <td>false</td>
       <td>Способ оплаты (указывается строкой, соответствие настраивается в соответствующем разделе настроек) </td>
     </tr>
   </tbody>
  <tr>
       <td>payment_status</td>
       <td>boolean</td>
-      <td>false</td>
       <td>Статус платежа, передается булево, в случае оплаты истина </td>
     </tr>
   </tbody>
   <tr>
       <td>shipping_date_from</td>
       <td>datetime</td>
-      <td>true</td>
       <td>Время доставки от</td>
     </tr>
   </tbody>
   <tr>
       <td>shipping_date_to</td>
       <td>datetime</td>
-      <td>true</td>
       <td>Время доставки до</td>
     </tr>
   </tbody>
   <tr>
       <td>comment</td>
       <td>string</td>
-      <td>false</td>
       <td>Комментарий</td>
     </tr>
   </tbody>
   <tr>
       <td>count_of_returned_bottles</td>
       <td>integer</td>
-      <td>false</td>
       <td>Кол-во бутылей 
       к возврату</td>
     </tr>
@@ -278,21 +264,18 @@ removed - отменено (диспетчером или клиентом)</td>
   <tr>
       <td>order_item_list</td>
       <td>array</td>
-      <td>true</td>
       <td>Массив из заказанных позиций</td>
     </tr>
   </tbody>
   <tr>
       <td>client</td>
       <td>object</td>
-      <td>true</td>
       <td>Объект содержащий клиента</td>
     </tr>
   </tbody>
   <tr>
       <td>shipping_address</td>
       <td>object</td>
-      <td>true</td>
       <td>Объект содержащий адрес доставки</td>
     </tr>
   </tbody>
@@ -313,7 +296,6 @@ removed - отменено (диспетчером или клиентом)</td>
     <tr>
       <th>Название</th>
       <th>Тип  2</th>
-      <th>Обязательный 3</th>
       <th>Описание 3</th>
     </tr>
   </thead>
@@ -321,20 +303,17 @@ removed - отменено (диспетчером или клиентом)</td>
     <tr>
       <td>username</td>
       <td>string(255</td>
-      <td>true</td>
       <td>Имя клиента</td>
     </tr>
     <tr>
       <td>phone</td>
       <td>string(12)(11)</td>
-      <td>true</td>
       <td>Телефон клиента, например +79191991919</td>
     </tr>
   </tbody>
    <tr>
       <td>emai</td>
       <td>string(255)</td>
-      <td>false</td>
       <td>Электронная почта клиента</td>
     </tr>
   </tbody>
@@ -352,7 +331,6 @@ removed - отменено (диспетчером или клиентом)</td>
     <tr>
       <th>Название</th>
       <th>Тип  2</th>
-      <th>Обязательный 3</th>
       <th>Описание 3</th>
     </tr>
   </thead>
@@ -360,55 +338,47 @@ removed - отменено (диспетчером или клиентом)</td>
     <tr>
       <td>user_address_id</td>
       <td>integer(11)</td>
-      <td>false</td>
       <td>Идентификатор в принимающей системе</td>
     </tr>
     <tr>
       <td>city</td>
       <td>string(255)</td>
-      <td>true</td>
       <td>Город</td>
     </tr>
   </tbody>  
   <tr>
       <td>street</td>
       <td>string(255)</td>
-      <td>true</td>
       <td>Улица</td>
     </tr>
   </tbody>
   <tr>
       <td>house</td>
       <td>string(10)</td>
-      <td>true</td>
       <td>Дом</td>
     </tr>
   </tbody>
   <tr>
       <td>entrance</td>
       <td>string(10)</td>
-      <td>false</td>
       <td>Подъезд</td>
     </tr>
   </tbody>
   <tr>
       <td>floor</td>
       <td>string(10)</td>
-      <td>false</td>
       <td>Этаж</td>
     </tr>
   </tbody>
   <tr>
       <td>room</td>
       <td>string(10)</td>
-      <td>false</td>
       <td>Номер квартиры или офиса</td>
     </tr>
   </tbody>
   <tr>
       <td>str</td>
       <td>string(255)</td>
-      <td>true</td>
       <td>Адрес не структурировано, а единой строкой</td>
     </tr>
   </tbody>
@@ -426,7 +396,6 @@ removed - отменено (диспетчером или клиентом)</td>
     <tr>
       <th>Название</th>
       <th>Тип  2</th>
-      <th>Обязательный 3</th>
       <th>Описание 3</th>
     </tr>
   </thead>
@@ -434,41 +403,34 @@ removed - отменено (диспетчером или клиентом)</td>
     <tr>
       <td>product_id</td>
       <td>string(255)</td>
-      <td>true</td>
       <td>Идентификатор продукта в экспортирующей системе (внешнее приложение, сайт)</td>
     </tr>
     <tr>
       <td>price</td>
       <td>decimal(10,2)</td>
-      <td>true</td>
       <td>Цена продукта</td>
     </tr>
   </tbody>  
   <tr>
       <td>quantity</td>
       <td>integer(11)</td>
-      <td>true</td>
       <td>Кол-во заказанных продуктов</td>
     </tr>
   </tbody>
   <tr>
       <td>id</td>
       <td>string(255)</td>
-      <td>false</td>
       <td>Идентификатор позиции заказа в 1с</td>
     </tr>
   </tbody>
   <tr>
       <td>name</td>
       <td>string(255)</td>
-      <td>false</td>
       <td>Название продукта</td>
     </tr>
   </tbody>
  </table>
 
-
- 
 
 ## Ключевые моменты
 
