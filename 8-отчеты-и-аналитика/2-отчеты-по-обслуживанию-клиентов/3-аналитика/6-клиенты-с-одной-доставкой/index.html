@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.813915611072">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.813915778727">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.813915611072" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.813915778727" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.813915611072" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.813915778727" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.813915611072" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.813915778727" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,35 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-20</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-10-15</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет предназначен для анализа повторной активности клиента после первого заказа и выявления отвала клиентов в случае, если пробная поставка не была развита в постоянное сотрудничество.</p>
+<p>Отчет нужен для:</p>
+<ul>
+<li><p>Выявления клиентов, у которых за период была только одна доставка. Это его основная цель.</p>
+</li>
+<li><p>Анализ причин отсутствия повторных заказов/доставок. Помогает выяснить, почему клиент не сделал повторный заказ (например, недоволен качеством, высокой ценой или обратился к конкуренту).</p>
+</li>
+<li><p>Оценка эффективности удержания клиентов. Показывает, сколько клиентов компания потеряла за определенный период.</p>
+</li>
+<li><p>Определение необходимости проведения маркетинговых мероприятий для возвращения клиентов. На основе анализа можно принять решение о проведении акций, предоставлении скидок или других стимулов для возвращения клиентов.</p>
+</li>
+<li><p>Анализ «Сумма» по этим клиентам позволяет оценить, сколько компания может потерять, если эти клиенты не вернутся.</p>
+</li>
+</ul>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Обслуживание</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -237,13 +262,16 @@
     <figcaption class="caption">Клиенты с одной доставкой</figcaption>
 </figure>
 </p>
+<p>Отчет можно сформировать по <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Менеджер</span>
+</span> если выбран менеджер, то отчет буден сформирован по контрагентам, закрепленным за выбранным менеджером.</p>
 <p>Данные в отчете распределены по колонкам.</p>
 <p>В колонке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Контрагент</span>
-</span> выводится КА, которому была осуществлена доставка.</p>
+</span> выводится контрагент, которому была осуществлена доставка.</p>
 <p>В колонке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Адрес</span>
-</span> выводится АД, на который была осуществлена доставка.</p>
+</span> выводится адрес доставки, на который была осуществлена доставка.</p>
 <p>В колонке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Реализации</span>
 </span> выводятся документы, которым была осуществлена первая и последующая доставка.</p>
@@ -252,17 +280,17 @@
 </span> выводятся сумма доставки.</p>
 <p>В колонке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Сальдо</span>
-</span> выводится сумма долга КА.</p>
+</span> выводится сумма долга контрагента.</p>
 <p>В колонке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Без повторной доставки</span>
-</span> выводится количество КА, у которых не было повторной доставки.</p>
+</span> выводится количество контрагентов, у которых не было повторной доставки.</p>
 <doc-anchor-target id="права-доступа">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#права-доступа">#</doc-anchor-trigger>
         <span>Права доступа</span>
     </h2>
 </doc-anchor-target>
-<p>Отчет доступен пользователям, которым назначена роль <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+<p>Отчет доступен пользователям, которым назначена одна из ролей: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
     <span>Руководитель</span>
 </span>.</p>
 
