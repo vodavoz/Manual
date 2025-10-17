@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814013942531">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814016428806">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.814013942531" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.814016428806" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814013942531" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814016428806" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814013942531" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814016428806" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,36 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-20</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-10-17</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет выводит данные по статистике и составу недоставленных и отмененных заказов.</p>
+<p>Этот отчёт используется для анализа и учёта невыполненных заказов. Он помогает выяснить:</p>
+<ul>
+<li><p>Причины невыполнения заказов позволяют понять, какие проблемы чаще всего приводят к срыву доставки, и принять меры по их устранению.</p>
+</li>
+<li><p>Количество невыполненных заказов: в отчете указано общее количество невыполненных заказов за определенный период, а также разбивка по причинам. Это позволяет оценить масштаб проблемы и отслеживать динамику.</p>
+</li>
+<li><p>Анализ невыполненных заказов по датам: можно посмотреть, в какие дни было больше всего невыполненных заказов, что может указывать на пиковые нагрузки или другие факторы.</p>
+</li>
+<li><p>Информация по каждому заказу: в отчете отображаются данные по каждому невыполненному заказу: номер, контрагент, адрес доставки, товар, сумма, ответственный менеджер и водитель. Это позволяет детально изучить каждую ситуацию и выявить конкретные проблемы.</p>
+</li>
+<li><p>Информация о водителях: можно увидеть, какие водители чаще всего не успевают доставить заказы, что может указывать на необходимость перераспределения маршрутов или обучения водителей.</p>
+</li>
+</ul>
+<p>В целом этот отчёт помогает оптимизировать процессы доставки, сократить количество невыполненных заказов, повысить удовлетворённость клиентов и общую эффективность работы.</p>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Обслуживание</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -238,6 +264,18 @@
 </figure>
 </p>
 <p>Данные в отчете сгруппированы по причине, дате доставки и заказу.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Менеджер</span>
+</span> - если выбран менеджер, то данные сформируются, только выбранному менеджеру.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Причина</span>
+</span> - если выбрана причина, то отчет сформируется только по ней.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Принял</span>
+</span> - если выбран оператор принявший заказ, то данные сформируются только по нему.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Статус отмены</span>
+</span> - позволяет выбрать один из статусов и сформировать по нему отчет.</p>
 <p>В колонках выводится контрагент и его адрес, наименование и количество товара/тары, закрепленный менеджер и принявший заказ, МЛ и водитель, итоговое количество заказов.</p>
 <doc-anchor-target id="права-доступа">
     <h2>
