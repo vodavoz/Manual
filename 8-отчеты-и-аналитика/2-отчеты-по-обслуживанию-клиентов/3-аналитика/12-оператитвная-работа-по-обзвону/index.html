@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814005644624">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814006272463">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.814005644624" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.814006272463" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814005644624" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814006272463" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814005644624" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814006272463" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,42 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-26</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-10-16</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет предназначен для оперативного анализа работы оператора по факту выполнения оперативных задач, сформированных на конкретную дату обзвона.</p>
+<p>Отчет предназначен для:</p>
+<ul>
+<li><p>Оперативного мониторинга работы оператора в течение дня по плану обзвона: позволяет контролировать, сколько задач (обзвонов) было запланировано, сколько выполнено, сколько перенесено,
+и сколько обзвонов было неудачных (не удалось связаться или клиент отказался).</p>
+</li>
+<li><p>Оценки эффективности работы оператора: показывает процент выполнения плана по обзвону (“% заказов”), количество звонков и количество отказов от обзвона.</p>
+</li>
+<li><p>Выявления “проблемных” клиентов/задач: позволяет увидеть, какие задачи были перенесены или отвалены, что может сигнализировать о проблемах с клиентом или о неэффективности работы оператора.</p>
+</li>
+<li><p>Анализа причин переносов и отказов: наличие колонки “Комментарий переноса” позволяет фиксировать причину переноса обзвона, что может быть полезно для дальнейшего анализа и улучшения работы.</p>
+</li>
+</ul>
+<p>-Анализа просроченных задач: показывает, сколько задач по обзвону не было выполнено в срок (“Просроченные”).</p>
+<ul>
+<li><p>Отслеживания последней даты доставки: Колонка “Дата последней доставки” может быть полезна для приоритезации задач обзвона.</p>
+</li>
+<li><p>Управления базой контактов: позволяет увидеть, по каким контактам не удается связаться (отвалы, отказы от обзвона), что может указывать на необходимость актуализации базы данных.</p>
+</li>
+</ul>
+<p>В итоге, это инструмент для ежедневного контроля и оперативного управления работой операторов колл-центра или отдела продаж, направленный на повышение эффективности обзвона и увеличение конверсии.</p>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Обслуживание</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -238,7 +270,16 @@
 </figure>
 </p>
 <p>Данные в отчете сгруппированы по операторам.</p>
-<p>В колонках выводится план обзвона, КА и его адрес, заказ, количество звонков и отказов.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Дата контакта</span>
+</span> - это дата, на которую назначен звонок оператора</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Дата плана</span>
+</span> - это дата планирования для доставки, т.е. день доставки.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Менеджер</span>
+</span> - если выбран менеджер, то данные сформируются только по выбранному менеджеру.</p>
+<p>В колонках выводится план обзвона, контрагент и его адрес, заказ, количество звонков и отказов.</p>
 <p>В группе колонок <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Активные</span>
 </span> выводится количество активных контактов оператора по запланированному обзвону, переносу и отвалу адреса.</p>
