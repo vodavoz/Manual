@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814432964017">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814434698112">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.814432964017" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.814434698112" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814432964017" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814434698112" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814432964017" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814434698112" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,52 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-20</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-10-22</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет предназначен для проверки эффективности работы оператора по запланированным контактам, а так же для анализа статистики переносов заказа.</p>
+<p>Основные цели отчета:</p>
+<ul>
+<li>Оценка выполнения плана обзвона:</li>
+</ul>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Всего</span>
+</span>: показывает общее количество контактов, назначенных оператору для обзвона.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>В плане</span>
+</span>: сколько контактов было запланировано в плане обзвона.</p>
+<ul>
+<li>Анализ результатов обзвона:</li>
+</ul>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Принят</span>
+</span>: сколько контактов из плана обзвона ожидают завершения (заказ сформирован, но нет реализации) .</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Перенос</span>
+</span>: сколько контактов было перенесено на другое время (например, клиент попросил перезвонить позже).</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Закрыт</span>
+</span>: сколько контактов было закрыто оператором.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Доставлен</span>
+</span>: сколько контактов было успешно доставлено (звонок/сообщение дошло до абонента).</p>
+<p>Оценка эффективности работы операторов: отчет позволяет сравнить результаты работы разных операторов. Можно увидеть, кто лучше выполняет план обзвона, кто чаще дозванивается до клиентов, кто чаще закрывает контакты и т.д.</p>
+<p>Резюмируя, отчет позволяет:</p>
+<p>Отслеживать выполнение плана обзвона операторами.
+Анализировать результаты обзвона (принятые, перенесенные, закрытые контакты).
+Оценивать эффективность работы операторов по обработке контактов из плана обзвона.</p>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Обслуживание</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
