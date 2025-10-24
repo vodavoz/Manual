@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814624247045">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814625275450">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.814624247045" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.814625275450" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814624247045" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814625275450" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814624247045" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814625275450" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,39 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-20</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-10-22</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет предназначен для вывода статистики оформления заказов операторами и загруженности относительно маршрутов доставки.</p>
+<p>Основные цели отчета:</p>
+<ul>
+<li><p>Оптимизации маршрутов доставки: позволяет спланировать наиболее эффективные маршруты, минимизируя время и затраты на доставку.</p>
+</li>
+<li><p>Снижения задержек в доставке: дает возможность отслеживать статус каждого заказа и вовремя реагировать на возможные проблемы.</p>
+</li>
+<li><p>Повышения удовлетворенности клиентов: обеспечивает своевременную и предсказуемую доставку заказов.</p>
+</li>
+<li><p>Сокращения расходов на логистику: позволяет более эффективно использовать транспорт и персонал.</p>
+</li>
+<li><p>Контроль работы курьеров: позволяет отслеживать выполнение плана доставки по каждому маршруту.</p>
+</li>
+<li><p>Анализ загрузки по маршрутам: позволяет увидеть, какие маршруты наиболее загружены, и при необходимости перераспределить нагрузку.</p>
+</li>
+<li><p>Прогнозирования потребности в транспорте и персонале: на основе данных о планируемых доставках можно прогнозировать потребность в ресурсах.</p>
+</li>
+</ul>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Обслуживание</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -238,6 +267,30 @@
 </figure>
 </p>
 <p>Данные в отчете сгруппированы по маршруту и контрагенту.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Дата плана</span>
+</span> устанавливается период, по которому нужно сформировать отчет.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Диапазон дней</span>
+</span> устанавливается количество дней для вывода статистики (например: на неделю вперед).</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Маршрут</span>
+</span> если выбран маршрут, то отчет будет сформирован по выбранному маршруту.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Контрагент</span>
+</span> если выбран контрагент, то отчет будет сформирован по выбранному контрагенту.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Менеджер</span>
+</span> если выбран менеджер, то отчет будет сформирован по выбранному менеджеру.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Статус заказа</span>
+</span> если выбран статус заказа, то отчет будет сформирован по выбранному статусу.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Без заказов</span>
+</span> устанавливается, если в отчете не нужно выводить документ заказ покупателя.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>С заказами</span>
+</span> устанавливается, если в отчете нужно выводить документ заказ покупателя.</p>
 <p>В колонках выводится адрес доставки, заказ и его статус, даты последней,следующей и доставки, количество адресов и заказов.</p>
 <doc-anchor-target id="права-доступа">
     <h2>
