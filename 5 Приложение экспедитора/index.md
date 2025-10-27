@@ -6,7 +6,7 @@
 
 Скачать актуальную версию приложения вы можете по ссылке
 
-#### [Версия 2.4.5](https://cloud-edt.e1c-ops.com/applications/cloudedt/api/public/v1/v8-mobile-builder/downloads/android?token=eT4YhyxvRBR9HsjXS8wX0nW_p21-JOqVNkZNM2H4GZhU)
+#### [Версия 2.9.10](https://cloud-edt.e1c-ops.com/applications/cloudedt/api/public/v1/v8-mobile-builder/downloads/android?token=I97UNKE4n16xTmGWuwuXpeaAGlFkGxgsvvRgBpeEBkwH)
 
 Плюсы использования мобильного приложения:
 
@@ -26,3 +26,4 @@
 Целью данного раздела является обеспечение пользователей необходимой информацией для самостоятельной работы с мобильным приложением.
 
 Он будет полезен сотрудникам компаний, участвующих в бизнес-процессах по доставке воды. Главным образом для водителей и экспедиторов, осуществляющих непосредственно доставку воды.
+
