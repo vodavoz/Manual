@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814950452439">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.814967012506">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.814950452439" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.814967012506" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814950452439" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.814967012506" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814950452439" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.814967012506" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,33 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-20</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-10-28</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет выводит адреса доставки контрагентов, отправленные в отвал.</p>
+<p>Он необходим для того, чтобы:</p>
+<p>Фиксировать отключения: отчет позволяет четко задокументировать, какой клиент перестал пользоваться услугами компании.</p>
+<p>Выявлять причины отключения: определять, почему произошел отвал. В отчете фиксируются причины, указанные при проверке. Это ключевая информация для дальнейшего анализа.</p>
+<p>Анализ тенденций отказа от услуг: определение наиболее частых причин, по которым клиенты прекращают сотрудничество. Какие проблемы чаще всего приводят к потере клиентов?</p>
+<p>Принимать управленческие решения: на основе анализа причин оттока разрабатывать и внедрять меры по удержанию клиентов.
+Это может быть повышение качества обслуживания, изменение тарифной политики, корректировка маркетинговой стратегии и т. д.</p>
+<p>Оценить эффективность мер по удержанию клиентов: отследить динамику отключений после внедрения новых мер. Помогли ли изменения снизить отток клиентов?</p>
+<p>Оценка работы персонала: отчет позволяет оценить, насколько хорошо менеджер удерживает клиентов на своем участке.</p>
+<p>Создать историю отключений: позволяет анализировать ситуацию в динамике.</p>
+<p>Таким образом, отчёт становится инструментом для проактивного управления удержанием клиентов. Он позволяет не просто констатировать факт отказа, но и понимать его причины,
+принимать меры и оценивать их эффективность, стремясь сократить отток клиентов и повысить их лояльность.</p>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Обслуживание</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -237,6 +260,12 @@
     <figcaption class="caption">Проверка отвала адреса</figcaption>
 </figure>
 </p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Статус проверки отвала</span>
+</span> если выбран статус проверки отвала, то в отчет попадут все адреса доставки с выбранным статусом проверки.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Менеджер</span>
+</span> если он установлен и выбран менеджер, то в отчет попадут только адреса доставки, за которыми закреплен указанный менеджер.</p>
 <p>Данные в отчете сгруппированы по статусу отвала и закрепленному менеджеру.</p>
 <p>В колонках выводится наименование контрагента и его адрес доставки, контактное лицо, дата и ссылка документ проверки отвала, причина отключения.</p>
 <doc-anchor-target id="права-доступа">
