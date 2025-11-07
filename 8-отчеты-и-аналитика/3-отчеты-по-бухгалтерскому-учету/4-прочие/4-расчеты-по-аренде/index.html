@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.815829772128">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.815836266919">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.815829772128" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.815836266919" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.815829772128" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.815836266919" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.815829772128" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.815836266919" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,34 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-23</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-11-07</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет выводит информацию о количестве оборудования в аренде, сумме начисления за нее, а также потребление воды клиентов у которых стоят арендные аппараты.</p>
+<p>Отчет предназначен для:</p>
+<ul>
+<li><p>Контроль количества арендованного оборудования: показывает, сколько единиц оборудования арендовано каждым клиентом.</p>
+</li>
+<li><p>Отображение суммы начислений за аренду: показывает, сколько было начислено арендной платы за предоставленное оборудование.</p>
+</li>
+<li><p>Анализ потребления воды клиентами, у которых есть арендованные аппараты: Это очень важный аспект. Отчет показывает, сколько воды было использовано клиентами, у которых установлено арендованное оборудование.
+Это помогает понять, насколько активно используется оборудование и как это соотносится с начислениями.</p>
+</li>
+<li><p>Оценка эффективности аренды: сопоставив количество арендованного оборудования, сумму начислений и потребление ресурса, можно оценить прибыльность и целесообразность арендных отношений.</p>
+</li>
+</ul>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Бухгалтерия</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -238,6 +262,9 @@
 </figure>
 </p>
 <p>Данные в отчете сгруппированы по менеджерам и контрагентам.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Организация</span>
+</span> если выбрана организация, то в отчет попадет только выбранная организация.</p>
 <p>В колонке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Вид оплаты</span>
 </span> выводится каким образом платит клиент: наличные или безналичные (согласно договора аренды оборудования).</p>
