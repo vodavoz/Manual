@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816094616868">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816097023413">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.816094616868" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.816097023413" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.816094616868" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.816097023413" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.816094616868" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.816097023413" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -216,10 +216,28 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-23</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-11-10</span></div>
 </div>
 
+<doc-anchor-target id="описание-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-отчета">#</doc-anchor-trigger>
+        <span>Описание отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет выводит информацию о оборудовании, у которого наступила или уже просрочена дата профилактики.</p>
+<p>Этот отчет является критически важным для:</p>
+<p>Прогнозирования и планирования обслуживания: главная цель – показать, какое оборудование скоро потребует обслуживания (сервисного или гарантийного).
+Это позволяет заранее планировать работу сервисной службы, закупку запчастей и координировать действия с клиентами.</p>
+<p>Минимизации простоев оборудования: предотвращая поломки или сбои, отчет помогает снизить время, когда оборудование не используется, что важно как для клиента, так и для компании-арендодателя.</p>
+<p>Идентификации оборудования: как и предыдущие отчеты, точно указывает модель, серийный номер и другие характеристики оборудования.</p>
+<p>Оценки работы менеджеров: Ппзволяет увидеть, какому менеджеру принадлежит оборудование, нуждающееся в обслуживании и как менеджер работают с данной информацией (например: предлагают ли клиентам санитарную обработку).</p>
+<doc-anchor-target id="вид-отчета">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#вид-отчета">#</doc-anchor-trigger>
+        <span>Вид отчета</span>
+    </h2>
+</doc-anchor-target>
 <p>Отчет находится находится <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Ремонт и аренда</span>
 </span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
@@ -237,7 +255,13 @@
     <figcaption class="caption">Оборудование нуждающееся в обслуживании</figcaption>
 </figure>
 </p>
-<p>Данные в отчете сгруппированы по менеджеру и КА.</p>
+<p>Данные в отчете сгруппированы по менеджеру и контрагенту.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Дней до обслуживания</span>
+</span> указывается количество дней, которое осталось до даты обслуживания. По умолчанию 30 дней.</p>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>Менеджер</span>
+</span> если выбран менеджер, то в отчет попадет оборудование контрагентов, за которыми закреплен указанный менеджер..</p>
 <p>В колонках выводится наименование оборудования, количество дней до даты обслуживания, дата до которой распространяется гарантия на оборудование, интервал обслуживания в днях, серийный номер, статус и тип.</p>
 <doc-anchor-target id="права-доступа">
     <h2>
