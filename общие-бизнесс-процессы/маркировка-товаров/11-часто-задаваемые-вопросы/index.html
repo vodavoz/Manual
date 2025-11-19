@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816779584526">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816844622659">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -34,11 +34,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../static/logo.png" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.11.0.816779584526" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.11.0.816844622659" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816779584526" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.11.0.816844622659" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816779584526" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.11.0.816844622659" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -225,13 +225,6 @@
     </h3>
 </doc-anchor-target>
 <p>Чаще всего такая ситуация бывает при автоматической фискализации чеков, если в одном из них добавлено большое количество маркированных позиций. В такой ситуации надо остановить автоматическую фискализацию, после чего перезайти в программу, это необходимо, чтобы сеанс проверки кода прервался. После чего в списке нефискализированных чеков найти самый первый, как правило он будет на большую сумму, и фискализировать вручную. Ориентировочно такое возможно при более чем 20 маркированных позициях. Так же на кассах есть лимит после которого ККТ не может больше проверять чеки, он находится в диапазоне от 100 единиц. В таком случае чек придется дробить, тут уже идет ограничение самой кассы.</p>
-<doc-anchor-target id="не-сходится-количество-кодов-в-чз-и-водвозе">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#не-сходится-количество-кодов-в-чз-и-водвозе">#</doc-anchor-trigger>
-        <span>Не сходится количество кодов в ЧЗ и Вод@возе</span>
-    </h3>
-</doc-anchor-target>
-<p>Информация в ЧЗ придет в порядок к июню 2024 года.</p>
 <doc-anchor-target id="ошибка-в-документе-ввод-в-оборот">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#ошибка-в-документе-ввод-в-оборот">#</doc-anchor-trigger>
@@ -248,7 +241,7 @@
 </p>
 <p>В строке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Статус</span>
-</span> нажимаем на слово  <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+</span> нажимаем на слово <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Причина</span>
 </span> и программа выдаст окошко с описанием причины.</p>
 <p><figure class="content-center">
@@ -297,6 +290,24 @@
 </span> и в основном документе <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Передать данные</span>
 </span>.</p>
+<doc-anchor-target id="как-получить-лог-для-отправки-в-тех-поддержку">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#как-получить-лог-для-отправки-в-тех-поддержку">#</doc-anchor-trigger>
+        <span>Как получить лог для отправки в тех поддержку</span>
+    </h3>
+</doc-anchor-target>
+<p>При обращении в поддержку ЧЗ, они часто просят предоставить полный полный запрос API. Его можно найти в любом документе (закз кодов, ввод в оборот и т.д.),
+нажав на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Протокол обмена</span>
+</span> -&gt; <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Показать сообщения XML</span>
+</span>.</p>
+<p><figure class="content-center">
+    <img src="/images/%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B82.jpg" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Все, что находится в нижней части тоблицы это и есть полный запрос API. Его нужно скопировать и передать в поддержку ЧЗ.</p>
 
                                 
                                 <!-- Required only on API pages -->
