@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817300753986">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817302341338">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>4 Регламентные задания Телефония</title>
-    <meta name="title" content="4 Регламентные задания Телефония">
+    <title>Регламентные задание Телефония</title>
+    <meta name="title" content="Регламентные задание Телефония">
+    <meta name="description" content="Включает/отключает обмен сообщениями между системой взаимодействия 1С и сервисом whatsapp.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/1-руководство-администратора/настройки-программы/регламентные-задания/4-регламентные-задания-телефония/">
@@ -19,21 +20,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/Manual/1-руководство-администратора/настройки-программы/регламентные-задания/4-регламентные-задания-телефония/">
-    <meta property="og:title" content="4 Регламентные задания Телефония">
+    <meta property="og:title" content="Регламентные задание Телефония">
+    <meta property="og:description" content="Включает/отключает обмен сообщениями между системой взаимодействия 1С и сервисом whatsapp.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/Manual/1-руководство-администратора/настройки-программы/регламентные-задания/4-регламентные-задания-телефония/">
-    <meta property="twitter:title" content="4 Регламентные задания Телефония">
+    <meta property="twitter:title" content="Регламентные задание Телефония">
+    <meta property="twitter:description" content="Включает/отключает обмен сообщениями между системой взаимодействия 1С и сервисом whatsapp.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.817300753986" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.817302341338" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.817300753986" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.817302341338" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.817300753986" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.817302341338" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -197,19 +200,95 @@
                                         </li>
                                         <li class="pr-4">
                                             <a href="../../../../1-руководство-администратора/настройки-программы/регламентные-задания/4-регламентные-задания-телефония/" class="pr-4">
-                                                4 Регламентные задания Телефония
+                                                Регламентные задание Телефония
                                             </a>
                                         </li>
                                     </ol>
                                 </nav>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="4-регламентные-задания-телефония" class="break-words">
+<doc-anchor-target id="регламентные-задание-телефония" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-регламентные-задания-телефония">#</doc-anchor-trigger>
-        <span>4 Регламентные задания Телефония</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#регламентные-задание-телефония">#</doc-anchor-trigger>
+        <span>Регламентные задание Телефония</span>
     </h1>
 </doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-11-24</span></div>
+</div>
+
+<doc-anchor-target id="мессенджер-синхронизация-сообщений">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#мессенджер-синхронизация-сообщений">#</doc-anchor-trigger>
+        <span>Мессенджер: Синхронизация сообщений</span>
+    </h2>
+</doc-anchor-target>
+<p>Включает/отключает обмен сообщениями между системой взаимодействия 1С и сервисом whatsapp. Входящие сообщения поступают моментально, время отправки исходящих сообщений будет зависеть от установленного расписания регламентного задания.</p>
+<p>Стандартное расписание:</p>
+<p>каждый день; с 8:00:00 по 21:00:00 каждые 15 секунд.</p>
+<p>Рекомендуется устанавливать интервал не более 60 с.</p>
+<doc-anchor-target id="телефония-загрузка-истории-звонков">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-загрузка-истории-звонков">#</doc-anchor-trigger>
+        <span>Телефония: Загрузка истории звонков</span>
+    </h2>
+</doc-anchor-target>
+<p>По частям загружает историю телефонных звонков с сервера телефонии. При запуске проверяет идентификатор последнего загруженного звонка и выполняет загрузку порции истории звонков в базу 1С.</p>
+<p>Стандартное расписание:</p>
+<p>каждый день; с 8:00:00 по 21:00:00 каждые 120 секунд.</p>
+<p>Если регламентное задание отключить журнал звонков в подсистеме телефонии заполняться не будет.</p>
+<doc-anchor-target id="телефония-обмен-с-сервером-телефонии-контактными-данными">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-обмен-с-сервером-телефонии-контактными-данными">#</doc-anchor-trigger>
+        <span>Телефония: Обмен с сервером телефонии контактными данными</span>
+    </h2>
+</doc-anchor-target>
+<p>Заполняет информацию о владельцах номеров телефонов (компаниях и контактных лицах) в записях журнала звонков, загруженных за последние 3 месяца, если они еще не были заполнены ранее.</p>
+<p>Стандартное расписание:</p>
+<p>один день, по дням недели (суббота); с 20:00:00 один раз в день.</p>
+<p>После обновления контактной информации в карточке контрагента ищет документы телефонный звонок с аналогичным номером телефона и устанавливает связь между документом звонок и партенром/контрагентом/контактом.
+Регламентное задание обрабатывает звонки в которых не проставлен контрагент за последние 3 месяца. Это может оказывать серьезную нагрузку на сервер, поэтому рекомендуется запускать в нерабочее время, например раз в неделю по субботам.</p>
+<doc-anchor-target id="телефония-обмен-с-сервером-телефонии-событиями">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-обмен-с-сервером-телефонии-событиями">#</doc-anchor-trigger>
+        <span>Телефония: Обмен с сервером телефонии событиями</span>
+    </h2>
+</doc-anchor-target>
+<p>Устанавливает соединение с сервером телефонии для получения данных о выполняемых звонках. Фоновое задание может мешать обновлению информационной базы. Настраивайте расписание с учетом окна для проведения технических работ.</p>
+<p>Стандартное расписание:</p>
+<p>каждый день; с 8:00:00 по 21:00:00 каждую секунду.</p>
+<p>Доступно, если канал передачи событий установлен в значение long-polling соединение. Отвечает за открытие карточки клиента в момент входящего звонка, если используется longpoll соединение от сервера 1С к АТС.</p>
+<doc-anchor-target id="телефония-обновление-контактных-данных-оперативно">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-обновление-контактных-данных-оперативно">#</doc-anchor-trigger>
+        <span>Телефония: Обновление контактных данных (оперативно)</span>
+    </h2>
+</doc-anchor-target>
+<p>Заполняет информацию о владельцах номеров телефонов за последние 5 дней.</p>
+<p>Стандартное расписание:</p>
+<p>каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд.</p>
+<p>Делает то же самое, что и обновлять контактные данные только для звонков за последние 5 дней.</p>
+<doc-anchor-target id="телефония-обновление-таблицы-маршрутизации">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-обновление-таблицы-маршрутизации">#</doc-anchor-trigger>
+        <span>Телефония: Обновление таблицы маршрутизации</span>
+    </h2>
+</doc-anchor-target>
+<p>Заполняет таблицу маршрутизации для голосового меню данными о клиентах и сотрудниках. Ранжирует сотрудников по степени их участия в работе с клиентом и автоматически выявляет ответственных.</p>
+<p>Стандартное расписание:</p>
+<p>каждый день; с 8:00:00 по 21:00:00 каждые 900 секунд.</p>
+<p>Регламентное задание обрабатывает события в базе данных, настроенные в разделе отслеживаемые взаимодействия, строит таблицу маршрутизации которая используется, как для модуля умной маршрутизации, когда клиенту генерируется персональное голосовое меню, так и для функции перехвата на ответственного, если в настройках подсистемы указан этот вариант перехвата.
+Если выключить это задание, то таблица маршрутизации станет неактуальной и вышеописанные функции будут работать с устаревшими данными.</p>
+<doc-anchor-target id="телефония-отправка-метрики-разработчикам">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#телефония-отправка-метрики-разработчикам">#</doc-anchor-trigger>
+        <span>Телефония: Отправка метрики разработчикам</span>
+    </h2>
+</doc-anchor-target>
+<p>Оно есть в списке регламентных и фоновых заданий раздела &quot;Администрирование&quot;, в настройках подсистемы телефонии его нет.</p>
+<p>Стандартное расписание:</p>
+<p>каждый 7-й день, по дням недели (воскресенье); с 20:00:00 один раз в день.</p>
+<p>Раз в сутки отправляет данные по используемым конфигурации 1С; подсистеме телефонии; версии подсистемы телефонии; версии АТС; диалплана; статистике использования объектов подсистемы.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -276,6 +355,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "4 Регламентные задания Телефония", level: 4, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Регламентные задание Телефония", level: 4, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
