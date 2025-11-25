@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817361388851">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.817372689879">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../../../static/logo.png" rel="icon">
-    <link href="../../../../resources/css/retype.css?v=3.11.0.817361388851" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=3.11.0.817372689879" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.817361388851" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=3.11.0.817372689879" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.817361388851" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=3.11.0.817372689879" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -214,7 +214,7 @@
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
-    <div class="flex items-center shrink-0">Published&nbsp;<span>2025-11-24</span></div>
+    <div class="flex items-center shrink-0">Published&nbsp;<span>2023-06-14</span></div>
 </div>
 
 <doc-anchor-target id="автоматическое-получение-эдо">
@@ -225,6 +225,9 @@
 </doc-anchor-target>
 <p>Регламентное получение ЭДО (электронного документооборота) в 1С необходимо для автоматизации процесса получения входящих электронных документов от ваших контрагентов.
 Это означает, что система сама проверяет наличие новых документов и загружает их, избавляя вас от необходимости делать это вручную.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 900 секунд, завершать через 3 600 секунд</span>
+</span>.</p>
 <doc-anchor-target id="загрузка-сведений-об-отклонениях-ис-мп">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#загрузка-сведений-об-отклонениях-ис-мп">#</doc-anchor-trigger>
@@ -233,6 +236,9 @@
 </doc-anchor-target>
 <p>Означает, что процесс автоматического получения информации об отклонениях в системе маркировки (ИС МП, «Честный ЗНАК») будет выполняться периодически,
 по расписанию, без непосредственного участия пользователя.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 3:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="загрузка-статусов-операций-сбп">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#загрузка-статусов-операций-сбп">#</doc-anchor-trigger>
@@ -241,6 +247,9 @@
 </doc-anchor-target>
 <p>Позволяет вашей учетной системе самостоятельно получать от системы СБП
 (или от вашего банка-участника СБП) актуальную информацию о том, на каком этапе находится платеж, совершенный через СБП.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 300 секунд</span>
+</span>.</p>
 <doc-anchor-target id="заполнение-параметров-работы-расширений">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#заполнение-параметров-работы-расширений">#</doc-anchor-trigger>
@@ -250,6 +259,9 @@
 <p>Регламентное задание в 1С автоматически устанавливает или обновляет настройки, необходимые для корректной работы установленных расширений конфигурации.
 Это может включать обновление ключей доступа, путей к файлам, расписаний выполнения задач внутри расширений и т. д.,
 чтобы расширения работали без ручного вмешательства.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 15 секунд</span>
+</span>.</p>
 <doc-anchor-target id="исправление-устаревших-адресов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#исправление-устаревших-адресов">#</doc-anchor-trigger>
@@ -258,6 +270,9 @@
 </doc-anchor-target>
 <p>Регламентное задание в 1С автоматически обновляет адреса в базе данных, приводя их в соответствие с актуальным форматом или справочником адресов (например, ФИАС/ГАР),
 исправляя некорректные или устаревшие записи.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день, по дням недели [воскресенье]; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="контроль-удаления-помеченных-объектов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#контроль-удаления-помеченных-объектов">#</doc-anchor-trigger>
@@ -266,6 +281,9 @@
 </doc-anchor-target>
 <p>Регламентное задание в 1С периодически проверяет, все ли объекты, помеченные для удаления, были корректно удалены,
 и при необходимости сигнализирует о возможных проблемах или автоматически удаляет их.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день; каждые 300 секунд</span>
+</span>.</p>
 <doc-anchor-target id="обновление-агрегатов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновление-агрегатов">#</doc-anchor-trigger>
@@ -274,6 +292,9 @@
 </doc-anchor-target>
 <p>Регламентное задание в 1С периодически пересчитывает и обновляет предварительно рассчитанные итоговые данные (агрегаты) в базе данных,
 чтобы ускорить формирование отчетов и повысить производительность системы.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 1:00:00 один раз в день и с 14:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="обновление-классификаторов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновление-классификаторов">#</doc-anchor-trigger>
@@ -282,6 +303,9 @@
 </doc-anchor-target>
 <p>Регламентная задача в 1С автоматически загружает и обновляет внешние справочники (классификаторы),
 используемые в системе (например, справочники валют, стран, единиц измерения), чтобы они всегда были актуальными.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 0:51:47 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="обновление-классификаторов-мчд">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновление-классификаторов-мчд">#</doc-anchor-trigger>
@@ -290,6 +314,9 @@
 </doc-anchor-target>
 <p>Регламентное задание в 1С автоматически загружает и обновляет справочники, необходимые для работы с машиночитаемыми доверенностями (МЧД),
 чтобы ваша система корректно обрабатывала электронные доверенности.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый 7-й день; с 11:55:11 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="обновление-словаря-сопоставления-номенклатуры-бэд">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновление-словаря-сопоставления-номенклатуры-бэд">#</doc-anchor-trigger>
@@ -299,6 +326,9 @@
 <p>Регламентное задание в 1С автоматически обновляет справочник, который связывает вашу внутреннюю номенклатуру
 с номенклатурой внешних систем (например, контрагентов или электронного документооборота),
 чтобы обеспечить корректный обмен данными.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 1:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="обновление-статусов-мчд">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обновление-статусов-мчд">#</doc-anchor-trigger>
@@ -307,6 +337,9 @@
 </doc-anchor-target>
 <p>Регламентное задание в 1С периодически проверяет и обновляет статусы машиночитаемых доверенностей (МЧД) в вашей системе,
 например, чтобы отразить их активацию, отзыв или завершение срока действия.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 300 секунд</span>
+</span>.</p>
 <doc-anchor-target id="обработка-очереди-запросов-по-мчд-в-распределенный-реестр-фнс">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обработка-очереди-запросов-по-мчд-в-распределенный-реестр-фнс">#</doc-anchor-trigger>
@@ -314,6 +347,9 @@
     </h2>
 </doc-anchor-target>
 <p>Регламентное задание в 1С предназначено для автоматизации процесса обработки очереди запросов по механизму взаиморасчетов (МЧД) в распределённом реестре Федеральной налоговой службы (ФНС).</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 3 600 секунд</span>
+</span>.</p>
 <doc-anchor-target id="обработка-сервисов-интеграции">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#обработка-сервисов-интеграции">#</doc-anchor-trigger>
@@ -327,6 +363,9 @@
 Передача документов: Автоматизированная отправка и получение документов, необходимых для бизнеса (например, счета-фактуры, накладные).
 Интеграция с веб-сервисами: Поддержка связи с внешними API и веб-сервисами для расширения функциональности системы.
 Контроль ошибок: Мониторинг и обработка возможных сбоев в процессе передачи данных.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 120 секунд</span>
+</span>.</p>
 <doc-anchor-target id="отложенное-обновление-иб">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#отложенное-обновление-иб">#</doc-anchor-trigger>
@@ -336,6 +375,9 @@
 <p>Отложенное обновление информационной базы — это режим обновления конфигурации и платформы 1С, при котором изменения внедряются не сразу, а откладываются на определенное время.
 Этот механизм позволяет минимизировать риски сбоя бизнес-процессов,
 вызванных ошибками обновлений, и избежать остановки рабочих процессов на предприятии.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>c 14 января 2025 г. по 1 января 2035 г. каждый день; с 23:00:00 по 23:55:00 каждые 2 400 секунд, завершать после 5:00:00, повторять после завершения через 60 секунд</span>
+</span>.</p>
 <doc-anchor-target id="отправка-и-получение-данных-ис-мп">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#отправка-и-получение-данных-ис-мп">#</doc-anchor-trigger>
@@ -345,6 +387,9 @@
 <p>Регламентное задание 1С служит для автоматической передачи и приема данных между информационной системой организации (&quot;1С&quot;) и внешним источником данных, таким как межведомственный портал (МП).
 Основная цель задания заключается в регулярном обеспечении актуализации информации, необходимой для эффективного функционирования внутренних процессов предприятия и удовлетворения требований государственных органов.</p>
 <p>Этот процесс автоматизирует взаимодействие с государственными структурами и снижает нагрузку на сотрудников, позволяя оперативно получать необходимые сведения и соблюдать требования нормативных актов.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 2:00:00 по 4:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="отправка-серверных-оповещений-клиентам">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#отправка-серверных-оповещений-клиентам">#</doc-anchor-trigger>
@@ -353,6 +398,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С используется для автоматического уведомления пользователей системы о важных событиях и изменениях в информационной базе.
 Это задание периодически выполняется на стороне сервера и отправляет оповещения пользователям посредством встроенных механизмов уведомлений 1С.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 300 секунд</span>
+</span>.</p>
 <doc-anchor-target id="отправка-электронных-документов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#отправка-электронных-документов">#</doc-anchor-trigger>
@@ -361,6 +409,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С служит для автоматизированной отправки и обмена электронными документами между организациями.</p>
 <p>Благодаря этому механизму существенно упрощаются процедуры согласования и подписания документов, сокращаются сроки прохождения документации и повышается общая эффективность деловых коммуникаций.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-замеров-времени">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-замеров-времени">#</doc-anchor-trigger>
@@ -370,6 +421,9 @@
 <p>Регламентное задание 1С используется для периодического удаления устаревшей статистики производительности системы.
 Данная процедура очищает базу данных от накопленных записей о замерах времени выполнения запросов,
 процедур и методов, освобождая пространство и повышая производительность информационной системы.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 4:00:00 по 5:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-истории-операций-очереди-чеков">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-истории-операций-очереди-чеков">#</doc-anchor-trigger>
@@ -380,6 +434,9 @@
 Такая очистка необходима для освобождения пространства в базе данных и повышения эффективности работы системы.</p>
 <p>Основная задача этого задания — удаление устаревших записей проверок, выполненных ранее. Хранение большого объема исторических данных может негативно сказываться на быстродействии информационной системы,
 увеличивая объем хранимых данных и снижая общую производительность.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-истории-платежных-операций">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-истории-платежных-операций">#</doc-anchor-trigger>
@@ -388,6 +445,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для систематической очистки устаревших записей об операциях платежей в информационной базе.
 Задача этого процесса — поддержание оптимального размера базы данных и повышение производительности системы.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-истории-рассылки-отчетов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-истории-рассылки-отчетов">#</doc-anchor-trigger>
@@ -396,6 +456,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического удаления устаревших записей о рассылке отчетов и уведомлений
 внутри информационной системы. Основное назначение этого задания — поддержка порядка в базах данных и оптимизация места хранения информации.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 3:00:00 один раз в день, завершать после 4:00:00</span>
+</span>.</p>
 <doc-anchor-target id="очистка-истории-фискальных-операций">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-истории-фискальных-операций">#</doc-anchor-trigger>
@@ -405,6 +468,9 @@
 <p>Регламентное задание 1С предназначено для автоматической очистки устаревших записей о фискальных операциях (операциях кассового аппарата, налоговой отчетности и т.п.) в информационной базе.
 Данное задание повышает производительность системы, освобождая место от ненужных исторических данных,
 уменьшая размер базы данных и предотвращая снижение производительности из-за накопления большого количества информации.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-ненужных-файлов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-ненужных-файлов">#</doc-anchor-trigger>
@@ -417,6 +483,9 @@
 Временные файлы (tmp), созданные при выгрузке-отгрузке данных.
 Лог-файлы, хранящие историю работы приложения и службы.
 Файлы отчетов и архивы предыдущих версий, потерявшие свою актуальность.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день, по дням недели [суббота, воскресенье]; с 1:00:00 по 7:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-пула-кодов-маркировки-ис-мп">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-пула-кодов-маркировки-ис-мп">#</doc-anchor-trigger>
@@ -426,6 +495,9 @@
 <p>Регламентное задание 1С предназначено для автоматической очистки и оптимизации пула (резервуар) цифровых кодов маркировки товаров,
 используемых в рамках единой национальной системы мониторинга движения продукции («Честный знак»).
 Это важная процедура, позволяющая поддерживать порядок в системе управления товародвижением и обеспечивать точность учёта и контроля маркировочных меток.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="очистка-устаревших-данных">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#очистка-устаревших-данных">#</doc-anchor-trigger>
@@ -436,6 +508,9 @@
 Эта операция помогает освободить место на диске, повысить производительность системы и поддержать актуальность хранимой информации.</p>
 <p>Основное назначение задания:</p>
 <p>Периодически удалять устаревшие объекты, такие как журналы регистрации, временные файлы, архивные копии отчетов и прочие элементы, которые утратили актуальность и перестали использоваться.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 1:00:00 по 6:00:00 каждые 900 секунд, повторять после завершения через 300 секунд</span>
+</span>.</p>
 <doc-anchor-target id="перестроение-агрегатов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#перестроение-агрегатов">#</doc-anchor-trigger>
@@ -449,6 +524,9 @@
 <p>Особенности настройки:</p>
 <p>Рекомендуется настраивать это задание на регулярное выполнение, например, каждую ночь или в часы наименьшей нагрузки на систему, чтобы минимизировать возможные задержки в работе пользователей.</p>
 <p>Выполнение перестройки агрегатов положительно влияет на производительность системы, уменьшает время ожидания выполнения сложных запросов и повышает общую устойчивость информационной среды.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день, по дням недели [суббота]; с 5:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="получение-и-отправка-электронных-писем">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#получение-и-отправка-электронных-писем">#</doc-anchor-trigger>
@@ -457,6 +535,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С отвечает за автоматический прием входящих сообщений электронной почты и отправку исходящей корреспонденции непосредственно из информационной системы 1С.
 Оно обеспечивает связь с почтовыми серверами и интеграцию почтового трафика с основными бизнес-процессами организации.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 120 секунд</span>
+</span>.</p>
 <doc-anchor-target id="получение-статусов-электронных-писем">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#получение-статусов-электронных-писем">#</doc-anchor-trigger>
@@ -465,6 +546,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С отвечает за автоматическое отслеживание и обновление состояний отправленных электронных писем в информационной системе.
 Оно получает обратную информацию от почтовых серверов о доставке, прочтении и возможных проблемах с доставкой письма.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 1 800 секунд</span>
+</span>.</p>
 <doc-anchor-target id="получение-субъектов-для-скрытия-персональных-данных">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#получение-субъектов-для-скрытия-персональных-данных">#</doc-anchor-trigger>
@@ -476,6 +560,9 @@
 <p>Суть задания:</p>
 <p>Система собирает список лиц или организаций, чьи личные данные хранятся в базе данных и требуют защиты от несанкционированного доступа.
 Затем полученные субъекты используются для последующей анонимизации или ограничения доступа к данным.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="получение-электронных-документов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#получение-электронных-документов">#</doc-anchor-trigger>
@@ -484,6 +571,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С служит для автоматического приёма и импорта электронных документов, поступивших от контрагентов или партнеров.
 Оно организует регулярный сбор документов из внешних источников (таких как операторы электронного документооборота) и занесение их в учетную систему 1С.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="получить-данные-визуализации-эдо">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#получить-данные-визуализации-эдо">#</doc-anchor-trigger>
@@ -492,6 +582,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического сбора и отображения графической информации о состоянии электронного документооборота (ЭДО) в удобной форме для пользователей системы.
 Задание формирует отчёты и графики, показывающие динамику поступления и отправления документов, их типы, состояние обработки и другую полезную статистику.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 3 600 секунд</span>
+</span>.</p>
 <doc-anchor-target id="пометка-на-удаление-транспортных-контейнеров-эдо">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#пометка-на-удаление-транспортных-контейнеров-эдо">#</doc-anchor-trigger>
@@ -501,6 +594,9 @@
 <p>Регламентное задание 1С предназначено для автоматической установки отметки на удаление для устаревших или
 некорректных транспортно-коммуникационных контейнеров (документов) в системе электронного документооборота (ЭДО).
 Транспортные контейнеры содержат пакеты электронных документов, передаваемые между участниками оборота.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="проверка-ведения-учета">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-ведения-учета">#</doc-anchor-trigger>
@@ -510,6 +606,9 @@
 <p>Регламентное задание 1С предназначено для автоматического контроля правильности и полноты заполнения учетных данных в информационной базе.
 Оно проводит проверку соответствия введенной информации установленным правилам бухгалтерского и налогового учета,
 а также требованиям внутреннего регламента предприятия.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 20:00:00 по 8:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="проверка-контрагентов-на-подключение-к-1с-эдо">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-контрагентов-на-подключение-к-1с-эдо">#</doc-anchor-trigger>
@@ -518,6 +617,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического выявления компаний-партнеров, которые подключились к системе электронного документооборота
 (ЭДО) и готовы осуществлять обмен юридически значимой документацией в электронном виде.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="проверка-контрагентов-на-подключение-к-1с-эдо-выполнение">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-контрагентов-на-подключение-к-1с-эдо-выполнение">#</doc-anchor-trigger>
@@ -526,6 +628,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С осуществляет автоматическую проверку контрагентов вашей организации на предмет их участия в системе электронного документооборота (ЭДО) на платформе 1С.
 Основная цель задания — выявление потенциальных участников обмена электронными документами среди ваших поставщиков, покупателей и иных партнеров.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>один день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="проверка-кэша-состояний-фнс">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-кэша-состояний-фнс">#</doc-anchor-trigger>
@@ -534,6 +639,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для регулярного контроля и актуализации локального кэша налоговых данных, содержащего статусы различных обращений в Федеральную налоговую службу (ФНС).
 Это включает проверку квитанций о приеме деклараций, статусов сверок, постановок на налоговый учёт и других взаимодействий с органами ФНС.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 3:03:21 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="проверка-новых-электронных-документов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-новых-электронных-документов">#</doc-anchor-trigger>
@@ -542,6 +650,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С служит для автоматического обнаружения и первичной обработки вновь прибывших электронных документов, поступающих в организацию через операторов электронного документооборота (ЭДО).
 Оно позволяет быстро находить входящие документы и проверять их корректность перед дальнейшим использованием в системе учета.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 1 800 секунд</span>
+</span>.</p>
 <doc-anchor-target id="проверка-статусов-документов-вгисмт">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#проверка-статусов-документов-вгисмт">#</doc-anchor-trigger>
@@ -551,6 +662,9 @@
 <p>Регламентное задание 1С &quot;Проверка статусов документов ВГИСМТ&quot; предназначено для автоматического контроля и обновления
 статусов обрабатываемых документов в системах Государственной интегрированной информационной системы менеджмента транспортной отрасли (ВГИСМТ).
 Основная задача задания — постоянное наблюдение за состоянием документов, находящихся в системе, и внесение изменений в информационную базу при получении обновленной информации.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 3 600 секунд</span>
+</span>.</p>
 <doc-anchor-target id="продление-достоверности-подписей">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#продление-достоверности-подписей">#</doc-anchor-trigger>
@@ -559,6 +673,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического продления сроков действия квалифицированных электронных подписей (КЭП), использующихся в документах системы.
 Поскольку сертификаты имеют ограниченный срок действия, данная задача автоматически контролирует их актуальность и продлевает подписи до истечения их годности.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="рассылка-электронных-чеков">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#рассылка-электронных-чеков">#</doc-anchor-trigger>
@@ -567,6 +684,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматической отправки покупателям копий кассовых чеков и бланков строгой отчетности (БСО) в электронном виде.
 Это задание обеспечивает соблюдение законодательства о применении контрольно-кассовой техники (ККТ) и упрощает взаимодействие с клиентами.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 300 секунд</span>
+</span>.</p>
 <doc-anchor-target id="скрытие-персональных-данных-субъектов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#скрытие-персональных-данных-субъектов">#</doc-anchor-trigger>
@@ -575,6 +695,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С &quot;Скрытие персональных данных субъектов&quot; служит для автоматического маскирования или удаления конфиденциальных данных физических лиц (ФИО, паспортные данные, номера телефонов и прочее) в базе данных 1С.
 Главная цель задания — защита частной информации и выполнение требований российского законодательства о персональных данных (№152-ФЗ).</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="слияние-индекса-ппд">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#слияние-индекса-ппд">#</doc-anchor-trigger>
@@ -583,6 +706,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С служит для объединения и оптимизации индекса полнотекстового поиска документов и данных в системе 1С.
 Основная цель задания — улучшение производительности поисковых запросов и повышение удобства навигации по большому объему информации.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 1:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="старт-отложенных-процессов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#старт-отложенных-процессов">#</doc-anchor-trigger>
@@ -591,6 +717,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для запуска задач и процессов, запланированных на будущее, но ещё не начатых.
 Такие процессы создаются в системе и ожидают своего часа исполнения, например, массовые начисления зарплаты, закрытие месяца или запуск специальных отчетов.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 7:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="уведомление-исполнителей-о-новых-задачах">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#уведомление-исполнителей-о-новых-задачах">#</doc-anchor-trigger>
@@ -599,6 +728,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического информирования сотрудников о появлении новых поручений, заданий или задач в системе 1С.
 Основная цель задания — своевременное доведение информации до работников, чтобы они могли незамедлительно приступить к выполнению поставленных задач.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 8:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="удаление-неиспользованных-кодов-маркировки-ис-мп">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#удаление-неиспользованных-кодов-маркировки-ис-мп">#</doc-anchor-trigger>
@@ -608,6 +740,9 @@
 <p>Регламентное задание 1С предназначено для автоматического очищения информационной базы от
 ненужных кодов маркировки товаров, выданных Федеральным центром маркированию товаров (&quot;Честный знак&quot;), но не использованных в реальной практике.
 Такое задание помогает поддерживать аккуратность базы данных и соответствует требованиям Федерального закона № 487-ФЗ о маркировке товаров.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 2:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="удаление-помеченных-объектов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#удаление-помеченных-объектов">#</doc-anchor-trigger>
@@ -616,6 +751,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического удаления элементов информационной базы, которые были отмечены пользователями или программой как подлежащие уничтожению.
 Такое задание позволяет поддерживать порядок в базе данных, освобождая пространство и повышая производительность системы.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; с 4:00:00 по 6:00:00 один раз в день, завершать после 6:00:00</span>
+</span>.</p>
 <doc-anchor-target id="удаление-устаревших-параметров-работы-версий-расширений">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#удаление-устаревших-параметров-работы-версий-расширений">#</doc-anchor-trigger>
@@ -624,6 +762,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического удаления из базы данных параметров и настроек расширений, которые больше не применяются или устарели вследствие замены на новые версии или изменения архитектуры приложений.
 Использование данного задания помогает поддерживать чистоту базы данных и повысить её производительность.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="установка-периода-рассчитанных-итогов">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-периода-рассчитанных-итогов">#</doc-anchor-trigger>
@@ -632,6 +773,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С предназначено для автоматического расчёта и сохранения промежуточных итогов регистра бухгалтерского или налогового учёта за указанный временной интервал. Оно создает вспомогательные таблицы с суммарными показателями,
 такими как обороты, остатки и итоги, что значительно ускоряет построение отчётов и выполнение сложных аналитических запросов.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день, 5-го числа месяца; с 1:00:00 один раз в день</span>
+</span>.</p>
 <doc-anchor-target id="установка-порядка-отложенного-обновления-в-модели-сервиса">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#установка-порядка-отложенного-обновления-в-модели-сервиса">#</doc-anchor-trigger>
@@ -640,6 +784,9 @@
 </doc-anchor-target>
 <p>Регламентное задание 1С служит для автоматической настройки очередности и приоритетов обновления данных в сервисе (например, агрегировании данных, расчете итогов, обслуживании индексов и других регламентных задачах).
 Такой подход позволяет управлять нагрузкой на систему и распределять приоритеты выполнения регламентных операций, гарантируя равномерную и плавную работу.</p>
+<p>Стандартное расписание: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border h-6 px-2 text-xs rounded-md">
+    <span>каждый день; каждые 300 секунд</span>
+</span>.</p>
 
                                 
                                 <!-- Required only on API pages -->
