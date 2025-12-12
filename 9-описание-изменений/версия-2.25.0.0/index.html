@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.818757148226">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.818852016277">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Изменения в версии 2.25.0.0</title>
     <meta name="title" content="Изменения в версии 2.25.0.0">
-    <meta name="description" content="Доработан обмен с .">
+    <meta name="description" content="Обновлена подсистема Электронного документооборота до версии 1.9.15.82.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/9-описание-изменений/версия-2.25.0.0/">
@@ -21,22 +21,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/Manual/9-описание-изменений/версия-2.25.0.0/">
     <meta property="og:title" content="Изменения в версии 2.25.0.0">
-    <meta property="og:description" content="Доработан обмен с .">
+    <meta property="og:description" content="Обновлена подсистема Электронного документооборота до версии 1.9.15.82.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vodavoz.github.io/Manual/9-описание-изменений/версия-2.25.0.0/">
     <meta property="twitter:title" content="Изменения в версии 2.25.0.0">
-    <meta property="twitter:description" content="Доработан обмен с .">
+    <meta property="twitter:description" content="Обновлена подсистема Электронного документооборота до версии 1.9.15.82.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../static/logo.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.818757148226" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.818852016277" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.818757148226" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.818852016277" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.818757148226" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.818852016277" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -201,6 +201,25 @@
     <div class="flex items-center shrink-0">Published&nbsp;<span>2025-12-01</span></div>
 </div>
 
+<doc-anchor-target id="общие-изменения">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#общие-изменения">#</doc-anchor-trigger>
+        <span>Общие изменения</span>
+    </h2>
+</doc-anchor-target>
+<p>Обновлена подсистема Электронного документооборота до версии 1.9.15.82.</p>
+<p>Обновлена библиотека подключаемого оборудования до версии 3.2.7.34.</p>
+<p>Добавлена ставка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>22% НДС</span>
+</span> и её учет. Ставка действует в замен 20% НДС с 01.01.26го и не требует изменений в карточке товара.</p>
+<doc-anchor-target id="оптимизация">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#оптимизация">#</doc-anchor-trigger>
+        <span>Оптимизация</span>
+    </h2>
+</doc-anchor-target>
+<p>Изменены общие модули подсистемы водавоз, исполняемый код структурирован, добавлено описание, часть процедур претерпела измения, была переписана или переименована.</p>
+<p>Переделана логика формирования печатных документов по заказу, оптимизирован и структурирован код, уменьшено количество записей документов и улучшена скорость работы.</p>
 <doc-anchor-target id="мобильные-приложения">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#мобильные-приложения">#</doc-anchor-trigger>
@@ -248,9 +267,9 @@
 <p>Исправлена ошибка формирования чека возврата товаров на проверку маркировки.</p>
 <p>Доработана логика разрешительного режима, добавлена поддержка модуля локальной проверки, исключены ситуации с передачей кодов без офлайн проверки.</p>
 <p>Доработана логика автоматической фискализации, исключены ситуации дублирования фискального чека в ОФД.</p>
-<doc-anchor-target id="оптимизация">
+<doc-anchor-target id="оптимизация-1">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#оптимизация">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#оптимизация-1">#</doc-anchor-trigger>
         <span>Оптимизация</span>
     </h2>
 </doc-anchor-target>
