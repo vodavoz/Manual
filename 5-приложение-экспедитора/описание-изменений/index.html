@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.824544452994">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827665305245">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.12.0">
+    <meta name="generator" content="Retype 4.4.0">
 
     <!-- Primary Meta Tags -->
     <title>Описание изменений</title>
@@ -17,692 +18,389 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/5-приложение-экспедитора/описание-изменений/">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/Manual/5-приложение-экспедитора/описание-изменений/">
     <meta property="og:title" content="Описание изменений">
     <meta property="og:description" content="Исправлена ошибка интерфейса 1.7.4">
+    <meta property="og:site_name" content="Работа с программой">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://vodavoz.github.io/Manual/5-приложение-экспедитора/описание-изменений/">
-    <meta property="twitter:title" content="Описание изменений">
-    <meta property="twitter:description" content="Исправлена ошибка интерфейса 1.7.4">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vodavoz.github.io/Manual/5-приложение-экспедитора/описание-изменений/">
+    <meta name="twitter:title" content="Описание изменений">
+    <meta name="twitter:description" content="Исправлена ошибка интерфейса 1.7.4">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/logo.png" />
-    <link href="../../resources/css/retype.css?v=3.12.0.824544452994" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.4.0.827665305245" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.12.0.824544452994" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.12.0.824544452994" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.4.0.827665305245" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.4.0.827665305245" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
-        <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
-        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
-            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
-                <!-- Mobile menu button skeleton -->
-                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
-                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
-        
-                <!-- Logo -->
-                <div class="flex items-center justify-between h-full py-2 md:w-75">
-                    <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-xl">
-                            <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Работа с программой</span>
-                        </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Водавоз</span>
-                    </div>
-        
-                    <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="https://vodavoz.github.io/Manual/" class="flex items-center leading-snug text-xl">
+                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Работа с программой</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Водавоз</span>
                 </div>
-        
-                <div class="flex justify-between md:grow">
-                    <!-- Top Nav -->
-                    <nav id="retype-header-nav" class="hidden md:flex">
-                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="http://vodavoz.ru/">vodavoz.ru</a>
-                            </li>
-        
-                        </ul>
-                    </nav>
-        
-                    <div v-cloak class="flex justify-end grow">
-                        <div id="retype-mobile-search-button"></div>
-                        <doc-search-desktop></doc-search-desktop>
-        
-                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
-                        <doc-history></doc-history>
-                    </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="http://vodavoz.ru/">vodavoz.ru</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
                 </div>
             </div>
-        </header>
-    
-    
-        <div id="retype-container" class="container relative flex bg-white">
-            <!-- Sidebar Skeleton -->
-            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
-            
-                <div class="flex items-center h-16 px-6">
-                    <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-none focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
-                </div>
-            
-                <div class="pl-6 mt-1 mb-4">
-                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                </div>
-            
-                <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+            <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                    <span class="text-xs whitespace-nowrap">Powered by</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="http://vodavoz.ru/">vodavoz.ru</a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+        
                     <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
                         <span class="text-xs whitespace-nowrap">Powered by</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
                     </a>
                 </div>
-            </div>
-            
-            <!-- Sidebar component -->
-            <doc-sidebar v-cloak>
-                <template #sidebar-footer>
-                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
-            
-                        <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
-                            <nav>
-                                <ul class="flex flex-wrap justify-center items-center">
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="http://vodavoz.ru/">vodavoz.ru</a>
-                                    </li>
-            
-                                </ul>
-                            </nav>
-                        </div>
-            
-                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
-                            <span class="text-xs whitespace-nowrap">Powered by</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
-                        </a>
-                    </div>
-                </template>
-            </doc-sidebar>
-    
-            <div class="grow min-w-0 bg-body-bg">
-                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
-                <div class="flex">
-                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
-                        <main class="relative pb-12 lg:pt-2">
-                            <div class="retype-markdown" id="retype-content">
-                                <!-- Rendered if sidebar right is enabled -->
-                                <div id="retype-sidebar-right-toggle"></div>
-                                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
-                                    <ol role="list">
-                                        <li class="pr-4">
-                                            <a href="../../" class="pr-4">
-                                                Добро пожаловать на сайт
-                                            </a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
-                                            </svg>
-                                        </li>
-                                        <li class="pr-4">
-                                            <a href="../../5-приложение-экспедитора/" class="pr-4">
-                                                Приложение 1​с Экспедитор
-                                            </a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
-                                            </svg>
-                                        </li>
-                                        <li class="pr-4">
-                                            <a href="../../5-приложение-экспедитора/описание-изменений/" class="pr-4">
-                                                Описание изменений
-                                            </a>
-                                        </li>
-                                    </ol>
-                                </nav>
-                
-                                <!-- Page content  -->
-<doc-anchor-target id="описание-изменений" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#описание-изменений">#</doc-anchor-trigger>
-        <span>Описание изменений</span>
-    </h1>
-</doc-anchor-target>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../../" class="pr-4">
+                                Добро пожаловать на сайт
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../5-приложение-экспедитора/" class="pr-4">
+                                Приложение 1​с Экспедитор
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../../5-приложение-экспедитора/описание-изменений/" class="pr-4">
+                                Описание изменений
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Page content  -->
+<h1 id="описание-изменений">Описание изменений</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
     <div class="flex items-center shrink-0">Published&nbsp;<span>2025-07-14</span></div>
 </div>
 
-<doc-anchor-target id="изменение-180">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-180">#</doc-anchor-trigger>
-        <span>Изменение 1.8.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-180">Изменение 1.8.0</h2>
 <p>Исправлена ошибка интерфейса 1.7.4</p>
-<doc-anchor-target id="изменение-181">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-181">#</doc-anchor-trigger>
-        <span>Изменение 1.8.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-181">Изменение 1.8.1</h2>
 <p>Добавлена проверка версии ЦБ.</p>
 <p>Доработан механизм работы причин отключения.</p>
 <p>Исправлен обрабочик неудачного обращения к базе лицензирования.</p>
-<doc-anchor-target id="изменение-182">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-182">#</doc-anchor-trigger>
-        <span>Изменение 1.8.2</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-182">Изменение 1.8.2</h2>
 <p>Добавлена проверка понижения версии при выводе сообщения обновления.</p>
-<doc-anchor-target id="изменение-184">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-184">#</doc-anchor-trigger>
-        <span>Изменение 1.8.4</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-184">Изменение 1.8.4</h2>
 <p>Добавлен параметр chart_time_work отвечающий за передачу графика работы клиента.</p>
 <p>Добавлен Gtin для номенклатуры для разбора кодов маркировки.</p>
 <p>Переделан обработчик сканирования кодов, добавлены различные сообщения при сканировании. Добавлена проверка на сканирование не корректных кодов номенклатуры. Добавлены обработчики по количеству кодов и дублей при сканировании.</p>
-<doc-anchor-target id="изменение-185">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-185">#</doc-anchor-trigger>
-        <span>Изменение 1.8.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-185">Изменение 1.8.5</h2>
 <p>При обмене данными добавлен параметр dont_control_mark, используется для отключение необходимости сканирования кодов маркировки для организаций которым коды списываем по ОСУ (юр лица).</p>
 <p>Изменена видимость формы сканирования штрихкодов.</p>
-<doc-anchor-target id="изменение-186">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-186">#</doc-anchor-trigger>
-        <span>Изменение 1.8.6</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-186">Изменение 1.8.6</h2>
 <p>Изменен обработчик считывания штрихкодов</p>
-<doc-anchor-target id="изменение-187">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-187">#</doc-anchor-trigger>
-        <span>Изменение 1.8.7</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-187">Изменение 1.8.7</h2>
 <p>Переделана работа штрихкода, добавлено сканирование до момента отгрузки товара.</p>
-<doc-anchor-target id="изменение-188">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-188">#</doc-anchor-trigger>
-        <span>Изменение 1.8.8</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-188">Изменение 1.8.8</h2>
 <p>Добавлена совместимость с Торговыми точками. Добавлена возможность указания возврата товара.</p>
 <p>Доработана видимость команды сканирования</p>
-<doc-anchor-target id="изменение-189">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-189">#</doc-anchor-trigger>
-        <span>Изменение 1.8.9</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-189">Изменение 1.8.9</h2>
 <p>Доработана видимость команд сканирования</p>
-<doc-anchor-target id="изменение-192">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-192">#</doc-anchor-trigger>
-        <span>Изменение 1.9.2</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-192">Изменение 1.9.2</h2>
 <p>Добавлена статистика по продажам маркируемой продукции.</p>
 <p>Добавлен формат даты на выбор даты доставки, для исключения региональных проблем</p>
-<doc-anchor-target id="изменение-193">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-193">#</doc-anchor-trigger>
-        <span>Изменение 1.9.3</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-193">Изменение 1.9.3</h2>
 <p>Изменена запись номенклатуры при получении</p>
 <p>Изменена форма заказа</p>
 <p>Добавлен криптохвост при сканировании кодов</p>
-<doc-anchor-target id="изменение-194">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-194">#</doc-anchor-trigger>
-        <span>Изменение 1.9.4</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-194">Изменение 1.9.4</h2>
 <p>Исправлена ошибка ссылочности при перезаписи номенклатуры.</p>
-<doc-anchor-target id="изменение-195">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-195">#</doc-anchor-trigger>
-        <span>Изменение 1.9.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-195">Изменение 1.9.5</h2>
 <p>Изменен формат передачи штрихкода, с обычной строки на строку формата Base64</p>
-<doc-anchor-target id="изменение-1100">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1100">#</doc-anchor-trigger>
-        <span>Изменение 1.10.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1100">Изменение 1.10.0</h2>
 <p>Добавлено СБП</p>
-<doc-anchor-target id="изменение-1101">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1101">#</doc-anchor-trigger>
-        <span>Изменение 1.10.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1101">Изменение 1.10.1</h2>
 <p>Добавлен адрес сайта с инструкцией и инетрвалы доставки</p>
-<doc-anchor-target id="изменение-1102">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1102">#</doc-anchor-trigger>
-        <span>Изменение 1.10.2</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1102">Изменение 1.10.2</h2>
 <p>Добавлены возможности отключения звонков и отмены доставки у водителей.</p>
 <p>Изменен внешний вид оплат.</p>
 <p>Добавлены отступы перед командой СБП.</p>
-<doc-anchor-target id="изменение-1110">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1110">#</doc-anchor-trigger>
-        <span>Изменение 1.11.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1110">Изменение 1.11.0</h2>
 <p>Добавлены команды по загрузке и получению статистики на форму МЛ и настроек. Конечный релиз для СБП</p>
-<doc-anchor-target id="изменение-1111">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1111">#</doc-anchor-trigger>
-        <span>Изменение 1.11.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1111">Изменение 1.11.1</h2>
 <p>Изменена ссылка на приложение экспедитора</p>
-<doc-anchor-target id="изменение-1120">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1120">#</doc-anchor-trigger>
-        <span>Изменение 1.12.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1120">Изменение 1.12.0</h2>
 <p>Добавлена возможность выкупа тары из формы оплаты.</p>
 <p>Добавлена возможность создания заказов курьером.</p>
-<doc-anchor-target id="изменение-1121">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1121">#</doc-anchor-trigger>
-        <span>Изменение 1.12.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1121">Изменение 1.12.1</h2>
 <p>Исправлены ошибки в логике заполнения ТЧ.</p>
 <p>Доработана логика добавления тары на выкуп в заказ.</p>
-<doc-anchor-target id="изменение-1122">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1122">#</doc-anchor-trigger>
-        <span>Изменение 1.12.2</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1122">Изменение 1.12.2</h2>
 <p>Разрешено изменение цены в товаре.</p>
 <p>Добавлен пересчет цены по количеству.</p>
-<doc-anchor-target id="изменение-1124">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1124">#</doc-anchor-trigger>
-        <span>Изменение 1.12.4</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1124">Изменение 1.12.4</h2>
 <p>Доработана передача номера телефона.</p>
 <p>Добавлено поле для показа состава заказа.</p>
-<doc-anchor-target id="изменение-1125">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-1125">#</doc-anchor-trigger>
-        <span>Изменение 1.12.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-1125">Изменение 1.12.5</h2>
 <p>Исправлена ошибка предупреждения по дате отключения, когда предупреждало вне зависимости от количества дней предупреждения.</p>
-<doc-anchor-target id="изменение-200">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-200">#</doc-anchor-trigger>
-        <span>Изменение 2.0.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-200">Изменение 2.0.0</h2>
 <p>Обновлено сканирование, добавлена функция работы с внешними приложениями для сканирования.</p>
 <p>Обновлена форма оплат, проведена адаптация для узких экранов.</p>
-<doc-anchor-target id="изменение-210">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-210">#</doc-anchor-trigger>
-        <span>Изменение 2.1.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-210">Изменение 2.1.0</h2>
 <p>Добавлен режим работы кладовщика.</p>
 <p>Добавлен счетчик отсканированных товаров.</p>
 <p>Изменена логика обработки цены по заказам.</p>
-<doc-anchor-target id="изменение-221">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-221">#</doc-anchor-trigger>
-        <span>Изменение 2.2.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-221">Изменение 2.2.1</h2>
 <p>Исправлены ошибки совместимости ТСД и передачи данных.</p>
 <p>Доработан интерфейс установки драйверов для ТСД и его внешний вид.</p>
-<doc-anchor-target id="изменение-230">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-230">#</doc-anchor-trigger>
-        <span>Изменение 2.3.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-230">Изменение 2.3.0</h2>
 <p>Исправлены ошибки передачи цены тары, удаления строк товара.</p>
 <p>Вкладка &quot;Залоговая тара&quot; переименована в &quot;Оплата тары&quot;.</p>
-<doc-anchor-target id="изменение-231">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-231">#</doc-anchor-trigger>
-        <span>Изменение 2.3.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-231">Изменение 2.3.1</h2>
 <p>Исправлена ошибка пересчета суммы к оплате при безналичном расчете, в случаях когда изменялось количество покупаемой тары.</p>
-<doc-anchor-target id="изменение-235">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-235">#</doc-anchor-trigger>
-        <span>Изменение 2.3.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-235">Изменение 2.3.5</h2>
 <p>Добавлено возможность автокорректировки количества отсканированных марок с контролем продаваемой продукции.</p>
 <p>Добавлена команда очистки отсканированных марок.</p>
 <p>Улучшена команда очистки данных в устройстве, теперь не требуется перезапуск приложения.</p>
 <p>Добавлен пересчет количества требуемых марок для сканирования при изменении количества маркируемого товара.</p>
-<doc-anchor-target id="изменение-240">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-240">#</doc-anchor-trigger>
-        <span>Изменение 2.4.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-240">Изменение 2.4.0</h2>
 <p>Изменение версии
 Исправлена ошибка, при получении точек без маркированной продукции</p>
-<doc-anchor-target id="изменение-242">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-242">#</doc-anchor-trigger>
-        <span>Изменение 2.4.2</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-242">Изменение 2.4.2</h2>
 <p>Исправлена очистка кодов при отгрузке ТН с режима экспедитор.</p>
 <p>Исправлена доступность отгрузки экспедитором без сканирования.</p>
-<doc-anchor-target id="изменение-243">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-243">#</doc-anchor-trigger>
-        <span>Изменение 2.4.3</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-243">Изменение 2.4.3</h2>
 <p>Исправлена проблема базового сканера.</p>
 <p>Скрыта команда сброса точки доставки.</p>
 <p>Повышен релиз платформы мп, до 8.3.25</p>
-<doc-anchor-target id="изменение-245">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-245">#</doc-anchor-trigger>
-        <span>Изменение 2.4.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-245">Изменение 2.4.5</h2>
 <p>Исправление ошибки установки на ряд устройств.</p>
-<doc-anchor-target id="изменение-248">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-248">#</doc-anchor-trigger>
-        <span>Изменение 2.4.8</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-248">Изменение 2.4.8</h2>
 <p>Исправление совместимости с упаковками</p>
-<doc-anchor-target id="изменение-250">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-250">#</doc-anchor-trigger>
-        <span>Изменение 2.5.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-250">Изменение 2.5.0</h2>
 <p>Исправлена ошибка сброса кодов маркировки.</p>
 <p>Удленнена строка ссылки на обновление, что бы было возможно переходить по универсальной ссылке обновления.</p>
 <p>Повышена версия платформы 1с до 8.3.25.52</p>
-<doc-anchor-target id="изменение-260">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-260">#</doc-anchor-trigger>
-        <span>Изменение 2.6.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-260">Изменение 2.6.0</h2>
 <p>Добавлено сканирование накладных для быстрого перехода в режиме кладовщика.</p>
 <p>Доработан механизм скрытых звонков.</p>
 <p>Добавлена возможность загрузки заказов в режиме кладовщика.</p>
 <p>Устранена проблема с установкой на Редми.</p>
-<doc-anchor-target id="изменение-261">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-261">#</doc-anchor-trigger>
-        <span>Изменение 2.6.1</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-261">Изменение 2.6.1</h2>
 <p>Доработан внешний вид оплаченных заказов</p>
-<doc-anchor-target id="изменение-263">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-263">#</doc-anchor-trigger>
-        <span>Изменение 2.6.3</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-263">Изменение 2.6.3</h2>
 <p>Правки визуала</p>
-<doc-anchor-target id="изменение-266">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-266">#</doc-anchor-trigger>
-        <span>Изменение 2.6.6</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-266">Изменение 2.6.6</h2>
 <p>Исправлена ошибка связи с базой.</p>
 <p>Уменьшен таймаут получения МЛ.</p>
 <p>Добавлено сканирование у Юр. Лиц.</p>
 <p>Исправлена загрузка товаров.</p>
 <p>Обновлена версия платформы до 8.3.26.33</p>
-<doc-anchor-target id="изменение-267">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-267">#</doc-anchor-trigger>
-        <span>Изменение 2.6.7</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-267">Изменение 2.6.7</h2>
 <p>Добавлено понятие времени ожидания сервера, по умолчанию 15 секунд.</p>
-<doc-anchor-target id="изменение-268">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-268">#</doc-anchor-trigger>
-        <span>Изменение 2.6.8</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-268">Изменение 2.6.8</h2>
 <p>Возвращен команда перствления строк. Исправлена статистика по МЛ.</p>
-<doc-anchor-target id="изменение-270">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-270">#</doc-anchor-trigger>
-        <span>Изменение 2.7.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-270">Изменение 2.7.0</h2>
 <p>Доработано сканирование. Добавлена совместимость заказами дистрибьюторов.</p>
-<doc-anchor-target id="изменение-275">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-275">#</doc-anchor-trigger>
-        <span>Изменение 2.7.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-275">Изменение 2.7.5</h2>
 <p>Если поле &quot;Перезвонить за&quot; пустое, то иконка не выводится.</p>
 <p>Если меньше 10 минут, то зеленая трубка.</p>
 <p>Если 10-30 минут, то желтая.</p>
 <p>Если больше 30 то красная.</p>
-<doc-anchor-target id="изменение-277">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-277">#</doc-anchor-trigger>
-        <span>Изменение 2.7.7</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-277">Изменение 2.7.7</h2>
 <p>Возвращена нумерация заявок.</p>
 <p>Возвращена кнопка сброса заявки.</p>
-<doc-anchor-target id="изменение-279">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-279">#</doc-anchor-trigger>
-        <span>Изменение 2.7.9</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-279">Изменение 2.7.9</h2>
 <p>Цветовая раскраска пернесена в правый угол.</p>
 <p>Возвращена заявок на которые поехал водитель.</p>
 <p>Исправлена проблем сканирования с преобразованием &quot; в @ из-за настроек клавиатуры.</p>
-<doc-anchor-target id="изменение-280">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-280">#</doc-anchor-trigger>
-        <span>Изменение 2.8.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-280">Изменение 2.8.0</h2>
 <p>Добавлено распознавание КИГУ</p>
-<doc-anchor-target id="изменение-282">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-282">#</doc-anchor-trigger>
-        <span>Изменение 2.8.2</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-282">Изменение 2.8.2</h2>
 <p>Добавлено представление для выделенных заказов и внутренних заявок.</p>
-<doc-anchor-target id="изменение-284">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-284">#</doc-anchor-trigger>
-        <span>Изменение 2.8.4</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-284">Изменение 2.8.4</h2>
 <p>Исправлена ошибка с видом продажи тары.</p>
-<doc-anchor-target id="изменение-285">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-285">#</doc-anchor-trigger>
-        <span>Изменение 2.8.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-285">Изменение 2.8.5</h2>
 <p>Исправлена ошибка лицензирования и автономной работы.</p>
-<doc-anchor-target id="изменение-286">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-286">#</doc-anchor-trigger>
-        <span>Изменение 2.8.6</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-286">Изменение 2.8.6</h2>
 <p>Изменение проверки организации владельца марки.</p>
 <p>Изменение алгоритма проверки кода маркировки, исключение скрытых символов, что приводило к сбоям при работе на определенных тсд</p>
-<doc-anchor-target id="изменение-289">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-289">#</doc-anchor-trigger>
-        <span>Изменение 2.8.9</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-289">Изменение 2.8.9</h2>
 <p>Реализована возможность удаления кодов при сканировании.</p>
 <p>Добавлен драйвер клеверенс.</p>
-<doc-anchor-target id="изменение-290">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-290">#</doc-anchor-trigger>
-        <span>Изменение 2.9.0</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-290">Изменение 2.9.0</h2>
 <p>Настроено отображение и работ удаления кодов.</p>
-<doc-anchor-target id="изменение-294">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-294">#</doc-anchor-trigger>
-        <span>Изменение 2.9.4</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-294">Изменение 2.9.4</h2>
 <p>Внесена статистика по кладовщику</p>
-<doc-anchor-target id="изменение-295">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-295">#</doc-anchor-trigger>
-        <span>Изменение 2.9.5</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-295">Изменение 2.9.5</h2>
 <p>Увеличено поле таймаута, настроен внешний вид, убраны данные отладки.</p>
-<doc-anchor-target id="изменение-296">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-296">#</doc-anchor-trigger>
-        <span>Изменение 2.9.6</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-296">Изменение 2.9.6</h2>
 <p>Доработан разбор КИТу при не корректной отдачи</p>
-<doc-anchor-target id="изменение-297">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-297">#</doc-anchor-trigger>
-        <span>Изменение 2.9.7</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-297">Изменение 2.9.7</h2>
 <p>Исправлен разбор  КИТу с 20 знаками из-за лидирующих нулей</p>
-<doc-anchor-target id="изменение-298">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-298">#</doc-anchor-trigger>
-        <span>Изменение 2.9.8</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-298">Изменение 2.9.8</h2>
 <p>Версия с поддержкой кода КИТу с 2 лидирующими нулями</p>
-<doc-anchor-target id="изменение-299">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-299">#</doc-anchor-trigger>
-        <span>Изменение 2.9.9</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-299">Изменение 2.9.9</h2>
 <p>Исправление ошибок разбора версии 2.9.8</p>
-<doc-anchor-target id="изменение-2910">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-2910">#</doc-anchor-trigger>
-        <span>Изменение 2.9.10</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-2910">Изменение 2.9.10</h2>
 <p>Добавлена команда запроса Gtin в настройки экспедитора</p>
-<doc-anchor-target id="изменение-2911">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#изменение-2911">#</doc-anchor-trigger>
-        <span>Изменение 2.9.11</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="изменение-2911">Изменение 2.9.11</h2>
 <p>Возвращены сообщения о сканировании</p>
 <p>Добавлена возможность отключения переключателя &quot;Нет кодов&quot; для водителя.</p>
 
-                                
-                                <!-- Required only on API pages -->
-                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
-                            </div>
-                            <footer id="retype-content-footer" class="clear-both">
-                            
-                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
-                                    <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../5-приложение-экспедитора/2-инструкции-экспедитора/6-частые-вопросы/">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                            <span>
-                                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Частые вопросы</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                            
-                                    <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../7-общие-инструкции-по-работе/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Общие инструкции по работе</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
-                                    </div>
-                                </nav>
-                            </footer>
-                        </main>
                 
-                        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
-                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
-                                <div id="retype-footer-links" class="print:hidden">
-                                    <ul class="flex flex-wrap items-center text-sm">
-                                    </ul>
-                                </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>Все права защищены</p></div>
-                            </footer>
-                        </div>
-                    </div>
-                
-                    <!-- Rendered if sidebar right is enabled -->
-                    <!-- Sidebar right skeleton-->
-                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
-                        <div class="pl-5">
-                            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                        </div>
-                    </div>
-                
-                    <!-- User should be able to hide sidebar right -->
-                    <doc-sidebar-right v-cloak></doc-sidebar-right>
-                </div>
-
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
             </div>
+            <footer id="retype-content-footer" class="clear-both">
+            
+                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../5-приложение-экспедитора/2-инструкции-экспедитора/6-частые-вопросы/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                            <span>
+                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                <span class="block mt-1">Частые вопросы</span>
+                            </span>
+                        </a>
+                    </div>
+            
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../7-общие-инструкции-по-работе/">
+                            <span>
+                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
+                                <span class="block mt-1">Общие инструкции по работе</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                        </a>
+                    </div>
+                </nav>
+            </footer>
+        </main>
+
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
+                </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>Все права защищены</p></div>
+            </footer>
         </div>
-    
-        <doc-search-mobile></doc-search-mobile>
-        <doc-back-to-top></doc-back-to-top>
     </div>
+
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
+
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
 
 
     <div id="retype-overlay-target"></div>
