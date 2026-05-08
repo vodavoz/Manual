@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827665986705">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831546230502">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>Настройки и описание форм и видов чеков</title>
@@ -17,6 +17,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/3-руководства-пользователей/3-диспетчер/работа-с-кассой/1-настройки-и-описание-форм-и-видов-чеков/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://vodavoz.github.io/Manual/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -38,14 +39,17 @@
     <meta name="twitter:image" content="https://vodavoz.github.io/Manual/images/диспетчер/кас.gif">
     <meta name="twitter:image:alt" content="Настройки и описание форм и видов чеков">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://vodavoz.github.io/Manual/3-руководства-пользователей/3-диспетчер/работа-с-кассой/1-настройки-и-описание-форм-и-видов-чеков.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../../static/logo.png" />
-    <link href="../../../../resources/css/retype.css?v=4.4.0.827665986705" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=4.5.3.831546230502" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -145,7 +149,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -189,6 +193,8 @@
                         </li>
                     </ol>
                 </nav>
+
+                <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
 <h1 id="настройки-и-описание-форм-и-видов-чеков">Настройки и описание форм и видов чеков</h1>
@@ -248,16 +254,19 @@
     <span>Чеки</span>
 </span>:</p>
 <ul>
-<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Все</span>
 </span> - в табличном поле будут отражены все чеки, независимо от статуса;</p>
 </li>
-<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Фискализорованные</span>
 </span> - в табличном поле будут отражены чеки, которые фискализированны (фискализация это процедура сбора и передачи в налоговые органы данных о принятых предприятием денежных средствах с помощью
 специальных модулей хранения информации (фискальных регистраторов или фискальных накопителей);</p>
 </li>
-<li><p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li>
+<p><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Отложенные</span>
 </span> - в табличном поле будут отражены нефискализированные и проблемные чеки.</p>
 </li>
@@ -399,11 +408,13 @@
 </span>.</p>
 <p>Рассмортрим их подробнее:</p>
 <ul>
-<li><p>Тип чека - <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li>
+<p>Тип чека - <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Стандартный</span>
 </span> - устанавливается у чеков, оплата по которым поступила в день отгрузки, в основном при оплате наличными.</p>
 </li>
-<li><p>Тип чека - <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li>
+<p>Тип чека - <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Кредит</span>
 </span>:</p>
 </li>
@@ -460,9 +471,11 @@
     <span>Сайта</span>
 </span>. Например:</p>
 <ul>
-<li><p>если клиент оплачивает водителю при получении товара через сгенерированный Qr код, то создается один чек;</p>
+<li>
+<p>если клиент оплачивает водителю при получении товара через сгенерированный Qr код, то создается один чек;</p>
 </li>
-<li><p>если оплата была произведена по одному из вариантов <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li>
+<p>если оплата была произведена по одному из вариантов <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>СБП/Приложения/Сайта</span>
 </span> до доставки, то прибивается два чека: <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Чек предоплаты</span>
@@ -494,11 +507,14 @@
 <p>Для оптимальной работы кассы рекомендуется хранить историю фискальных операций в течении 1го месяца.
 Позволяет:</p>
 <ul>
-<li><p>Обеспечить быструю работу кассы (меньше данных — быстрее обработка).</p>
+<li>
+<p>Обеспечить быструю работу кассы (меньше данных — быстрее обработка).</p>
 </li>
-<li><p>Упростить сверку с ОФД и выявление расхождений.</p>
+<li>
+<p>Упростить сверку с ОФД и выявление расхождений.</p>
 </li>
-<li><p>Экономить место на диске.</p>
+<li>
+<p>Экономить место на диске.</p>
 </li>
 </ul>
 <p>Более длительное хранение может потребоваться для архивных целей или в соответствии с внутренней политикой компании, но для операционной работы кассы часто достаточно одного месяца.</p>
@@ -599,6 +615,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Настройки и описание форм и видов чеков", level: 4, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Настройки и описание форм и видов чеков", level: 4, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/3-руководства-пользователей/3-диспетчер/работа-с-кассой/1-настройки-и-описание-форм-и-видов-чеков.md" }</script>
 </body>
 </html>

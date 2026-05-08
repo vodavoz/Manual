@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827665986705">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831546230502">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>Расширенные</title>
@@ -17,6 +17,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/1-руководство-администратора/настройки-программы/4-расширенные/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://vodavoz.github.io/Manual/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -38,14 +39,17 @@
     <meta name="twitter:image" content="https://vodavoz.github.io/Manual/images/изменения/расш.jpg">
     <meta name="twitter:image:alt" content="Расширенные">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://vodavoz.github.io/Manual/1-руководство-администратора/настройки-программы/4-расширенные.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../static/logo.png" />
-    <link href="../../../resources/css/retype.css?v=4.4.0.827665986705" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.5.3.831546230502" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -145,7 +149,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -182,6 +186,8 @@
                     </ol>
                 </nav>
 
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="расширенные">Расширенные</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -193,53 +199,70 @@
     <figcaption class="caption"></figcaption>
 </figure>
 <ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать факторинг - устанавливается для включения функционала факторинга.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать факторинг - устанавливается для включения функционала факторинга.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать пропуска - устанавливается для включения функционала работы с пропусками и их автоматическим формированием. При включении в адресе доставки добавляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать пропуска - устанавливается для включения функционала работы с пропусками и их автоматическим формированием. При включении в адресе доставки добавляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Настройки пропуска</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать производство - устанавливается для включения функционала работы с производством. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать производство - устанавливается для включения функционала работы с производством. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Производство</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать торговые точки - устанавливается для включения функционала работы с торговыми точками. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать торговые точки - устанавливается для включения функционала работы с торговыми точками. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Торговые точки</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать почтовый клиент - устанавливается для включения функционала обмена почтовыми сообщениями.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать почтовый клиент - устанавливается для включения функционала обмена почтовыми сообщениями.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Указывать залоги в отгрузках - при включении в заказе покупателя будут указываться залоги контрагента.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Указывать залоги в отгрузках - при включении в заказе покупателя будут указываться залоги контрагента.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Распределять поступления по счетам на оплату - устанавливается для включения функционала подстановки в документ <a href="/2-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2/2-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/2-%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B5-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/1-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D0%B9-%D1%81%D1%87%D0%B5%D1%82/">Поступление на расчетный счет</a> счета, при условии, что он указан в банковской выписке.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Распределять поступления по счетам на оплату - устанавливается для включения функционала подстановки в документ <a href="/2-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B8-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2/2-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/2-%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B5-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/1-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D0%B9-%D1%81%D1%87%D0%B5%D1%82/">Поступление на расчетный счет</a> счета, при условии, что он указан в банковской выписке.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Изменять дату сопроводительных документов - устанавливается для того, чтобы при добавлении документов ремонта в заказ покупателя такие документы перепроводились датой доставки, чтобы исключить претензии со стороны клиентов по датам в этих документах.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Изменять дату сопроводительных документов - устанавливается для того, чтобы при добавлении документов ремонта в заказ покупателя такие документы перепроводились датой доставки, чтобы исключить претензии со стороны клиентов по датам в этих документах.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Искать счета по полному номеру - при включении поиск счетов на оплату осуществляется только по полному номеру.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Искать счета по полному номеру - при включении поиск счетов на оплату осуществляется только по полному номеру.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать мобильное приложение - устанавливается для включения функционала работы с мобильным приложением клиента. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать мобильное приложение - устанавливается для включения функционала работы с мобильным приложением клиента. При включении в панели разделов появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Приложение клиента</span>
 </span>, в настройках программы вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Настройки МПК</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать бухгалтерские регистры - устанавливается для включения функционала работы с бухгалтерскими регистрами. При включении в настройках программы появляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать бухгалтерские регистры - устанавливается для включения функционала работы с бухгалтерскими регистрами. При включении в настройках программы появляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Настройки бухгалтерии</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать подключаемое оборудование - устанавливается для включения функционала по работе с подключаемым оборудованием ККМ.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать подключаемое оборудование - устанавливается для включения функционала по работе с подключаемым оборудованием ККМ.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать графики работы сотрудников - при включении в документы по МЛ автоматически проставляются сотрудники в зависимости от установленного им графика работы.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать графики работы сотрудников - при включении в документы по МЛ автоматически проставляются сотрудники в зависимости от установленного им графика работы.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Необходимо уточнение данных - устанавливается для включения функционала уточнения данных.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Необходимо уточнение данных - устанавливается для включения функционала уточнения данных.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Вести учет маркируемой продукции ИСМП - устанавливается для включения функционала работы с маркировкой. При включении в настройках программы появляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Вести учет маркируемой продукции ИСМП - устанавливается для включения функционала работы с маркировкой. При включении в настройках программы появляется вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Настройки маркировки</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать упаковки - устанавливается для отгрузок в упаковках.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать упаковки - устанавливается для отгрузок в упаковках.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать бизнес-процесс ремонта - с помощью данного инструмента запускаются бизнес-процессы по ремонту и
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать бизнес-процесс ремонта - с помощью данного инструмента запускаются бизнес-процессы по ремонту и
 обслуживанию номерного оборудования и выполняются активные задачи по ним. В разделе Ремонт и аренда появляется раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>бизнес-процесс ремонта</span>
 </span>.</p>
@@ -332,6 +355,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Расширенные", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Расширенные", level: 3, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/1-руководство-администратора/настройки-программы/4-расширенные.md" }</script>
 </body>
 </html>

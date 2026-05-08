@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827665986705">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831546230502">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>Интерфейс</title>
     <meta name="title" content="Интерфейс">
-    <meta name="description" content="Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала">
+    <meta name="description" content="Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала заказов покупателей будет открыта основная форма.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/7-общие-инструкции-по-работе/персональные-настройки/2-интерфейс/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://vodavoz.github.io/Manual/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vodavoz.github.io/Manual/7-общие-инструкции-по-работе/персональные-настройки/2-интерфейс/">
     <meta property="og:title" content="Интерфейс">
-    <meta property="og:description" content="Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала">
+    <meta property="og:description" content="Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала заказов покупателей будет открыта основная форма.">
     <meta property="og:image" content="https://vodavoz.github.io/Manual/images/персональные_настройки_интерфейс.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,18 +35,21 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://vodavoz.github.io/Manual/7-общие-инструкции-по-работе/персональные-настройки/2-интерфейс/">
     <meta name="twitter:title" content="Интерфейс">
-    <meta name="twitter:description" content="Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала">
+    <meta name="twitter:description" content="Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала заказов покупателей будет открыта основная форма.">
     <meta name="twitter:image" content="https://vodavoz.github.io/Manual/images/персональные_настройки_интерфейс.jpg">
     <meta name="twitter:image:alt" content="Интерфейс">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://vodavoz.github.io/Manual/7-общие-инструкции-по-работе/персональные-настройки/2-интерфейс.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../static/logo.png" />
-    <link href="../../../resources/css/retype.css?v=4.4.0.827665986705" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.5.3.831546230502" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -145,7 +149,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -182,6 +186,8 @@
                     </ol>
                 </nav>
 
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="интерфейс">Интерфейс</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -193,11 +199,14 @@
     <figcaption class="caption"></figcaption>
 </figure>
 <ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала заказов покупателей будет открыта основная форма. Если константа не включена, то при оформлении нового заказа откроется сначала основная форма, а после его записи система перейдет на упрощенную форму заказа.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Упрощенный заказ - при включении во время оформления нового заказа система сразу откроет упрощенную форму заказа. При открытии этого заказа из журнала заказов покупателей будет открыта основная форма. Если константа не включена, то при оформлении нового заказа откроется сначала основная форма, а после его записи система перейдет на упрощенную форму заказа.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Без телефонии - устанавливается чтобы при запуске конфигурации модуль телефонии не запускался. Актуально в случае, если не приобретен модуль телефонии. Система не будет запрашивать ввод лицензии.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Без телефонии - устанавливается чтобы при запуске конфигурации модуль телефонии не запускался. Актуально в случае, если не приобретен модуль телефонии. Система не будет запрашивать ввод лицензии.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать упрощенную форму списка контрагентов -  устанавливается чтобы при открытии справочника  <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Использовать упрощенную форму списка контрагентов -  устанавливается чтобы при открытии справочника  <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Контрагенты</span>
 </span> отображалась упрощенная форма списка. Она отличается от основной отсутствием информации по долгам КА: не выводится фильтр <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Без переплат</span>
@@ -207,31 +216,42 @@
     <span>Долг</span>
 </span> на форме списка данного справочника.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать журнал в заказе - при включении в заказе покупателя отображается вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать журнал в заказе - при включении в заказе покупателя отображается вкладка <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Журнал</span>
 </span>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать детализацию в журнале заказов - при включении в журнале заказов покупателей в нижней части экрана появляется форма, в которой отображается детализация по выделенному заказу: номенклатура, ее количество, цена и сумма. В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать детализацию в журнале заказов - при включении в журнале заказов покупателей в нижней части экрана появляется форма, в которой отображается детализация по выделенному заказу: номенклатура, ее количество, цена и сумма. В поле <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Комментарий</span>
 </span> выводится комментарий из бланка заказа при его наличии.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Сворачивать интервалы в рабочем месте логиста - при включении в рабочем месте логиста сворачиваются/разворачиваются интервалы времени доставки.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Сворачивать интервалы в рабочем месте логиста - при включении в рабочем месте логиста сворачиваются/разворачиваются интервалы времени доставки.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать код клиента в рабочем месте логиста - при включении в рабочем месте логиста выводится код КА.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать код клиента в рабочем месте логиста - при включении в рабочем месте логиста выводится код КА.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать день недели в рабочем месте логиста - при включении в рабочем месте логиста выводится вид планирования.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать день недели в рабочем месте логиста - при включении в рабочем месте логиста выводится вид планирования.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать заказы развернутыми в рабочем месте логиста - при включении группы заказов всегда развернуты, в противном случае всегда свернуты.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать заказы развернутыми в рабочем месте логиста - при включении группы заказов всегда развернуты, в противном случае всегда свернуты.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать контрагента в рабочем месте логиста - при включении в рабочем месте логиста вместе с АД выводится информация о КА.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать контрагента в рабочем месте логиста - при включении в рабочем месте логиста вместе с АД выводится информация о КА.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать категорию в оперативных задачах - при включении в оперативных задачах отображается категория КА.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать категорию в оперативных задачах - при включении в оперативных задачах отображается категория КА.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать дни недели в оперативных задачах - при включении в оперативных задачах отображаются дни недели.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать дни недели в оперативных задачах - при включении в оперативных задачах отображаются дни недели.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать архивные документы - устанавливается чтобы просматривать архивные документы.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Показывать архивные документы - устанавливается чтобы просматривать архивные документы.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Не проверять ИНН - устанавливается для отклбчения функционала проверки корректности заполнения ИНН и можно вводить любые значения. Если в настройках программы включена константа <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Не проверять ИНН - устанавливается для отклбчения функционала проверки корректности заполнения ИНН и можно вводить любые значения. Если в настройках программы включена константа <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
     <span>Заполнять ИНН</span>
 </span>, то данная константа не работает.</p>
 </li>
@@ -302,6 +322,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Интерфейс", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Интерфейс", level: 3, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/7-общие-инструкции-по-работе/персональные-настройки/2-интерфейс.md" }</script>
 </body>
 </html>

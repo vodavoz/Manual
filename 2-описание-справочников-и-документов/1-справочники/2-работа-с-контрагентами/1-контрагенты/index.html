@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827665986705">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831546230502">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>Контрагенты</title>
@@ -17,6 +17,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/2-описание-справочников-и-документов/1-справочники/2-работа-с-контрагентами/1-контрагенты/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://vodavoz.github.io/Manual/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -38,14 +39,17 @@
     <meta name="twitter:image" content="https://vodavoz.github.io/Manual/images/изменения/контр.jpg">
     <meta name="twitter:image:alt" content="Контрагенты">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://vodavoz.github.io/Manual/2-описание-справочников-и-документов/1-справочники/2-работа-с-контрагентами/1-контрагенты.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../../static/logo.png" />
-    <link href="../../../../resources/css/retype.css?v=4.4.0.827665986705" rel="stylesheet">
+    <link href="../../../../resources/css/retype.css?v=4.5.3.831546230502" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../../resources/js/config.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/config.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../../resources/js/lunr.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -145,7 +149,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -189,6 +193,8 @@
                         </li>
                     </ol>
                 </nav>
+
+                <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
 <h1 id="контрагенты">Контрагенты</h1>
@@ -343,13 +349,17 @@
 </span> – основной банковский счет контрагента, данный счет будет автоматически заполняться в платежных документах.</p>
 <h4 id="функциональные-поля">Функциональные поля:</h4>
 <ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Оригинальные подписи – признак заполнения документов подписями руководителей. По умолчанию признак отключен и при печати документов подставляются факсимиле подписантов. Если этот признак включить, то при печати документов подписи не будут выведены.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Оригинальные подписи – признак заполнения документов подписями руководителей. По умолчанию признак отключен и при печати документов подставляются факсимиле подписантов. Если этот признак включить, то при печати документов подписи не будут выведены.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> При печати брать факт.адрес из адреса доставки – признак печати адреса доставки в бухгалтерских документах. По умолчанию признак отключен и при печати бухгалтерских документов подставляется фактический адрес КА. Если этот признак включить, то при формировании документов адрес будет браться из адреса доставки.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> При печати брать факт.адрес из адреса доставки – признак печати адреса доставки в бухгалтерских документах. По умолчанию признак отключен и при печати бухгалтерских документов подставляется фактический адрес КА. Если этот признак включить, то при формировании документов адрес будет браться из адреса доставки.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Пакетный ввод накладных – признак пакетной печати товарной накладной. Порядок работы с данным функционалом описан в разделе <a href="/3-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9/1-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80/4-%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%BD%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D1%85/">Формирование пакетных накладных</a>.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Пакетный ввод накладных – признак пакетной печати товарной накладной. Порядок работы с данным функционалом описан в разделе <a href="/3-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9/1-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80/4-%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%BD%D0%B0%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D1%85/">Формирование пакетных накладных</a>.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Формировать,но не печатать документы - признак печати документов. Если этот признак включить, то  документы будут сформированы, но на печать будут не выведены. Необходимо,если КА работает с ЭДО и ему не требуется подписание бумажных оригиналов.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Формировать,но не печатать документы - признак печати документов. Если этот признак включить, то  документы будут сформированы, но на печать будут не выведены. Необходимо,если КА работает с ЭДО и ему не требуется подписание бумажных оригиналов.</p>
 </li>
 </ul>
 <h4 id="технические-реквизиты">Технические реквизиты:</h4>
@@ -549,6 +559,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Контрагенты", level: 4, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Контрагенты", level: 4, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/2-описание-справочников-и-документов/1-справочники/2-работа-с-контрагентами/1-контрагенты.md" }</script>
 </body>
 </html>

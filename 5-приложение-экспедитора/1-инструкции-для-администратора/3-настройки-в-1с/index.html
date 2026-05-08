@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.827665986705">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831546230502">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>Настройки в 1с</title>
@@ -17,6 +17,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://vodavoz.github.io/Manual/5-приложение-экспедитора/1-инструкции-для-администратора/3-настройки-в-1с/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://vodavoz.github.io/Manual/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -38,14 +39,17 @@
     <meta name="twitter:image" content="https://vodavoz.github.io/Manual/images/создание_пользователя_2.jpg">
     <meta name="twitter:image:alt" content="Настройки в 1с">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://vodavoz.github.io/Manual/5-приложение-экспедитора/1-инструкции-для-администратора/3-настройки-в-1с.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../static/logo.png" />
-    <link href="../../../resources/css/retype.css?v=4.4.0.827665986705" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.5.3.831546230502" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.4.0.827665986705" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.831546230502" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -145,7 +149,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -182,6 +186,8 @@
                     </ol>
                 </nav>
 
+                <doc-page-actions></doc-page-actions>
+
                 <!-- Page content  -->
 <h1 id="настройки-в-1с">Настройки в 1с</h1>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -208,11 +214,14 @@
     <span>Водитель</span>
 </span>.</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Сканировать коды в МПЭ- если водитель работает с маркированной продукцией, то ему необходимо проставить данный признак для того, чтобы в приложении появилась команда сканирования продукции.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Сканировать коды в МПЭ- если водитель работает с маркированной продукцией, то ему необходимо проставить данный признак для того, чтобы в приложении появилась команда сканирования продукции.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Контролировать получение МЛ - если стоит данный признак, то водитель не сможет получить новый МЛ, пока не закроет текущий. Это контроль выполнения заданий, не для всех компаний подходит.</p>
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Контролировать получение МЛ - если стоит данный признак, то водитель не сможет получить новый МЛ, пока не закроет текущий. Это контроль выполнения заданий, не для всех компаний подходит.</p>
 </li>
-<li class="task-list-item"><p><input disabled="disabled" type="checkbox" checked="checked" /> Разрешено оформление заказов - если водитель работает с функционалом произвольного добавления заказов, то ему необходимо проставить данный признак и указать адрес, на который будет оформляться заказ (данный АД создается у предопределенного КА <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+<li class="task-list-item">
+<p><input disabled="disabled" type="checkbox" checked="checked" /> Разрешено оформление заказов - если водитель работает с функционалом произвольного добавления заказов, то ему необходимо проставить данный признак и указать адрес, на который будет оформляться заказ (данный АД создается у предопределенного КА <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Розничный покупатель</span>
 </span>).</p>
 </li>
@@ -310,6 +319,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Настройки в 1с", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Настройки в 1с", level: 3, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/5-приложение-экспедитора/1-инструкции-для-администратора/3-настройки-в-1с.md" }</script>
 </body>
 </html>
