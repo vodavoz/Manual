@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Manual">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831551750288">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.834322233110">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Настройка ТС ПиОТ</title>
@@ -45,11 +45,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../../static/logo.png" />
-    <link href="../../../resources/css/retype.css?v=4.5.3.831551750288" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=4.6.0.834322233110" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.5.3.831551750288" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.5.3.831551750288" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=4.6.0.834322233110" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=4.6.0.834322233110" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -254,7 +254,64 @@
     <span>Модуля ЕСП</span>
 </span>.</p>
 <h2 id="соединение-модуля-есп-и-1с">Соединение Модуля ЕСП и 1с</h2>
-<p>Пока находится в разработке, в скором времи появится решение.</p>
+<h1 id="минимальные-требования">Минимальные требования</h1>
+<p>Для кассы:</p>
+<ul>
+<li>
+<p>Драйвер не ниже:   10.10.8.23</p>
+</li>
+<li>
+<p>ККТ должна быть зарегистрирована на ФФД 1.2.</p>
+</li>
+<li>
+<p>Параметр <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Торговля маркированными товарами</span>
+</span>  должен быть включен.</p>
+</li>
+</ul>
+<p>Для ЛМ ЧЗ 2.0:</p>
+<ul>
+<li>ЕСМ: версия 1.6 или выше</li>
+<li>lm-controller: версия 1.6 или выше</li>
+</ul>
+<h1 id="настройка-ккт">Настройка ККТ</h1>
+<p>Перейдите в раздел <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+    <span>Работа с оборудованием</span>
+</span>-&gt;<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-success-text bg-badge-success border border-badge-success-border h-6 px-2 text-xs rounded-md">
+    <span>Подключаемое оборудование</span>
+</span>.</p>
+<p>Разверните вложенный список <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>ККТ с передачей данных</span>
+</span>, выберите необходимую ККТ.</p>
+<figure class="content-center">
+    <img src="/images/%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0/%D0%BF%D0%B8%D0%BE%D1%82.gif" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<h1 id="обновление-компоненты-дккт">Обновление компоненты ДККТ</h1>
+<p>В строке <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Драйвер оборудования</span>
+</span> нажмите на кнопку <img src="/images/%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0/%D0%BF%D0%B8%D0%BE%D1%82.jpg" alt="" class="max-w-full h-auto" /></p>
+<p>В окне Драйвера оборудования нажмите кнопку на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Обновить</span>
+</span>, далее в окне обновления нажмите на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Обновить из файла</span>
+</span> и <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Продолжить</span>
+</span>.</p>
+<p>Далее у вас откроется Проводник, выберите необходимую компоненету – для этого перейдите в <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Program Files</span>
+</span> → <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>ATOL</span>
+</span> →
+<span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Drivers10</span>
+</span> → <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>ККТ</span>
+</span> → <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>1Cv83</span>
+</span>, нажать левой кнопкой мыши по архиву и нажать на кнопку <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-light-text bg-badge-light border border-badge-light-border h-6 px-2 text-xs rounded-md">
+    <span>Открыть</span>
+</span>.</p>
 
                 
                 <!-- Required only on API pages -->
